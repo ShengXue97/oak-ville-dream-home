@@ -1,0 +1,1727 @@
+[
+  {
+    "proxy": "COL_Living_Media_Console_Carcass",
+    "source": "Living_Media_Console_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Media_Console_Recessed_Plinth",
+    "source": "Living_Media_Console_Recessed_Plinth",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Media_Console_Front_01",
+    "source": "Living_Media_Console_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Media_Console_Front_02",
+    "source": "Living_Media_Console_Front_02",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Media_Console_Front_03",
+    "source": "Living_Media_Console_Front_03",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Media_Console_Front_04",
+    "source": "Living_Media_Console_Front_04",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_TV",
+    "source": "Living_TV",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Entry_Shoe_Storage_Carcass",
+    "source": "Entry_Shoe_Storage_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Entry_Shoe_Storage_Recessed_Plinth",
+    "source": "Entry_Shoe_Storage_Recessed_Plinth",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Entry_Shoe_Storage_Front_01",
+    "source": "Entry_Shoe_Storage_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Wardrobe_Carcass",
+    "source": "Bedroom_3_Wardrobe_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Wardrobe_Recessed_Plinth",
+    "source": "Bedroom_3_Wardrobe_Recessed_Plinth",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Wardrobe_Front_01",
+    "source": "Bedroom_3_Wardrobe_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Wardrobe_Front_02",
+    "source": "Bedroom_3_Wardrobe_Front_02",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Wardrobe_Front_03",
+    "source": "Bedroom_3_Wardrobe_Front_03",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Wardrobe_Carcass",
+    "source": "Bedroom_2_Wardrobe_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Wardrobe_Recessed_Plinth",
+    "source": "Bedroom_2_Wardrobe_Recessed_Plinth",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Wardrobe_Front_01",
+    "source": "Bedroom_2_Wardrobe_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Wardrobe_Front_02",
+    "source": "Bedroom_2_Wardrobe_Front_02",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Wardrobe_Front_03",
+    "source": "Bedroom_2_Wardrobe_Front_03",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Low_Storage_Carcass",
+    "source": "Bedroom_2_Low_Storage_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Low_Storage_Recessed_Plinth",
+    "source": "Bedroom_2_Low_Storage_Recessed_Plinth",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Low_Storage_Front_01",
+    "source": "Bedroom_2_Low_Storage_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Low_Storage_Front_02",
+    "source": "Bedroom_2_Low_Storage_Front_02",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Low_Storage_Front_03",
+    "source": "Bedroom_2_Low_Storage_Front_03",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Wardrobe_Carcass",
+    "source": "Main_Bedroom_Wardrobe_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Wardrobe_Recessed_Plinth",
+    "source": "Main_Bedroom_Wardrobe_Recessed_Plinth",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Wardrobe_Front_01",
+    "source": "Main_Bedroom_Wardrobe_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Wardrobe_Front_02",
+    "source": "Main_Bedroom_Wardrobe_Front_02",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Wardrobe_Front_03",
+    "source": "Main_Bedroom_Wardrobe_Front_03",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Base_Carcass",
+    "source": "Kitchen_West_Base_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Base_Recessed_Plinth",
+    "source": "Kitchen_West_Base_Recessed_Plinth",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Base_Front_01",
+    "source": "Kitchen_West_Base_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Base_Front_02",
+    "source": "Kitchen_West_Base_Front_02",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Base_Front_03",
+    "source": "Kitchen_West_Base_Front_03",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Base_Front_04",
+    "source": "Kitchen_West_Base_Front_04",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Counter",
+    "source": "Kitchen_West_Counter",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Back_Base_Carcass",
+    "source": "Kitchen_Back_Base_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Back_Base_Recessed_Plinth",
+    "source": "Kitchen_Back_Base_Recessed_Plinth",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Back_Base_Front_01",
+    "source": "Kitchen_Back_Base_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Back_Base_Front_02",
+    "source": "Kitchen_Back_Base_Front_02",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Back_Base_Front_03",
+    "source": "Kitchen_Back_Base_Front_03",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Back_Counter",
+    "source": "Kitchen_Back_Counter",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Upper_Carcass",
+    "source": "Kitchen_West_Upper_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Upper_Front_01",
+    "source": "Kitchen_West_Upper_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Upper_Front_02",
+    "source": "Kitchen_West_Upper_Front_02",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Upper_Front_03",
+    "source": "Kitchen_West_Upper_Front_03",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_Upper_Front_04",
+    "source": "Kitchen_West_Upper_Front_04",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Backsplash",
+    "source": "Kitchen_Backsplash",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Induction_Hob",
+    "source": "Kitchen_Induction_Hob",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Hob_Ring",
+    "source": "Kitchen_Hob_Ring",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Hob_Ring.001",
+    "source": "Kitchen_Hob_Ring.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Sink_Rim",
+    "source": "Kitchen_Sink_Rim",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Sink_Bowl",
+    "source": "Kitchen_Sink_Bowl",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Tap_Stem",
+    "source": "Kitchen_Tap_Stem",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Tap_Spout",
+    "source": "Kitchen_Tap_Spout",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Fridge",
+    "source": "Kitchen_Fridge",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Kitchen_Fridge_Handle",
+    "source": "Kitchen_Fridge_Handle",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_WC_Cistern",
+    "source": "Common_Bath_WC_Cistern",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_WC_Pan",
+    "source": "Common_Bath_WC_Pan",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_WC_Seat",
+    "source": "Common_Bath_WC_Seat",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Vanity_Carcass",
+    "source": "Common_Bath_Vanity_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Vanity_Front_01",
+    "source": "Common_Bath_Vanity_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Vanity_Top",
+    "source": "Common_Bath_Vanity_Top",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Basin",
+    "source": "Common_Bath_Basin",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Mirror",
+    "source": "Common_Bath_Mirror",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Shower_Stem",
+    "source": "Common_Bath_Shower_Stem",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Shower_Head",
+    "source": "Common_Bath_Shower_Head",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Shower_Glass",
+    "source": "Common_Bath_Shower_Glass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_WC_Cistern",
+    "source": "Ensuite_WC_Cistern",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_WC_Pan",
+    "source": "Ensuite_WC_Pan",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_WC_Seat",
+    "source": "Ensuite_WC_Seat",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_Vanity_Carcass",
+    "source": "Ensuite_Vanity_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_Vanity_Front_01",
+    "source": "Ensuite_Vanity_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_Vanity_Top",
+    "source": "Ensuite_Vanity_Top",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_Basin",
+    "source": "Ensuite_Basin",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_Mirror",
+    "source": "Ensuite_Mirror",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_Shower_Stem",
+    "source": "Ensuite_Shower_Stem",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_Shower_Head",
+    "source": "Ensuite_Shower_Head",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_Shower_Glass",
+    "source": "Ensuite_Shower_Glass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Service_Yard_Washer",
+    "source": "Service_Yard_Washer",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Service_Yard_Washer_Door",
+    "source": "Service_Yard_Washer_Door",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Service_Yard_Upper_Storage_Carcass",
+    "source": "Service_Yard_Upper_Storage_Carcass",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Service_Yard_Upper_Storage_Front_01",
+    "source": "Service_Yard_Upper_Storage_Front_01",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Service_Yard_Upper_Storage_Front_02",
+    "source": "Service_Yard_Upper_Storage_Front_02",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_AC_Ledge_Condenser_Indicative",
+    "source": "AC_Ledge_Condenser_Indicative",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Removable_Cove_Trim",
+    "source": "Living_Removable_Cove_Trim",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Mixer_Stem",
+    "source": "Common_Bath_Mixer_Stem",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Mixer_Spout",
+    "source": "Common_Bath_Mixer_Spout",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_Mixer_Stem",
+    "source": "Ensuite_Mixer_Stem",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Ensuite_Mixer_Spout",
+    "source": "Ensuite_Mixer_Spout",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Sofa_Platform",
+    "source": "Living_Sofa_Platform",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Sofa_Back",
+    "source": "Living_Sofa_Back",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Sofa_Arm",
+    "source": "Living_Sofa_Arm",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Sofa_Arm.001",
+    "source": "Living_Sofa_Arm.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Sofa_Seat_0",
+    "source": "Living_Sofa_Seat_0",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Sofa_Back_Cushion_0",
+    "source": "Living_Sofa_Back_Cushion_0",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Sofa_Seat_1",
+    "source": "Living_Sofa_Seat_1",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Sofa_Back_Cushion_1",
+    "source": "Living_Sofa_Back_Cushion_1",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Sofa_Seat_2",
+    "source": "Living_Sofa_Seat_2",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Sofa_Back_Cushion_2",
+    "source": "Living_Sofa_Back_Cushion_2",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Coffee_Table_Top",
+    "source": "Living_Coffee_Table_Top",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Coffee_Table_Base",
+    "source": "Living_Coffee_Table_Base",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Side_Table",
+    "source": "Living_Side_Table",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Side_Table_Base",
+    "source": "Living_Side_Table_Base",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Oval_Table",
+    "source": "Dining_Oval_Table",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Table_Pedestal",
+    "source": "Dining_Table_Pedestal",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Table_Pedestal.001",
+    "source": "Dining_Table_Pedestal.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_0_Seat",
+    "source": "Dining_Chair_West_0_Seat",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_0_Back",
+    "source": "Dining_Chair_West_0_Back",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_0_Leg",
+    "source": "Dining_Chair_West_0_Leg",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_0_Leg.001",
+    "source": "Dining_Chair_West_0_Leg.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_0_Leg.002",
+    "source": "Dining_Chair_West_0_Leg.002",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_0_Leg.003",
+    "source": "Dining_Chair_West_0_Leg.003",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_0_Seat",
+    "source": "Dining_Chair_East_0_Seat",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_0_Back",
+    "source": "Dining_Chair_East_0_Back",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_0_Leg",
+    "source": "Dining_Chair_East_0_Leg",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_0_Leg.001",
+    "source": "Dining_Chair_East_0_Leg.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_0_Leg.002",
+    "source": "Dining_Chair_East_0_Leg.002",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_0_Leg.003",
+    "source": "Dining_Chair_East_0_Leg.003",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_1_Seat",
+    "source": "Dining_Chair_West_1_Seat",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_1_Back",
+    "source": "Dining_Chair_West_1_Back",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_1_Leg",
+    "source": "Dining_Chair_West_1_Leg",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_1_Leg.001",
+    "source": "Dining_Chair_West_1_Leg.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_1_Leg.002",
+    "source": "Dining_Chair_West_1_Leg.002",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_West_1_Leg.003",
+    "source": "Dining_Chair_West_1_Leg.003",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_1_Seat",
+    "source": "Dining_Chair_East_1_Seat",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_1_Back",
+    "source": "Dining_Chair_East_1_Back",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_1_Leg",
+    "source": "Dining_Chair_East_1_Leg",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_1_Leg.001",
+    "source": "Dining_Chair_East_1_Leg.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_1_Leg.002",
+    "source": "Dining_Chair_East_1_Leg.002",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Chair_East_1_Leg.003",
+    "source": "Dining_Chair_East_1_Leg.003",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Bed_Base",
+    "source": "Bedroom_3_Bed_Base",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Mattress",
+    "source": "Bedroom_3_Mattress",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Upholstered_Headboard",
+    "source": "Bedroom_3_Upholstered_Headboard",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Duvet",
+    "source": "Bedroom_3_Duvet",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Desk",
+    "source": "Bedroom_3_Desk",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Desk_Leg",
+    "source": "Bedroom_3_Desk_Leg",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Desk_Leg.001",
+    "source": "Bedroom_3_Desk_Leg.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Desk_Stool",
+    "source": "Bedroom_3_Desk_Stool",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Stool_Base",
+    "source": "Bedroom_3_Stool_Base",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Bed_Base",
+    "source": "Bedroom_2_Bed_Base",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Mattress",
+    "source": "Bedroom_2_Mattress",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Upholstered_Headboard",
+    "source": "Bedroom_2_Upholstered_Headboard",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Duvet",
+    "source": "Bedroom_2_Duvet",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Bedside",
+    "source": "Bedroom_2_Bedside",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Bedside_Base",
+    "source": "Bedroom_2_Bedside_Base",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Bed_Base",
+    "source": "Main_Bedroom_Bed_Base",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Mattress",
+    "source": "Main_Bedroom_Mattress",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Upholstered_Headboard",
+    "source": "Main_Bedroom_Upholstered_Headboard",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Duvet",
+    "source": "Main_Bedroom_Duvet",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Bedside",
+    "source": "Main_Bedroom_Bedside",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Bedside_Base",
+    "source": "Main_Bedroom_Bedside_Base",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Bedside.001",
+    "source": "Main_Bedroom_Bedside.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Bedside_Base.001",
+    "source": "Main_Bedroom_Bedside_Base.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Shelter_Freestanding_Shelf",
+    "source": "Shelter_Freestanding_Shelf",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Shelter_Freestanding_Shelf.001",
+    "source": "Shelter_Freestanding_Shelf.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Shelter_Freestanding_Shelf.002",
+    "source": "Shelter_Freestanding_Shelf.002",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Shelter_Freestanding_Shelf.003",
+    "source": "Shelter_Freestanding_Shelf.003",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Shelter_Shelf_Upright",
+    "source": "Shelter_Shelf_Upright",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Shelter_Shelf_Upright.001",
+    "source": "Shelter_Shelf_Upright.001",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Pendant_Shade",
+    "source": "Dining_Pendant_Shade",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Plant_Pot",
+    "source": "Living_Plant_Pot",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Dining_Plant_Pot",
+    "source": "Dining_Plant_Pot",
+    "role": "Collision_Furniture"
+  },
+  {
+    "proxy": "COL_Living_Floor",
+    "source": "Living_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Floor",
+    "source": "Bedroom_3_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Floor",
+    "source": "Bedroom_2_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Floor",
+    "source": "Main_Bedroom_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_Corridor_Floor",
+    "source": "Bedroom_Corridor_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Shelter_Floor",
+    "source": "Shelter_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Dining_Floor",
+    "source": "Dining_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Entry_Floor",
+    "source": "Entry_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Kitchen_Floor",
+    "source": "Kitchen_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Service_Yard_Floor",
+    "source": "Service_Yard_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Utility_Strip_Floor",
+    "source": "Utility_Strip_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Floor",
+    "source": "Common_Bath_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Ensuite_Floor",
+    "source": "Ensuite_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_AC_Ledge_Floor",
+    "source": "AC_Ledge_Floor",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_0_pier",
+    "source": "Facade_North_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_0_sill",
+    "source": "Facade_North_0_sill",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_0_header",
+    "source": "Facade_North_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_1_pier",
+    "source": "Facade_North_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_1_sill",
+    "source": "Facade_North_1_sill",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_1_header",
+    "source": "Facade_North_1_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_2_pier",
+    "source": "Facade_North_2_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_2_sill",
+    "source": "Facade_North_2_sill",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_2_header",
+    "source": "Facade_North_2_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_3_pier",
+    "source": "Facade_North_3_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_3_sill",
+    "source": "Facade_North_3_sill",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_3_header",
+    "source": "Facade_North_3_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_North_4_pier",
+    "source": "Facade_North_4_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Living_West_0_pier",
+    "source": "Living_West_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_East_0_pier",
+    "source": "Main_East_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_East_0_sill",
+    "source": "Main_East_0_sill",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_East_0_header",
+    "source": "Main_East_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_East_1_pier",
+    "source": "Main_East_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_South_0_pier",
+    "source": "Main_South_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_South_0_header",
+    "source": "Main_South_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_South_1_pier",
+    "source": "Main_South_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom3_West_0_pier",
+    "source": "Bedroom3_West_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom3_East_0_pier",
+    "source": "Bedroom3_East_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom2_East_0_pier",
+    "source": "Bedroom2_East_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom2_East_0_header",
+    "source": "Bedroom2_East_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom2_East_1_pier",
+    "source": "Bedroom2_East_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom3_South_0_pier",
+    "source": "Bedroom3_South_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom3_South_0_header",
+    "source": "Bedroom3_South_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom3_South_1_pier",
+    "source": "Bedroom3_South_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom2_South_0_pier",
+    "source": "Bedroom2_South_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom2_South_0_header",
+    "source": "Bedroom2_South_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom2_South_1_pier",
+    "source": "Bedroom2_South_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Shelter_North_0_pier",
+    "source": "Shelter_North_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Shelter_West_0_pier",
+    "source": "Shelter_West_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Shelter_East_0_pier",
+    "source": "Shelter_East_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Shelter_East_0_header",
+    "source": "Shelter_East_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Shelter_East_1_pier",
+    "source": "Shelter_East_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Shelter_South_0_pier",
+    "source": "Shelter_South_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Entry_South_0_pier",
+    "source": "Entry_South_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Entry_South_0_header",
+    "source": "Entry_South_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Entry_South_1_pier",
+    "source": "Entry_South_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Kitchen_West_0_pier",
+    "source": "Kitchen_West_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Kitchen_Yard_South_0_pier",
+    "source": "Kitchen_Yard_South_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_East_0_pier",
+    "source": "Yard_East_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_East_0_sill",
+    "source": "Yard_East_0_sill",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_East_0_header",
+    "source": "Yard_East_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_East_1_pier",
+    "source": "Yard_East_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Utility_0_pier",
+    "source": "Yard_Utility_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Utility_0_sill",
+    "source": "Yard_Utility_0_sill",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Utility_0_header",
+    "source": "Yard_Utility_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Utility_1_pier",
+    "source": "Yard_Utility_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Kitchen_Yard_0_pier",
+    "source": "Kitchen_Yard_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Kitchen_Yard_0_header",
+    "source": "Kitchen_Yard_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Kitchen_Yard_1_pier",
+    "source": "Kitchen_Yard_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bath_Common_West_0_pier",
+    "source": "Bath_Common_West_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Baths_North_0_pier",
+    "source": "Baths_North_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Baths_North_0_header",
+    "source": "Baths_North_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Baths_North_1_pier",
+    "source": "Baths_North_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Baths_Divider_0_pier",
+    "source": "Baths_Divider_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Ensuite_East_0_pier",
+    "source": "Ensuite_East_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Baths_South_0_pier",
+    "source": "Baths_South_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Baths_South_0_sill",
+    "source": "Baths_South_0_sill",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Baths_South_0_header",
+    "source": "Baths_South_0_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Baths_South_1_pier",
+    "source": "Baths_South_1_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Baths_South_1_sill",
+    "source": "Baths_South_1_sill",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Baths_South_1_header",
+    "source": "Baths_South_1_header",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Baths_South_2_pier",
+    "source": "Baths_South_2_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Ledge_West_0_pier",
+    "source": "Ledge_West_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Ledge_East_0_pier",
+    "source": "Ledge_East_0_pier",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Ledge_South_Parapet",
+    "source": "Ledge_South_Parapet",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_North_Closure",
+    "source": "Yard_North_Closure",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_Column_0",
+    "source": "Facade_Column_0",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_Column_6.375",
+    "source": "Facade_Column_6.375",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Facade_Column_12.675",
+    "source": "Facade_Column_12.675",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Living_Ceiling",
+    "source": "Living_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Ceiling",
+    "source": "Bedroom_3_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Ceiling",
+    "source": "Bedroom_2_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Ceiling",
+    "source": "Main_Bedroom_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_Corridor_Ceiling",
+    "source": "Bedroom_Corridor_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Shelter_Ceiling",
+    "source": "Shelter_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Dining_Ceiling",
+    "source": "Dining_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Entry_Ceiling",
+    "source": "Entry_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Kitchen_Ceiling",
+    "source": "Kitchen_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Service_Yard_Ceiling",
+    "source": "Service_Yard_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Utility_Strip_Ceiling",
+    "source": "Utility_Strip_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Ceiling",
+    "source": "Common_Bath_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Ensuite_Ceiling",
+    "source": "Ensuite_Ceiling",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Kitchen_Open_Portal_Soffit",
+    "source": "Kitchen_Open_Portal_Soffit",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Entry_Door_Leaf",
+    "source": "Entry_Door_Leaf",
+    "role": "Collision_Doors"
+  },
+  {
+    "proxy": "COL_Entry_Door_Jamb",
+    "source": "Entry_Door_Jamb",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Entry_Door_Jamb.001",
+    "source": "Entry_Door_Jamb.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Entry_Door_Frame_Head",
+    "source": "Entry_Door_Frame_Head",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Shelter_Door_Leaf",
+    "source": "Shelter_Door_Leaf",
+    "role": "Collision_Doors"
+  },
+  {
+    "proxy": "COL_Shelter_Door_Jamb",
+    "source": "Shelter_Door_Jamb",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Shelter_Door_Jamb.001",
+    "source": "Shelter_Door_Jamb.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Shelter_Door_Frame_Head",
+    "source": "Shelter_Door_Frame_Head",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Door_Leaf",
+    "source": "Bedroom_3_Door_Leaf",
+    "role": "Collision_Doors"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Door_Jamb",
+    "source": "Bedroom_3_Door_Jamb",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Door_Jamb.001",
+    "source": "Bedroom_3_Door_Jamb.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Door_Frame_Head",
+    "source": "Bedroom_3_Door_Frame_Head",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Door_Leaf",
+    "source": "Bedroom_2_Door_Leaf",
+    "role": "Collision_Doors"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Door_Jamb",
+    "source": "Bedroom_2_Door_Jamb",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Door_Jamb.001",
+    "source": "Bedroom_2_Door_Jamb.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Door_Frame_Head",
+    "source": "Bedroom_2_Door_Frame_Head",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Door_Leaf",
+    "source": "Main_Bedroom_Door_Leaf",
+    "role": "Collision_Doors"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Door_Jamb",
+    "source": "Main_Bedroom_Door_Jamb",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Door_Jamb.001",
+    "source": "Main_Bedroom_Door_Jamb.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Door_Frame_Head",
+    "source": "Main_Bedroom_Door_Frame_Head",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Door_Leaf",
+    "source": "Common_Bath_Door_Leaf",
+    "role": "Collision_Doors"
+  },
+  {
+    "proxy": "COL_Common_Bath_Door_Jamb",
+    "source": "Common_Bath_Door_Jamb",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Door_Jamb.001",
+    "source": "Common_Bath_Door_Jamb.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Door_Frame_Head",
+    "source": "Common_Bath_Door_Frame_Head",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Ensuite_Door_Leaf",
+    "source": "Ensuite_Door_Leaf",
+    "role": "Collision_Doors"
+  },
+  {
+    "proxy": "COL_Ensuite_Door_Jamb",
+    "source": "Ensuite_Door_Jamb",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Ensuite_Door_Jamb.001",
+    "source": "Ensuite_Door_Jamb.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Ensuite_Door_Frame_Head",
+    "source": "Ensuite_Door_Frame_Head",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Service_Yard_Door_Leaf",
+    "source": "Service_Yard_Door_Leaf",
+    "role": "Collision_Doors"
+  },
+  {
+    "proxy": "COL_Service_Yard_Door_Jamb",
+    "source": "Service_Yard_Door_Jamb",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Service_Yard_Door_Jamb.001",
+    "source": "Service_Yard_Door_Jamb.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Service_Yard_Door_Frame_Head",
+    "source": "Service_Yard_Door_Frame_Head",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Living_Window_Glass",
+    "source": "Living_Window_Glass",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Living_Window_Mullion",
+    "source": "Living_Window_Mullion",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Living_Window_Mullion.001",
+    "source": "Living_Window_Mullion.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Living_Window_Mullion.002",
+    "source": "Living_Window_Mullion.002",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Living_Window_Rail",
+    "source": "Living_Window_Rail",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Living_Window_Rail.001",
+    "source": "Living_Window_Rail.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Window_Glass",
+    "source": "Bedroom_3_Window_Glass",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Window_Mullion",
+    "source": "Bedroom_3_Window_Mullion",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Window_Mullion.001",
+    "source": "Bedroom_3_Window_Mullion.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Window_Mullion.002",
+    "source": "Bedroom_3_Window_Mullion.002",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Window_Rail",
+    "source": "Bedroom_3_Window_Rail",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_3_Window_Rail.001",
+    "source": "Bedroom_3_Window_Rail.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Window_Glass",
+    "source": "Bedroom_2_Window_Glass",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Window_Mullion",
+    "source": "Bedroom_2_Window_Mullion",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Window_Mullion.001",
+    "source": "Bedroom_2_Window_Mullion.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Window_Mullion.002",
+    "source": "Bedroom_2_Window_Mullion.002",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Window_Rail",
+    "source": "Bedroom_2_Window_Rail",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Bedroom_2_Window_Rail.001",
+    "source": "Bedroom_2_Window_Rail.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Window_Glass",
+    "source": "Main_Bedroom_Window_Glass",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Window_Mullion",
+    "source": "Main_Bedroom_Window_Mullion",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Window_Mullion.001",
+    "source": "Main_Bedroom_Window_Mullion.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Window_Mullion.002",
+    "source": "Main_Bedroom_Window_Mullion.002",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Window_Rail",
+    "source": "Main_Bedroom_Window_Rail",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_Bedroom_Window_Rail.001",
+    "source": "Main_Bedroom_Window_Rail.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Main_East_Window_Glass",
+    "source": "Main_East_Window_Glass",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Common_Bath_Vent_Window",
+    "source": "Common_Bath_Vent_Window",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Ensuite_Vent_Window",
+    "source": "Ensuite_Vent_Window",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre",
+    "source": "Yard_Vent_Louvre",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.001",
+    "source": "Yard_Vent_Louvre.001",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.002",
+    "source": "Yard_Vent_Louvre.002",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.003",
+    "source": "Yard_Vent_Louvre.003",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.004",
+    "source": "Yard_Vent_Louvre.004",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.005",
+    "source": "Yard_Vent_Louvre.005",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.006",
+    "source": "Yard_Vent_Louvre.006",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.007",
+    "source": "Yard_Vent_Louvre.007",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.008",
+    "source": "Yard_Vent_Louvre.008",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.009",
+    "source": "Yard_Vent_Louvre.009",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.010",
+    "source": "Yard_Vent_Louvre.010",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.011",
+    "source": "Yard_Vent_Louvre.011",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.012",
+    "source": "Yard_Vent_Louvre.012",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.013",
+    "source": "Yard_Vent_Louvre.013",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.014",
+    "source": "Yard_Vent_Louvre.014",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.015",
+    "source": "Yard_Vent_Louvre.015",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.016",
+    "source": "Yard_Vent_Louvre.016",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.017",
+    "source": "Yard_Vent_Louvre.017",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.018",
+    "source": "Yard_Vent_Louvre.018",
+    "role": "Collision_Architecture"
+  },
+  {
+    "proxy": "COL_Yard_Vent_Louvre.019",
+    "source": "Yard_Vent_Louvre.019",
+    "role": "Collision_Architecture"
+  }
+]

@@ -9,6 +9,7 @@ from pathlib import Path
 from mathutils import Vector, Quaternion
 
 ROOT = Path(__file__).resolve().parents[1]
+BUILD_OUTPUT = ROOT / "oak-ville.blend"
 H = 2.60
 COLS = {}
 ROOMS = {
@@ -72,12 +73,12 @@ def box(name, bounds, coll="Architecture", mat="Wall_Paint", bevel=0, solid=True
         verts,
         [],
         [
-            (0, 2, 3, 1),
-            (4, 5, 7, 6),
-            (0, 1, 5, 4),
-            (2, 6, 7, 3),
-            (0, 4, 6, 2),
-            (1, 3, 7, 5),
+            (1, 3, 2, 0),
+            (6, 7, 5, 4),
+            (4, 5, 1, 0),
+            (3, 7, 6, 2),
+            (2, 6, 4, 0),
+            (5, 7, 3, 1),
         ],
     )
     mesh.update()
@@ -200,10 +201,14 @@ def save(stage):
     s["ceiling_height_assumed_m"] = H
     s["project_version"] = ["0.0.0", "0.1.0", "0.2.0", "0.3.0", "0.4.0", "0.5.0"][stage]
     bpy.ops.file.pack_all()
+    if not bpy.data.filepath:
+        bpy.ops.wm.save_as_mainfile(
+            filepath=str(BUILD_OUTPUT), check_existing=False, compress=True
+        )
     bpy.ops.file.make_paths_relative()
     refresh(stage)
     bpy.ops.wm.save_as_mainfile(
-        filepath=str(ROOT / "oak-ville.blend"), check_existing=False, compress=True
+        filepath=str(BUILD_OUTPUT), check_existing=False, compress=True
     )
 
 
@@ -365,7 +370,7 @@ def architecture():
     ]:
         img = bpy.data.images.load(str(ROOT / filename), check_existing=True)
         img.pack()
-        img.filepath = "//" + filename
+        img.filepath = str(ROOT / filename)
         o = bpy.data.objects.new("REF_" + filename, None)
         COLS["Reference_Plans"].objects.link(o)
         o.empty_display_type = "IMAGE"
@@ -498,4 +503,8 @@ def walkthrough():
 if __name__ == "__main__":
     args = sys.argv[sys.argv.index("--") + 1 :] if "--" in sys.argv else []
     stage = int(args[args.index("--stage") + 1]) if "--stage" in args else 5
+    if "--output" in args:
+        BUILD_OUTPUT = (ROOT / args[args.index("--output") + 1]).resolve()
+        if not BUILD_OUTPUT.is_relative_to(ROOT):
+            raise ValueError("Build output must remain inside this project")
     build(stage)

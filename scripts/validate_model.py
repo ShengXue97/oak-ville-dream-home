@@ -5,6 +5,8 @@ oriented mesh bounding boxes. Sampling is 25 mm maximum, with a 12.5 mm
 safety allowance. Furniture boxes are intentionally conservative.
 """
 
+from mathutils import Matrix
+
 
 def obstacle_boxes():
     obstacles = []
@@ -16,13 +18,26 @@ def obstacle_boxes():
         corners = [Vector(corner) for corner in obj.bound_box]
         low = Vector(tuple(min(point[axis] for point in corners) for axis in range(3)))
         high = Vector(tuple(max(point[axis] for point in corners) for axis in range(3)))
-        obstacles.append((obj, low, high, obj.matrix_world.inverted()))
+        inverse = obj.matrix_world.inverted()
+        up = obj.matrix_world.to_3x3() @ Vector((0, 0, 1))
+        if abs(up.normalized().z) < 0.99999:
+            # Sideways appliances use conservative world bounds. Their local Z
+            # cannot be treated as the vertical direction of a human capsule.
+            corners = [obj.matrix_world @ point for point in corners]
+            low = Vector(
+                tuple(min(point[axis] for point in corners) for axis in range(3))
+            )
+            high = Vector(
+                tuple(max(point[axis] for point in corners) for axis in range(3))
+            )
+            inverse = Matrix.Identity(4)
+        obstacles.append((obj, low, high, inverse))
     return obstacles
 
 
 def capsule_distance(x, plan_y, obstacle):
     obj, low, high, inverse = obstacle
-    # All collision sources have upright local Z, including hinged doors.
+    # Upright local coordinates, or world coordinates for tilted sources.
     foot = inverse @ Vector((x, -plan_y, 0))
     spine_low = foot.z + 0.25
     spine_high = foot.z + 1.45
@@ -119,6 +134,15 @@ def rectangles_overlap(first, second, tolerance=0.002):
 
 
 def footprint(obj):
+    up = obj.matrix_world.to_3x3() @ Vector((0, 0, 1))
+    if abs(up.normalized().z) < 0.99999:
+        corners = [obj.matrix_world @ Vector(corner) for corner in obj.bound_box]
+        left, right = min(p.x for p in corners), max(p.x for p in corners)
+        bottom, top = min(p.y for p in corners), max(p.y for p in corners)
+        return [
+            Vector(point)
+            for point in [(left, bottom), (right, bottom), (right, top), (left, top)]
+        ]
     low = [min(corner[axis] for corner in obj.bound_box) for axis in range(3)]
     high = [max(corner[axis] for corner in obj.bound_box) for axis in range(3)]
     return [

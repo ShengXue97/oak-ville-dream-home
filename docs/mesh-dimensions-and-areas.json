@@ -1,0 +1,108 @@
+{
+  "mesh_datum_checks": [
+    {
+      "description": "Bedroom 3 west partition datum",
+      "plan_reference_mm": 3375.0,
+      "actual_mesh_datum_mm": 3375.0,
+      "error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "description": "Bedroom 3/2 partition datum",
+      "plan_reference_mm": 6375.0,
+      "actual_mesh_datum_mm": 6375.0,
+      "error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "description": "Bedroom 2/main partition datum",
+      "plan_reference_mm": 9375.0,
+      "actual_mesh_datum_mm": 9375.0,
+      "error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "description": "Right external wall datum",
+      "plan_reference_mm": 12675.0,
+      "actual_mesh_datum_mm": 12675.0,
+      "error_mm": 0.0002,
+      "pass": true
+    },
+    {
+      "description": "Shelter east datum",
+      "plan_reference_mm": 1750.0,
+      "actual_mesh_datum_mm": 1750.0,
+      "error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "description": "Kitchen west datum",
+      "plan_reference_mm": 3500.0,
+      "actual_mesh_datum_mm": 3500.0,
+      "error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "description": "Kitchen/yard divider datum",
+      "plan_reference_mm": 5775.0,
+      "actual_mesh_datum_mm": 5775.0,
+      "error_mm": 0.0001,
+      "pass": true
+    },
+    {
+      "description": "Yard/utility divider datum",
+      "plan_reference_mm": 7150.0,
+      "actual_mesh_datum_mm": 7150.0,
+      "error_mm": 0.0001,
+      "pass": true
+    },
+    {
+      "description": "Ensuite/ledge east datum",
+      "plan_reference_mm": 11100.0,
+      "actual_mesh_datum_mm": 11100.0,
+      "error_mm": 0.0004,
+      "pass": true
+    },
+    {
+      "description": "Shelter north datum",
+      "plan_reference_mm": 4450.0,
+      "actual_mesh_datum_mm": 4450.0,
+      "error_mm": -0.0002,
+      "pass": true
+    },
+    {
+      "description": "Shelter south datum",
+      "plan_reference_mm": 7250.0,
+      "actual_mesh_datum_mm": 7250.0,
+      "error_mm": 0.0,
+      "pass": true
+    },
+    {
+      "description": "Kitchen south datum",
+      "plan_reference_mm": 8950.0,
+      "actual_mesh_datum_mm": 8950.0,
+      "error_mm": -0.0002,
+      "pass": true
+    },
+    {
+      "description": "Bath south datum",
+      "plan_reference_mm": 6400.0,
+      "actual_mesh_datum_mm": 6400.0,
+      "error_mm": 0.0001,
+      "pass": true
+    },
+    {
+      "description": "Ledge south datum",
+      "plan_reference_mm": 7650.0,
+      "actual_mesh_datum_mm": 7650.0,
+      "error_mm": 0.0001,
+      "pass": true
+    }
+  ],
+  "all_mesh_datums_pass": true,
+  "sampled_internal_floor_m2": 83.44,
+  "sampled_floor_including_ledge_m2": 86.171,
+  "secondary_plan_quoted_internal_m2": 86,
+  "difference_m2": -2.56,
+  "warning": "Not a statutory area calculation. Wall-face assumptions and drawing variants remain unresolved."
+}

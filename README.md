@@ -1,3 +1,9 @@
+## Editable Blender model — v0.5.0
+
+Open [oak-ville.blend](oak-ville.blend). The warm cream-and-oak model, scripts, packed references and designer schedules are complete. Start with the [validation report](docs/VALIDATION_REPORT.md), [designer handoff](docs/DESIGNER_HANDOFF.md), [walkthrough guide](docs/WALKTHROUGH.md) and [restyling guide](docs/RESTYLING.md). Local previews are in [renders/index.html](renders/index.html); reproduce them with `scripts/render_previews.py` and `scripts/preview_gallery.py`.
+
+The model is a dimensioned design reference with documented assumptions, not surveyed fabrication drawings. Collision meshes are supplied for later engine integration; Blender Walk Navigation itself does not block walls/furniture. Use Solid shading for responsive movement.
+
 Primary style update: USER_PRIMARY_STYLE_REFERENCE.png and STYLE_DIRECTION.md now control the aesthetic.
 
 # Start here

@@ -1,0 +1,233 @@
+{
+  "view_count": 25,
+  "all_images_load": true,
+  "all_images_nonuniform": true,
+  "views": [
+    {
+      "file": "renders/EYE_W01_entry-dining.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "148df2288922c9a7b7462e3c4cd72aacdb2052aa313582f2eca96bbe190dbd14"
+    },
+    {
+      "file": "renders/EYE_W02_dining-living.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "3fd948565ec28159ee67b537a69861465c1049a26eef529b6e3bd8eb01f02807"
+    },
+    {
+      "file": "renders/EYE_W03_dining-kitchen.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "539c95870a375ad6f6a7e93fca832767ea2d2c8a0512dcfedb0993fb2f5732b5"
+    },
+    {
+      "file": "renders/EYE_W04_bedroom_corridor.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "2aacc67e5fc770cae5295b09fbde50852be672eb4d17d17d8b885bafb380150b"
+    },
+    {
+      "file": "renders/EYE_W05_Bedroom_3.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "0592406a20c50230cf3c367e692bc65e1b269994b06cc3786e50319a1ffc2e08"
+    },
+    {
+      "file": "renders/EYE_W06_Bedroom_2.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "205e7abe2cf078607c86e0b6048e51c5d766fbd92b7c3df014f28c7088c7e4f2"
+    },
+    {
+      "file": "renders/EYE_W07_main_bedroom.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "841a8e776536f2d9e7ab2d1d6a89a18c270f06697d4f4c93bdadbafb13ca4614"
+    },
+    {
+      "file": "renders/EYE_W08_common_bath.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "2653e412c20b80068363c9674a86748a54859f509273244884e12b8fcd613407"
+    },
+    {
+      "file": "renders/EYE_W09_ensuite.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "bcf75f59fe7efdc44a3fe0450f706e167b4451cd340b9b37c0001b09de196359"
+    },
+    {
+      "file": "renders/EYE_W10_service_yard.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "834a58fb107c06d839afb637fb0ae7fb06534ffa5a5116898232c48f90c0f95f"
+    },
+    {
+      "file": "renders/EYE_W11_shelter_access.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "d6f79526d86956e1052967fca7a10e20c23735a11b028a8afa7c792a4dad5794"
+    },
+    {
+      "file": "renders/PREVIEW_Bedroom_2.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "b936196815bf90f984713dd9b89a1257dacef8bb5c74ff61bb7f28df8a2445dc"
+    },
+    {
+      "file": "renders/PREVIEW_Bedroom_3.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "09dae619d3a68c8b0cd84e2235d78aecca2136bcee4dac60b1767a2e08f894b3"
+    },
+    {
+      "file": "renders/PREVIEW_Common_Bath.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "8ff5dd7405ac93ef601b97016ef98c70b98edf1bdc13b4418a542323f0f7137c"
+    },
+    {
+      "file": "renders/PREVIEW_Common_Bath_Vanity.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "93e7a32ee73d73fba8b31d3256232e9b35447b24a809490ed6ff9195afb9220e"
+    },
+    {
+      "file": "renders/PREVIEW_Dining.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "be5eb6411c9c073bc684fdbe6df607f6fb682f943f6c7f722fba2cb9977dd2e8"
+    },
+    {
+      "file": "renders/PREVIEW_Ensuite.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "9e24b7b18fb52bcdd8a1cb46d4167efa1d3eeba03ea72e1de1d15c4838bc1073"
+    },
+    {
+      "file": "renders/PREVIEW_Ensuite_Vanity.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "348ac06c041d18bfb00f1788c707643f5e111c70695ecc02c3dc5c33f6da897c"
+    },
+    {
+      "file": "renders/PREVIEW_Entry.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "c26220336dd5b6f583db16cfe999fef699a454730465de887833f9af76b31fde"
+    },
+    {
+      "file": "renders/PREVIEW_Kitchen.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "1b2de99518422f85a68517967913b2a1e524a001f333b8293e8142331706376e"
+    },
+    {
+      "file": "renders/PREVIEW_Living_Eye.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "23e1d4a8e7c18fe123f5f3dd770c952f4b751cc2e3572aa6acc4efceb084da98"
+    },
+    {
+      "file": "renders/PREVIEW_Main_Bedroom.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "24a9f88c1828f6d6dd0f6987268979a0283eb866559420c942d1ae010d183e77"
+    },
+    {
+      "file": "renders/PREVIEW_Service_Yard.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "37adc0416f3f48bfdf73b8ab9baab00816e0215f7800fca26ad69492d9fa5f04"
+    },
+    {
+      "file": "renders/PREVIEW_Shelter.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "3d07a6c82ee43153901986eb39f7240f96a623397629d763fbae2a45bf8c95a5"
+    },
+    {
+      "file": "renders/PLAN_Orthographic.png",
+      "size": [
+        960,
+        720
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "4812e2afddac938021f095cd6987b4d6bd7c98fdf7de2d9094dc808fc0a20c1a"
+    }
+  ],
+  "visual_review": "Room and walkway contact sheets reviewed; living, bathrooms, vanity and plan inspected individually during delivery. Provisional design-detail representations, not photogrammetry."
+}

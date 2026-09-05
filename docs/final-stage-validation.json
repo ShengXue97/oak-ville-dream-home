@@ -1,0 +1,8 @@
+{
+  "routes_pass": true,
+  "furniture_and_swings_pass": true,
+  "mesh_dimensions_pass": true,
+  "collision_proxies": 345,
+  "scene_objects": 919,
+  "note": "Saved-file reopening and image review are recorded separately after this stage."
+}

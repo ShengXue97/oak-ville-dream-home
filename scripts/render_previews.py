@@ -24,7 +24,7 @@ cameras = [
     for obj in scene.objects
     if obj.type == "CAMERA"
     and (
-        obj.name == requested
+        obj.name in requested.split(",")
         if requested
         else obj.name.startswith(("PREVIEW_", "EYE_W"))
         or obj.name == "PLAN_Orthographic"
@@ -33,14 +33,23 @@ cameras = [
 scene.render.engine = "CYCLES"
 scene.cycles.samples = 24
 scene.cycles.use_denoising = True
+scene.cycles.denoiser = "OPENIMAGEDENOISE"
+scene.cycles.denoising_use_gpu = False
 scene.render.image_settings.file_format = "PNG"
 scene.render.resolution_x = 960
 scene.render.resolution_y = 720
 scene.render.resolution_percentage = 100
 results = []
+fixture_visibility = {
+    obj: obj.hide_render
+    for obj in bpy.data.collections["Lighting"].objects
+    if obj.type == "MESH"
+}
 for camera_object in sorted(cameras, key=lambda obj: obj.name):
     started = time.time()
     top_view = camera_object.name == "PLAN_Orthographic"
+    for obj, original_visibility in fixture_visibility.items():
+        obj.hide_render = original_visibility or top_view
     for layer in scene.view_layers:
         layer.use = layer.name == (
             "Inspection_Cutaway" if top_view else "Enclosed_Walkthrough"

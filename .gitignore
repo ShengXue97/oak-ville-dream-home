@@ -9,3 +9,6 @@ renders/*
 scripts/.commit-message.txt
 assets/*.tmp
 assets/.tools/
+assets/.render-cache/
+assets/.preview-browser/
+assets/reproduction-check.blend

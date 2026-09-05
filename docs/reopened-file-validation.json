@@ -1,0 +1,41 @@
+{
+  "opened_file": "oak-ville.blend",
+  "blender_version": "5.2.1 LTS",
+  "project_version": "0.5.0",
+  "metres_per_unit": 1.0,
+  "default_scene": "Oak_Ville",
+  "camera": "PREVIEW_Living_Eye",
+  "routes_pass": true,
+  "furniture_and_swings_pass": true,
+  "mesh_dimensions_pass": true,
+  "images": [
+    {
+      "name": "OAK_VILLE_DIMENSIONED_PLAN.jpg",
+      "path": "//OAK_VILLE_DIMENSIONED_PLAN.jpg",
+      "packed": true,
+      "loaded_pixels": true
+    },
+    {
+      "name": "OAK_VILLE_PRIMARY_FLOOR_PLAN.png",
+      "path": "//OAK_VILLE_PRIMARY_FLOOR_PLAN.png",
+      "packed": true,
+      "loaded_pixels": true
+    },
+    {
+      "name": "USER_PRIMARY_STYLE_REFERENCE.png",
+      "path": "//USER_PRIMARY_STYLE_REFERENCE.png",
+      "packed": true,
+      "loaded_pixels": true
+    }
+  ],
+  "packed_references_pass": true,
+  "missing_libraries": [],
+  "ceiling_objects": 13,
+  "route_count": 11,
+  "collision_proxy_count": 345,
+  "file_size_bytes": 4641522,
+  "read_only": true,
+  "nonmanifold_collision_sources": [],
+  "inward_closed_meshes": [],
+  "all_pass": true
+}

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.0 — Walkthrough validation and designer handoff
+
+- Added 345 separate collision proxies, adjustable 1.70 m human reference, exact 1 m cube, natural 65° eye cameras for all W01–W11 connections and room previews, plus orthographic inspection views.
+- Added dimensioned SVG, room/area and camera schedules, packed in-file handoff text, style controls, fast-preview controls, reproduction and reopened-file validation scripts.
+- Verified all 15 dimension-chain segments and 14 actual mesh datums, all 11 furnished routes, eight door sweeps, outward closed mesh normals and packed image loading. No linked assets are missing.
+- Reproduced all five stages independently and compared the scene objects for transform/dimension/role/route differences. Added hollow editable vanity bowls and mixer taps during final fixture review.
+- Documented 83.440 m² sampled internal floor excluding walls versus 91.8612 m² reference patches including walls, and the unresolved difference from the older plan's 86 m² figure.
+- Kept the live user's Solid navigation view intact. Blender Walk mode has no wall/furniture capsule controller; collision proxies prepare later engine integration and are not interactive physics.
+
 ## 0.4.0 — Materials and lighting
 
 - Added procedural pale-oak planks/grain, cream upholstery, oatmeal textiles, warm ivory wet finishes, curtains, tonal art and restrained greenery.
