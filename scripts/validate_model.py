@@ -113,7 +113,9 @@ def validate_routes(report_name="walkthrough-validation"):
         "all_pass": all(row["pass"] for row in results),
         "limitations": "Conservative furniture bounds, proposed dimensions, no building compliance certification or game-engine physics test",
     }
-    (ROOT / "docs" / (report_name + ".json")).write_text(json.dumps(report, indent=2))
+    (ROOT / "docs/validation" / (report_name + ".json")).write_text(
+        json.dumps(report, indent=2)
+    )
     return report
 
 
@@ -221,7 +223,7 @@ def validate_furniture_and_swings():
         "all_pass": not clashes and all(row["pass"] for row in swings),
         "limitations": "1-degree swing samples, leaf bounds only; handles/hinge hardware and cabinet door operation need detailed design. Interpenetrating components within the same furniture assembly are intentional.",
     }
-    (ROOT / "docs/furniture-fit-and-door-swings.json").write_text(
+    (ROOT / "docs/validation/furniture-fit-and-door-swings.json").write_text(
         json.dumps(report, indent=2)
     )
     return report

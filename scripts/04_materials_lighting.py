@@ -374,7 +374,7 @@ preset = {
     "daylight_design_kelvin": 6500,
     "texture_dependency": "Procedural nodes only; edit EDIT_PALETTE ramps for textured materials",
 }
-(ROOT / "assets/MINIMALIST_CREAM.json").write_text(json.dumps(preset, indent=2))
+(ROOT / "assets/styles/MINIMALIST_CREAM.json").write_text(json.dumps(preset, indent=2))
 
 living_camera = camera(
     "PREVIEW_Living_Eye", (2.65, 4.05, 1.60), (1.45, 1.50, 1.10), fov=65

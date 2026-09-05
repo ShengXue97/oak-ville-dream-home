@@ -12,7 +12,7 @@ import html
 def write_designer_documents():
     scene = bpy.context.scene
     bpy.context.view_layer.update()
-    with (ROOT / "docs/furniture-component-schedule.csv").open(
+    with (ROOT / "docs/schedules/furniture-component-schedule.csv").open(
         "w", newline=""
     ) as stream:
         writer = csv.writer(stream)
@@ -74,7 +74,9 @@ def write_designer_documents():
                 "floor_area_method": "25mm centre-sampled grid; excludes wall footprint at z=0.8m, includes doorway floors; no furniture subtraction",
             }
         )
-    with (ROOT / "docs/room-area-schedule.csv").open("w", newline="") as stream:
+    with (ROOT / "docs/schedules/room-area-schedule.csv").open(
+        "w", newline=""
+    ) as stream:
         writer = csv.DictWriter(stream, fieldnames=room_rows[0].keys())
         writer.writeheader()
         writer.writerows(room_rows)
@@ -135,7 +137,7 @@ def write_designer_documents():
         "difference_m2": round(net_internal - 86, 3),
         "warning": "Not a statutory area calculation. Wall-face assumptions and drawing variants remain unresolved.",
     }
-    (ROOT / "docs/mesh-dimensions-and-areas.json").write_text(
+    (ROOT / "docs/validation/mesh-dimensions-and-areas.json").write_text(
         json.dumps(report, indent=2)
     )
 
@@ -262,7 +264,7 @@ def write_designer_documents():
             "</svg>",
         ]
     )
-    (ROOT / "docs/OAK_VILLE_DIMENSIONED_MODEL.svg").write_text(
+    (ROOT / "docs/drawings/OAK_VILLE_DIMENSIONED_MODEL.svg").write_text(
         "\n".join(svg), encoding="utf-8"
     )
     return report

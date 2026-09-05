@@ -36,7 +36,7 @@ The photograph's extension lines indicate these structural/partition references,
 
 ## Area and drawing-variant reconciliation
 
-`dimension-validation.json` lists all chain errors and non-overlapping floor-patch areas. These patches include wall reference footprints: internal reference area **91.8612 m²**, ledge **3.09375 m²**, combined **94.955 m²**. They are not the net usable area. The older plan quotes 86 m² internal and about 90 m² including ledge. Final 25 mm grid sampling gives **83.440 m² internal floor excluding wall footprints**, or **86.171 m² including the ledge**. This is a different area convention, not a statutory measurement; see `VALIDATION_REPORT.md` and `room-area-schedule.csv`.
+`validation/dimension-validation.json` lists all chain errors and non-overlapping floor-patch areas. These patches include wall reference footprints: internal reference area **91.8612 m²**, ledge **3.09375 m²**, combined **94.955 m²**. They are not the net usable area. The older plan quotes 86 m² internal and about 90 m² including ledge. Final 25 mm grid sampling gives **83.440 m² internal floor excluding wall footprints**, or **86.171 m² including the ledge**. This is a different area convention, not a statutory measurement; see `VALIDATION_REPORT.md` and `schedules/room-area-schedule.csv`.
 
 Both drawings have the same basic rooms and access topology. The secondary plan shows furnished kitchen cabinets and a service-yard utility band more clearly; the photograph controls the kitchen west datum and lower chain. The secondary illustration is not dimensioned, so quantitative differences cannot be proven. The discrepancy in area remains unresolved pending original undistorted drawings/site measurements. No room has been resized to fit the headline area.
 

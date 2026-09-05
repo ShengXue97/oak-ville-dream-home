@@ -35,7 +35,7 @@ def scene_record():
 
 
 delivered = scene_record()
-bpy.ops.wm.open_mainfile(filepath=str(ROOT / "assets/reproduction-check.blend"))
+bpy.ops.wm.open_mainfile(filepath=str(ROOT / ".cache/reproduction-check.blend"))
 reproduced = scene_record()
 differences = {
     name: {"delivered": delivered.get(name), "reproduced": reproduced.get(name)}
@@ -49,5 +49,7 @@ report = {
     "differences": differences,
     "pass": not differences,
 }
-(ROOT / "docs/reproduction-validation.json").write_text(json.dumps(report, indent=2))
+(ROOT / "docs/validation/reproduction-validation.json").write_text(
+    json.dumps(report, indent=2)
+)
 print(json.dumps({"differences": list(differences), "pass": not differences}, indent=2))

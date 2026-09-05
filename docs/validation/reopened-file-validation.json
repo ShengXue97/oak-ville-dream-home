@@ -11,19 +11,19 @@
   "images": [
     {
       "name": "OAK_VILLE_DIMENSIONED_PLAN.jpg",
-      "path": "//OAK_VILLE_DIMENSIONED_PLAN.jpg",
+      "path": "//references\\original\\OAK_VILLE_DIMENSIONED_PLAN.jpg",
       "packed": true,
       "loaded_pixels": true
     },
     {
       "name": "OAK_VILLE_PRIMARY_FLOOR_PLAN.png",
-      "path": "//OAK_VILLE_PRIMARY_FLOOR_PLAN.png",
+      "path": "//references\\original\\OAK_VILLE_PRIMARY_FLOOR_PLAN.png",
       "packed": true,
       "loaded_pixels": true
     },
     {
       "name": "USER_PRIMARY_STYLE_REFERENCE.png",
-      "path": "//USER_PRIMARY_STYLE_REFERENCE.png",
+      "path": "//references\\original\\USER_PRIMARY_STYLE_REFERENCE.png",
       "packed": true,
       "loaded_pixels": true
     }
@@ -33,7 +33,7 @@
   "ceiling_objects": 13,
   "route_count": 11,
   "collision_proxy_count": 345,
-  "file_size_bytes": 4641522,
+  "file_size_bytes": 4632207,
   "read_only": true,
   "nonmanifold_collision_sources": [],
   "inward_closed_meshes": [],

@@ -83,9 +83,11 @@ report["all_pass"] = (
     and not invalid_closed_meshes
     and not negative_volume_meshes
 )
-(ROOT / "docs/reopened-file-validation.json").write_text(json.dumps(report, indent=2))
+(ROOT / "docs/validation/reopened-file-validation.json").write_text(
+    json.dumps(report, indent=2)
+)
 print(json.dumps(report, indent=2), flush=True)
 if not report["all_pass"]:
     raise RuntimeError(
-        "Saved-file validation failed; inspect docs/reopened-file-validation.json"
+        "Saved-file validation failed; inspect docs/validation/reopened-file-validation.json"
     )

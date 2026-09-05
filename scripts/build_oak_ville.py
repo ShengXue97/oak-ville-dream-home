@@ -9,6 +9,14 @@ from pathlib import Path
 from mathutils import Vector, Quaternion
 
 ROOT = Path(__file__).resolve().parents[1]
+for folder in (
+    "docs/validation",
+    "docs/schedules",
+    "docs/drawings",
+    "assets/styles",
+    ".cache",
+):
+    (ROOT / folder).mkdir(parents=True, exist_ok=True)
 BUILD_OUTPUT = ROOT / "oak-ville.blend"
 H = 2.60
 COLS = {}
@@ -368,9 +376,11 @@ def architecture():
         "OAK_VILLE_PRIMARY_FLOOR_PLAN.png",
         "USER_PRIMARY_STYLE_REFERENCE.png",
     ]:
-        img = bpy.data.images.load(str(ROOT / filename), check_existing=True)
+        img = bpy.data.images.load(
+            str(ROOT / "references/original" / filename), check_existing=True
+        )
         img.pack()
-        img.filepath = str(ROOT / filename)
+        img.filepath = str(ROOT / "references/original" / filename)
         o = bpy.data.objects.new("REF_" + filename, None)
         COLS["Reference_Plans"].objects.link(o)
         o.empty_display_type = "IMAGE"
@@ -431,7 +441,9 @@ def validate_dimensions():
         4,
     )
     out["includes_ledge_m2"] = round(sum(out["reference_areas_m2"].values()), 4)
-    (ROOT / "docs/dimension-validation.json").write_text(json.dumps(out, indent=2))
+    (ROOT / "docs/validation/dimension-validation.json").write_text(
+        json.dumps(out, indent=2)
+    )
     return out
 
 

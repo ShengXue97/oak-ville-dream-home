@@ -10,9 +10,9 @@ Version 0.5.0. The editable model is `../oak-ville.blend`. It was constructed th
 - Eight door leaves pass 91 angular samples from closed to open without detected wall/furniture penetration above the stated tolerance. Frames/leaf origins remain separate. Door handles, hinges, cabinet doors/drawers and appliance service clearances are not fully simulated.
 - No furniture/architecture bounding-box penetration over 10 mm remains. Separate collision proxies are supplied for architecture, furniture and moving door leaves. They are hidden and excluded from the normal view layers.
 - Source references are packed and readable after reopening. Surface textures are procedural, so there are no external texture dependencies or missing linked libraries.
-- The entire model was regenerated from scripts in `assets/reproduction-check.blend`. Comparison against the main file found no differences in object transforms/dimensions, collection memberships, material role assignments, vertex counts or route control points at 0.00001 m rounding. This test file is ignored by Git.
+- The entire model was regenerated from scripts in `.cache/reproduction-check.blend`. Comparison against the main file found no differences in object transforms/dimensions, collection memberships, material role assignments, vertex counts or route control points at 0.00001 m rounding. This test file is ignored by Git.
 
-See `reopened-file-validation.json`, `reproduction-validation.json`, `walkthrough-validation.json`, `furniture-fit-and-door-swings.json`, `dimension-validation.json` and `mesh-dimensions-and-areas.json` for machine-readable evidence.
+See `validation/reopened-file-validation.json`, `validation/reproduction-validation.json`, `validation/walkthrough-validation.json`, `validation/furniture-fit-and-door-swings.json`, `validation/dimension-validation.json` and `validation/mesh-dimensions-and-areas.json` in `docs/validation/` for machine-readable evidence.
 
 ## Dimensions and area limits
 
@@ -46,7 +46,7 @@ Columns, frames, finishes and furniture can reduce these nominal spans locally. 
 
 ## Visual review and walkthrough scope
 
-Room and connection images are in `../renders/index.html`, alongside a rendered orthographic plan. The dimensioned vector plan is `OAK_VILLE_DIMENSIONED_MODEL.svg`. Human-scale images use Z=1.60 m and 65° horizontal field of view; the presentation/plan cameras are explicitly separate. Bathrooms have additional vanity views because one natural-angle view cannot show all fittings in the compact space.
+Room and connection images are in `../renders/index.html`, alongside a rendered orthographic plan. The dimensioned vector plan is `drawings/OAK_VILLE_DIMENSIONED_MODEL.svg`. Human-scale images use Z=1.60 m and 65° horizontal field of view; the presentation/plan cameras are explicitly separate. Bathrooms have additional vanity views because one natural-angle view cannot show all fittings in the compact space.
 
 The model uses warm cream, pale oak, oatmeal and ivory throughout. Proposed fixtures are editable design-level representations, not manufacturer CAD or shop drawings. Plumbing, electrical circuits, waterproofing, material specifications, structural status and actual service constraints are not established. The shelter/yard/ledge have limited photographic evidence; their fitting proposals must not be mistaken for surveyed conditions.
 

@@ -78,7 +78,7 @@ for source in list(bpy.context.scene.objects):
     collision_records.append({"proxy": proxy.name, "source": source.name, "role": role})
 for layer in bpy.context.scene.view_layers:
     layer.layer_collection.children["Collision"].exclude = True
-(ROOT / "docs/collision-manifest.json").write_text(
+(ROOT / "docs/validation/collision-manifest.json").write_text(
     json.dumps(collision_records, indent=2)
 )
 
@@ -161,7 +161,7 @@ for route in list(bpy.context.scene.objects):
     eye["route"] = route.name
 camera("PRESENTATION_Axonometric", (17.5, 17.0, 15), (6.3, 4.4, 0), fov=50, ortho=18)
 
-with (ROOT / "docs/camera-schedule.csv").open("w", newline="") as stream:
+with (ROOT / "docs/schedules/camera-schedule.csv").open("w", newline="") as stream:
     writer = csv.writer(stream)
     writer.writerow(
         ["camera", "x_m", "plan_y_m", "eye_z_m", "horizontal_fov_deg", "purpose"]
@@ -300,4 +300,6 @@ summary = {
     "scene_objects": len(scene.objects),
     "note": "Saved-file reopening and image review are recorded separately after this stage.",
 }
-(ROOT / "docs/final-stage-validation.json").write_text(json.dumps(summary, indent=2))
+(ROOT / "docs/validation/final-stage-validation.json").write_text(
+    json.dumps(summary, indent=2)
+)

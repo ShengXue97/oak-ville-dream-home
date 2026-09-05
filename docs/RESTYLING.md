@@ -4,7 +4,7 @@ The building shell and dimensions are in `Architecture`; openings and hinged lea
 
 For a palette change, edit the shared role in Material Properties or the Shader Editor: `Wall_Paint`, `Floor_Main`, `Oak_Joinery`, `Cabinet_Front`, `Countertop`, `Fabric_Main`, `Fabric_Oatmeal`, `Wet_Tile`, `Sheer_Linen`. Textured materials use the clearly named `EDIT_PALETTE` Color Ramp. Oak flooring also has the `Oak_Planks_1200x180mm` Brick node; edit its two plank colours for a floor colour change. Roughness remains on the Principled shader. No reference photo is used as a surface texture.
 
-`assets/palette-editable.json` is exported from the actual material nodes. Duplicate it, adjust values, and call `apply_palette` in `scripts/style_controls.py` from Blender's Python Console. Colours are scene-linear RGBA. This affects shared materials throughout the flat and does not change geometry. The floor's Brick node remains directly editable in the Shader Editor.
+`assets/styles/palette-editable.json` is exported from the actual material nodes. Duplicate it, adjust values, and call `apply_palette` in `scripts/style_controls.py` from Blender's Python Console. Colours are scene-linear RGBA. This affects shared materials throughout the flat and does not change geometry. The floor's Brick node remains directly editable in the Shader Editor.
 
 For an alternative furnishing scheme, call `duplicate_style('DESIGN_OPTION_B')`. It creates independent mesh/light data beneath a new, initially hidden collection. Switch the original and alternative collections' viewport and render visibility together. Make a material single-user before changing only one option's material. Walls keep their shared roles; use a separate saved `.blend` for comparing whole-flat wall/floor palettes.
 

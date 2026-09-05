@@ -40,7 +40,7 @@ for path in paths:
 page = """<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Oak Ville model previews</title><style>body{font:16px system-ui;background:#faf6ed;color:#263735;margin:32px}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}figure{margin:0;background:white;padding:12px}img{width:100%}figcaption{padding:10px 0}a{color:#315f60}</style>
 <h1>Oak Ville · editable model previews</h1><p>Warm cream and pale oak minimalism. Eye-level cameras: 1.60 m, 65° horizontal field of view. Openings and unlabelled dimensions remain provisional.</p>
-<p><a href="../docs/OAK_VILLE_DIMENSIONED_MODEL.svg">Dimensioned designer drawing</a> · <a href="../docs/DESIGNER_HANDOFF.md">Assumptions and handoff</a></p><main>"""
+<p><a href="../docs/drawings/OAK_VILLE_DIMENSIONED_MODEL.svg">Dimensioned designer drawing</a> · <a href="../docs/DESIGNER_HANDOFF.md">Assumptions and handoff</a></p><main>"""
 (folder / "index.html").write_text(
     page + "\n".join(cards) + "</main></html>", encoding="utf-8"
 )
@@ -58,7 +58,7 @@ for path in paths:
                 "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
             }
         )
-(ROOT / "docs/preview-validation.json").write_text(
+(ROOT / "docs/validation/preview-validation.json").write_text(
     json.dumps(
         {
             "view_count": len(validation),

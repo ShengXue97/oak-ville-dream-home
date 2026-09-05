@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased — Project organisation
+
+- Separated the supplied reference pack into `references/original/`, preserving source images and internal gallery links.
+- Grouped generated drawings, schedules and validation evidence beneath `docs/`; moved editable palettes to `assets/styles/`.
+- Updated reproduction scripts, documentation and packed Blender reference paths. Removed disposable backups, reproduction copies and tool caches; future temporary files use `.cache/`.
+- Model version remains 0.5.0: this is project organisation and tooling, with no geometry or interior-design change.
+
 ## 0.5.0 — Walkthrough validation and designer handoff
 
 - Added 345 separate collision proxies, adjustable 1.70 m human reference, exact 1 m cube, natural 65° eye cameras for all W01–W11 connections and room previews, plus orthographic inspection views.

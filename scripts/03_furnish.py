@@ -741,7 +741,9 @@ cub(
 
 # Schedule actual mesh bounds after dependency evaluation, not nominal strings.
 bpy.context.view_layer.update()
-with (ROOT / "docs/furniture-component-schedule.csv").open("w", newline="") as stream:
+with (ROOT / "docs/schedules/furniture-component-schedule.csv").open(
+    "w", newline=""
+) as stream:
     writer = csv.writer(stream)
     writer.writerow(
         ["component", "width_m", "depth_m", "height_m", "x_m", "plan_y_m", "z_m"]

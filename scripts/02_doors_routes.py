@@ -207,7 +207,7 @@ for name, points in ROUTES.items():
 
 entry_camera = camera("FP_Entry_160cm_65deg", (2.70, 7.05, 1.60), (2.8, 4.9, 1.60))
 entry_camera["purpose"] = "Human-scale entry start; horizontal field of view 65 degrees"
-with (ROOT / "docs/door-schedule.csv").open("w", newline="") as stream:
+with (ROOT / "docs/schedules/door-schedule.csv").open("w", newline="") as stream:
     writer = csv.DictWriter(stream, fieldnames=door_schedule[0].keys())
     writer.writeheader()
     writer.writerows(door_schedule)

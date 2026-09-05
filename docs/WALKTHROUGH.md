@@ -16,7 +16,7 @@ Blender navigation does not implement the supplied capsule/mesh physics. It can 
 
 ## Cutaway, dimensions and calibration
 
-Switch to `Inspection_Cutaway` and choose `PLAN_Orthographic` for the plan. This layer excludes only ceilings and reference images; architectural walls remain. Enable overlays to see curves and helpers. `docs/OAK_VILLE_DIMENSIONED_MODEL.svg` is the annotated vector drawing for a designer.
+Switch to `Inspection_Cutaway` and choose `PLAN_Orthographic` for the plan. This layer excludes only ceilings and reference images; architectural walls remain. Enable overlays to see curves and helpers. `docs/drawings/OAK_VILLE_DIMENSIONED_MODEL.svg` is the annotated vector drawing for a designer.
 
 Enable `Walkthrough → Calibration` in the view layer to inspect the 1.70 m human and exact 1 m cube. The human parent scales uniformly by desired height / 1.70. These are simulation defaults, not the owner's dimensions. Disable calibration again for navigation and renders.
 
@@ -30,9 +30,9 @@ For a later engine, export at scale 1 metre/unit (e.g. glTF after baking unsuppo
 
 ## Reproduce and validate
 
-To reproduce without overwriting the main file, append `--output assets/reproduction-check.blend` to the build command below. Then open `oak-ville.blend` in background with `--python scripts/compare_reproduction.py` to compare the model data. These checks do not reload the live session.
+To reproduce without overwriting the main file, append `--output .cache/reproduction-check.blend` to the build command below. Then open `oak-ville.blend` in background with `--python scripts/compare_reproduction.py` to compare the model data. These checks do not reload the live session.
 
-`python scripts/preview_gallery.py` creates contact sheets and `renders/index.html` from the images; it uses Pillow. The Python scripts use four-space indentation and have been formatted with Black. The ignored `assets/.tools/` folder contains the optional local formatter, not a modelling dependency.
+`python scripts/preview_gallery.py` creates contact sheets and `renders/index.html` from the images; it uses Pillow. The Python scripts use four-space indentation and have been formatted with Black. Black is an optional development tool; Pillow is needed only for generating the preview gallery. Temporary reproduction files belong in `.cache/`.
 
 From this project folder, using the installed Blender executable:
 
