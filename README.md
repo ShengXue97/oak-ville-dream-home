@@ -1,6 +1,8 @@
 # Oak Ville ? editable Blender project
 
-Current model version: **0.5.1**. Open [oak-ville.blend](oak-ville.blend).
+Current project version: **0.6.0**. Open [oak-ville.blend](oak-ville.blend).
+
+The [Unreal desktop walkthrough](unreal/OakVille/OakVille.uproject) lives in this repository. See the [Unreal guide](docs/unreal/README.md) and [Blender update workflow](docs/unreal/UPDATE_FROM_BLENDER.md).
 
 | Folder | Contents |
 |---|---|

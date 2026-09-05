@@ -4,7 +4,7 @@ Live: runpy.run_path(path)['build'](stage). Never reload an existing scene.
 Coordinates in design data: x right, v down on plan, z up. All metres.
 """
 
-import bpy, math, json, sys
+import bpy, math, json, sys, uuid
 from pathlib import Path
 from mathutils import Vector, Quaternion
 
@@ -212,6 +212,11 @@ def save(stage):
         if stage == 5
         else ["0.0.0", "0.1.0", "0.2.0", "0.3.0", "0.4.0"][stage]
     )
+    for obj in s.objects:
+        if obj.type == "MESH" and not obj.get("oakville_source_id"):
+            obj["oakville_source_id"] = str(
+                uuid.uuid5(uuid.NAMESPACE_URL, "oak-ville/" + obj.name)
+            )
     bpy.ops.file.pack_all()
     if not bpy.data.filepath:
         bpy.ops.wm.save_as_mainfile(

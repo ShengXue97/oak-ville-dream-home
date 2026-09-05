@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.6.0 - Editable Unreal walkthrough and Blender updates
+
+- Added the Unreal 5.8.2 editor project under `unreal/OakVille`, with centimetre-scale meshes, a 172 cm character capsule, 160 cm eye height, 65 degree field of view and desktop walking controls.
+- Added an incremental Blender export/update command, persistent object IDs, geometry hashes, safe Play/unsaved-map preflight checks and non-destructive removal reporting.
+- Verified rename and geometry updates preserve Unreal material overrides, actor references and manual translation offsets. An unchanged sync skipped all 576 geometry rebuilds.
+- Corrected triangle facing, repaired the shared oak shader, enabled Lumen explicitly and added sky/sun and exposure controls. Furniture/door collision uses tighter convex bounds; architecture uses simple boxes.
+- Validated all 576 imported bounds within 0.00005 cm of the Blender export and all 11 planned capsule routes with supporting floors. Reopened Blender and passed its dimension, route and packed-reference checks.
+- Geometry, furniture, role material instances and lighting remain separately editable. Scripts are formatted and documented in `docs/unreal/UPDATE_FROM_BLENDER.md`.
+- Limitations: Windows SDK is missing, so no standalone executable is delivered yet. Doors are static in their exported open state. Materials approximate the Blender design; full node graphs and multiple material slots are not transferred. Conservative furniture collision does not certify every possible approach or seating interaction.
+
 ## 0.5.1 - Attached door hardware and botanical detail
 
 - Replaced floating lever bars with connected mounting roses, spindles and levers on both sides of all eight doors; all parts remain parented to each door hinge.

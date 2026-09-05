@@ -1,0 +1,16 @@
+{
+  "version": "0.6.0",
+  "reviewed_previews": ["renders/unreal/living-offscreen.png", "renders/unreal/corridor-offscreen.png"],
+  "checkerboard_material_repaired": true,
+  "living_and_corridor_surfaces_readable": true,
+  "lumen_enabled_explicitly": true,
+  "fixed_exposure_luminance": 32,
+  "extended_ev100_range": false,
+  "floor_front_face_trace_from_above": true,
+  "floor_back_face_trace_from_below": false,
+  "limitations": [
+    "Offscreen previews differ from the interactive viewport and retain some noise.",
+    "Exterior surroundings have not been modelled; windows show sky and placeholder context.",
+    "Furniture collision is conservative and only named walking routes are exhaustively sampled."
+  ]
+}

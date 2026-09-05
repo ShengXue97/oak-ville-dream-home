@@ -8,3 +8,9 @@ renders/*
 *.log
 scripts/.commit-message.txt
 .cache/
+unreal/**/Binaries/
+unreal/**/DerivedDataCache/
+unreal/**/Intermediate/
+unreal/**/Saved/
+unreal/**/.vs/
+builds/

@@ -1,0 +1,8 @@
+{
+  "same_actor_and_mesh": true,
+  "rename_followed_id": true,
+  "material_override_retained": true,
+  "manual_offset_retained": true,
+  "geometry_updated": true,
+  "passed": true
+}
