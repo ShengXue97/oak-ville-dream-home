@@ -141,5 +141,6 @@
       "passed": false
     }
   ],
-  "passed": false
+  "passed": false,
+  "validation_stage": "Before final runtime speed-assignment fix; retained failure diagnostic"
 }

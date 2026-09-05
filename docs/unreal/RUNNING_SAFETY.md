@@ -46,3 +46,5 @@ OS focus. They do not simulate the user's physical keyboard or prove that the
 original intermittent input sequence has been reproduced. Results are in the
 adjacent validation JSON files. No geometry or Blender material changes are needed
 for this runtime-only patch; normal Blender-to-Unreal sync retains these controls.
+
+Final fix: use `movement.max_walk_speed = speed` instead of `set_editor_property`, avoiding editor notifications and component reconstruction during Play. The user confirmed it works. Additional automated testing was stopped at their request. The before-fix camera diagnostic retains its failures; it is not final acceptance. The general Play controls check passed after the camera repair.

@@ -1,7 +1,8 @@
 # Changelog
 
-## 0.10.2 - Centre the running camera and protect against wall crossings
+## 0.10.2 - Fix Shift-triggered camera displacement
 
+- Use runtime speed assignment instead of editor change notifications to prevent Blueprint component reconstruction on Shift transitions. User confirmed the fix in Play.
 - Replace the mesh-attached template viewpoint with a dedicated capsule-centred walkthrough camera. The old live camera was approximately 75 cm sideways from the collision capsule, allowing the view to enter walls while the player body stayed blocked.
 - Keep either Shift as hold-to-run (320 cm/s), returning to 180 cm/s on release; only G explicitly enables creative flight.
 - Recover an unexpected human flight mode or detached CharacterMovement collision component, in addition to disabled capsule collision.
