@@ -74,8 +74,16 @@ def main():
                     f"Geometry: {len(report['updated'])} changed, {len(report['added'])} added, {len(report['unchanged'])} unchanged"
                 )
                 remote("validate_scene.py")
-                if (ROOT / "assets/styles/accent-assignments.json").is_file():
+                export = json.loads(
+                    (ROOT / "assets/unreal-export/manifest.json").read_text()
+                )
+                if (
+                    export.get("active_style", "MINIMALIST_CREAM") == "MINIMALIST_CREAM"
+                    and (ROOT / "assets/styles/accent-assignments.json").is_file()
+                ):
                     remote("sync_accent_materials.py")
+                if export.get("styles"):
+                    remote("sync_styles.py")
                 print(
                     "Update complete. Unreal lighting and material overrides were retained."
                 )

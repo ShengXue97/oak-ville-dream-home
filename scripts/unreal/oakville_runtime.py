@@ -11,6 +11,7 @@ import math
 from pathlib import Path
 
 import unreal
+from oakville_styles import StyleSession, LABELS
 
 ROOT = Path(__file__).resolve().parents[2]
 STATE = None
@@ -190,6 +191,11 @@ class PlaySession:
         records = {
             by_id[r["source_id"]]: r for r in data["objects"] if r["source_id"] in by_id
         }
+        self.styles = None
+        try:
+            self.styles = StyleSession(actors, data)
+        except Exception as error:
+            unreal.log_error("Style switch unavailable: " + str(error))
         self.doors = []
         for record in data["doors"]:
             children = [
@@ -201,7 +207,7 @@ class PlaySession:
                 self.doors.append(Door(record, children, records))
         message(
             world,
-            "Human mode | WASD walk | Hold Shift run | Space jump | E door | G creative",
+            "Human mode | WASD walk | Hold Shift run | Space jump | E door | G creative | T style",
             duration=6,
         )
 
@@ -383,6 +389,18 @@ class PlaySession:
 
     def tick(self, delta):
         delta = min(delta, 0.5)
+        if self.pressed("T") and self.styles:
+            try:
+                self.styles.toggle()
+            except Exception as error:
+                unreal.log_error("Style switch failed: " + str(error))
+        if self.styles:
+            message(
+                self.world,
+                LABELS[self.styles.active] + " | T: switch style",
+                key="OakVilleStyle",
+                duration=0.5,
+            )
         if self.pressed("G"):
             self.set_creative(not self.creative)
         self.ensure_human_collision()

@@ -1,6 +1,8 @@
 # Oak Ville ? editable Blender project
 
-Current project version: **0.10.1**. Open [oak-ville.blend](oak-ville.blend).
+Current project version: **0.11.0**. Open [oak-ville.blend](oak-ville.blend).
+
+Press **T** in the Unreal editor Play walkthrough to switch between **Minimalist** and **Tropical modern**. Blender has the same two options in its **Oak Ville** sidebar; see the [style switch guide](docs/STYLE_SWITCH.md).
 
 The [Unreal desktop walkthrough](unreal/OakVille/OakVille.uproject) lives in this repository. See the [Unreal guide](docs/unreal/README.md) and [Blender update workflow](docs/unreal/UPDATE_FROM_BLENDER.md).
 

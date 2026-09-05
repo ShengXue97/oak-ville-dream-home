@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.11.0 - Reversible minimalist and tropical modern styles
+
+- Add a T-key style switch and persistent style label to the Unreal editor Play walkthrough. Press once to compare; holding T does not repeat. Each Play session starts with the saved Blender style.
+- Add a two-button Oak Ville sidebar in Blender, 16 independent tropical material roles and saved per-object style assignments. Keep the existing detailed geometry, artwork, UVs, lights, stable IDs and collision shared.
+- Adapt warm timber, sand stone, ivory linen, olive and cognac accents from sampled views of the selected i.Poise Design tour. This release is a finish option; new furniture shapes and botanical artwork are not included.
+- Export both finish sets and the active style, preserve unrelated Unreal overrides, and prevent the minimalist accent migration from overwriting a tropical sync.
+- Validate exact material round trips in Blender and Unreal, unchanged geometry and collision, saved-file dimensions, all 11 routes and the runtime input handler. Keep minimalist as the saved default.
+
 ## 0.10.3 - Coordinated minimalist materials and refined artwork
 
 - Follow the user's Singapore BTO examples with a warmer natural-oak floor family, honey-oak dining furniture, flax textiles and restrained sage, clay and olive accents. Keep the sofa consistently cream.

@@ -6,6 +6,11 @@ from pathlib import Path
 import unreal
 
 ROOT = Path(__file__).resolve().parents[2]
+export = json.loads((ROOT / "assets/unreal-export/manifest.json").read_text())
+if export.get("active_style", "MINIMALIST_CREAM") != "MINIMALIST_CREAM":
+    raise RuntimeError(
+        "Minimalist accent migration cannot run on a tropical export; use sync_styles.py"
+    )
 levels = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
 if levels.is_in_play_in_editor():
     raise RuntimeError("Stop Play before updating accent materials")

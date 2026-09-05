@@ -1,5 +1,9 @@
 # Changing the interior style
 
+For the built-in minimalist/tropical comparison, use the [two-option style switch](STYLE_SWITCH.md).
+It includes shared wall/floor assignments and restores the original materials.
+The manual duplication notes below apply only to creating additional geometry options.
+
 The building shell and dimensions are in `Architecture`; openings and hinged leaves are in `Doors_Windows`. Current furniture, joinery, lighting and decor are grouped beneath `MINIMALIST_CREAM`. They are not merged into the building.
 
 For a palette change, edit the shared role in Material Properties or the Shader Editor: `Wall_Paint`, `Floor_Main`, `Oak_Joinery`, `Cabinet_Front`, `Countertop`, `Fabric_Main`, `Fabric_Oatmeal`, `Wet_Tile`, `Sheer_Linen`. Textured materials use the clearly named `EDIT_PALETTE` Color Ramp. Oak flooring also has the `Oak_Planks_1200x180mm` Brick node; edit its two plank colours for a floor colour change. Roughness remains on the Principled shader. No reference photo is used as a surface texture.

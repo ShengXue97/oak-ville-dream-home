@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "press_hold_release_round_trip": true,
+  "materials_restored": 540,
+  "both_shift_keys_and_release": true,
+  "capsule_movement_collision_preserved": true,
+  "physical_keyboard_simulated": false
+}

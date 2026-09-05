@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "changed_surfaces": 540,
+  "both_round_trips_exact": true,
+  "transforms_meshes_collision_unchanged": true,
+  "unrelated_override_preserved": true
+}

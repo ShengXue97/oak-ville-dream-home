@@ -1,0 +1,25 @@
+{
+  "version": "0.11.0",
+  "reviewed": "2026-09-05",
+  "blender_views": [
+    "renders/styles/MINIMALIST_CREAM__PREVIEW_Living_Eye.png",
+    "renders/styles/TROPICAL_MODERN__PREVIEW_Living_Eye.png",
+    "renders/styles/TROPICAL_MODERN__PREVIEW_Main_Bedroom.png"
+  ],
+  "unreal_views": [
+    "renders/styles/unreal-tropical/living-offscreen.png",
+    "renders/styles/unreal-tropical/bedroom3-offscreen.png"
+  ],
+  "observations": [
+    "Original landscape print remains visible in both applications.",
+    "The sofa retains coherent ivory upholstery; tropical timber bases and framing are darker.",
+    "Tropical bedroom has sand/tan textiles and an olive throw.",
+    "No missing or checkered materials in inspected views.",
+    "Window panes and curtain edges remain visible under existing lighting."
+  ],
+  "limitations": [
+    "Visual review covers selected views rather than every viewpoint in the flat.",
+    "Unreal surface shading approximates Blender procedural nodes.",
+    "The tropical finish option shares existing furniture and artwork geometry."
+  ]
+}

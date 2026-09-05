@@ -10,12 +10,15 @@ import gzip
 import json
 import math
 import runpy
+import sys
 from pathlib import Path
 
 import bpy
 from mathutils import Vector
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "scripts"))
+from style_switch import material_options, STYLES, MINIMALIST
 # Validate the saved source against plan datums before publishing any export.
 # Comparing Unreal only to the export would miss an accidental source scale.
 runpy.run_path(str(ROOT / "scripts/reopen_validate.py"))
@@ -52,7 +55,12 @@ def material_settings(material):
         bricks = [node for node in material.node_tree.nodes if node.type == "TEX_BRICK"]
         if bricks:
             colour = list(bricks[0].inputs["Color1"].default_value)
-    return {"colour": colour, "roughness": roughness, "metallic": metallic}
+    return {
+        "colour": colour,
+        "roughness": roughness,
+        "metallic": metallic,
+        "base_role": material.get("base_role", material.name),
+    }
 
 
 objects = []
@@ -140,6 +148,9 @@ for obj in sorted(scene.objects, key=lambda item: item.name):
         }
     )
     evaluated.to_mesh_clear()
+    options = material_options(obj)
+    if options:
+        objects[-1]["style_materials"] = {style: slots[0] for style, slots in options.items()}
     if art_uvs:
         objects[-1]["uv0"] = art_uvs
 
@@ -170,7 +181,13 @@ doors = [
     for obj in scene.objects
     if "open_angle_degrees" in obj
 ]
+exported_roles = {record["material"] for record in objects}
+exported_roles.update(
+    role for record in objects for role in record.get("style_materials", {}).values()
+)
 manifest = {
+    "active_style": scene.get("active_style", MINIMALIST),
+    "styles": STYLES,
     "source_version": scene["project_version"],
     "coordinate_mapping": "Blender (X,Y,Z) metres -> Unreal (X,-Y,Z) centimetres",
     "geometry_revision": 4,
@@ -178,7 +195,7 @@ manifest = {
     "materials": {
         material.name: material_settings(material)
         for material in bpy.data.materials
-        if material.name in {record["material"] for record in objects}
+        if material.name in exported_roles
     },
     "lights": lights,
     "doors": doors,
@@ -191,6 +208,8 @@ manifest = {
 with gzip.open(OUTPUT / "scene.json.gz", "wt", encoding="utf-8") as stream:
     json.dump(manifest, stream, separators=(",", ":"))
 summary = {
+    "active_style": manifest["active_style"],
+    "styles": manifest["styles"],
     "source_version": manifest["source_version"],
     "mesh_objects": len(objects),
     "triangles": sum(len(obj["triangles"]) for obj in objects),

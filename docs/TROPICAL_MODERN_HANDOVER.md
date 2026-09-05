@@ -1,5 +1,11 @@
 # Oak Ville: modern tropical luxury handover
 
+Implementation update: v0.11.0 adds a reversible finish selector in Blender and
+Unreal Play (T). See [the switch guide](STYLE_SWITCH.md) and
+[sampled reference review](tropical-modern/REFERENCE_ANALYSIS.md). The original
+handover below records the earlier planning state; replacement furniture and
+full-tour reference coverage remain outside this first finish-switch release.
+
 Date: 2026-09-05
 Baseline application version: **0.10.3**
 Baseline implementation commit: **5689766** (`fix: refine minimalist material balance and artwork`)

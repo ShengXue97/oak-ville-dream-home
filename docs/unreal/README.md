@@ -11,6 +11,7 @@ the viewport to capture the mouse. Escape stops Play.
 | Space | Jump in human mode; ascend in creative mode |
 | E | Open or close the nearby door you are looking at |
 | G | Toggle human walking and creative flight without collision |
+| T | Switch Minimalist / Tropical modern finishes; press again to restore |
 | Left Ctrl | Descend in creative mode |
 
 Human mode is the default. Returning from creative mode places you at the last
@@ -36,6 +37,9 @@ E/G interaction, Shift running and camera setup currently run through editor Pyt
 This is an **editor Play walkthrough**. Packaging needs the missing Windows
 SDK/C++ toolchain and a Blueprint/C++ port of the editor-only interactions.
 Native movement uses Epic's standard CharacterMovement and Enhanced Input.
+
+The T style shortcut also uses editor Python. See [style switching](../STYLE_SWITCH.md)
+for Blender controls, saved defaults and the scope of the tropical finish option.
 
 For geometry changes follow [Update from Blender](UPDATE_FROM_BLENDER.md).
 The detailed furniture revision is documented in [Furniture overhaul](../FURNITURE_OVERHAUL.md),

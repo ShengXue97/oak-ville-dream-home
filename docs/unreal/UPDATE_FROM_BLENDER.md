@@ -3,6 +3,11 @@
 `oak-ville.blend` is the geometry source. Unreal owns its lighting, walkthrough
 settings and editable material instances. Keep both applications in this repo.
 
+The built-in [style selector](../STYLE_SWITCH.md) exports both finish sets and
+the saved active style. After geometry validation, the update applies that style
+to managed material slots. Minimalist accent migration runs only for a minimalist
+export. Custom material overrides and edited material instances remain intact.
+
 1. Edit and save `oak-ville.blend`. For new or duplicated objects, first run
    `scripts/unreal/prepare_blender_ids.py` in Blender's Text Editor, then save.
    Existing objects already carry IDs. Renaming them does not change those IDs.

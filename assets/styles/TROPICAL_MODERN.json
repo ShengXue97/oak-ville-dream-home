@@ -1,0 +1,24 @@
+{
+  "id": "TROPICAL_MODERN",
+  "label": "Tropical modern",
+  "description": "Warm teak, sand limestone, ivory linen, olive and cognac accents. A finish option on the existing detailed furniture and shared apartment shell.",
+  "reference": "https://www.youtube.com/watch?v=EcJ51c-ZILI",
+  "roles": {
+    "Wall_Paint": {"hex": "E7DECD", "roughness": 0.85},
+    "Oak_Joinery": {"hex": "926348", "roughness": 0.52},
+    "Accent_Honey_Oak": {"hex": "A77851", "roughness": 0.5},
+    "Accent_Natural_Oak_Floor": {"source": "Countertop", "hex": "D4C5AA", "roughness": 0.58},
+    "Floor_Main": {"source": "Countertop", "hex": "D4C5AA", "roughness": 0.58},
+    "Cabinet_Front": {"hex": "CCBA9B", "roughness": 0.65},
+    "Countertop": {"hex": "E2D6BF", "roughness": 0.52},
+    "Accent_Warm_Stone": {"hex": "BBA98A", "roughness": 0.62},
+    "Wet_Tile": {"hex": "C4B394", "roughness": 0.65},
+    "Fabric_Main": {"hex": "F0E7D8", "roughness": 0.92},
+    "Fabric_Oatmeal": {"hex": "DCCDB7", "roughness": 0.92},
+    "Accent_Flax_Linen": {"hex": "B49A76", "roughness": 0.93},
+    "Accent_Sage_Linen": {"hex": "66704B", "roughness": 0.9},
+    "Accent_Clay_Linen": {"hex": "AC6B43", "roughness": 0.88},
+    "Accent_Olive_Ceramic": {"hex": "45513A", "roughness": 0.5},
+    "Metal_Champagne": {"hex": "78654C", "roughness": 0.4}
+  }
+}

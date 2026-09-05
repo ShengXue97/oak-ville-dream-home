@@ -139,6 +139,7 @@ def create_materials():
     }
     result = {}
     for role, settings in DATA["materials"].items():
+        base_role = settings.get("base_role", role)
         name = "MI_" + safe_name(role)
         path = "/Game/OakVille/Materials/" + name
         instance = unreal.load_asset(path)
@@ -151,10 +152,10 @@ def create_materials():
             )
             kind = (
                 "glass"
-                if role in {"Glass", "Sheer_Linen"}
+                if base_role in {"Glass", "Sheer_Linen"}
                 else (
                     "wood"
-                    if role
+                    if base_role
                     in {
                         "Oak_Joinery",
                         "Floor_Main",

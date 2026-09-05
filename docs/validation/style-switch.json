@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "saved_style": "MINIMALIST_CREAM",
+  "changed_surfaces": 554,
+  "both_round_trips_exact": true,
+  "geometry_uv_visibility_lighting_collision_unchanged": true,
+  "idempotent_prepare": true,
+  "geometry_sha256": "cd38f788eb8bdd210d17d9336f0377eff69167c27a29fd1411ba71d6c946e6fa"
+}
