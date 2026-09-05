@@ -1,0 +1,12 @@
+{
+  "blender_version": "0.10.0",
+  "unreal_scene_version": "0.9.2",
+  "state": "awaiting_stop_play",
+  "reason": "The owner's active Play session was preserved. Sync preflight refused changes while playing.",
+  "remaining": [
+    "Run update_from_blender.py outside Play mode",
+    "Run sync_service_materials.py to apply frosted bathroom panes",
+    "Validate kitchen approach and new fixtures in Unreal",
+    "Update Unreal ProjectVersion to 0.10.0 after successful synchronization"
+  ]
+}

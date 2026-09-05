@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.10.0 - Bathroom window fittings, air conditioning and kitchen access
+
+- Completed both provisional bathroom window openings with frames, centre mullions, frosted privacy panes and latches, shown closed.
+- Added four separately editable indoor A/C assemblies for living and all bedrooms, with outlet flaps, intake slots and local pipe-cover stubs. Detailed the existing outdoor condenser with supports, an outward grille and a service panel.
+- Retained the one A/C ledge labelled on the supplied plan. Equipment sizes/positions are indicative; system capacity and complete pipe/drain routing remain unselected.
+- Moved the dining set 200 mm west and 150 mm north to improve the kitchen approach, retaining its full dimensions and moving attached details with it.
+- Added reproducible service builders, live collision-proxy updates, preview renders and documented installation assumptions. Ordinary Unreal sync retains the neutral-lighting calibration.
+
 ## 0.9.2 - Neutral daylight and controlled window highlights
 
 - Rebalanced 19 Unreal area lights by purpose and room instead of assigning the same intensity to windows, ceilings and task lights. Neutral ceiling fill preserves cream finishes without the previous yellow cast.
