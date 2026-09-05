@@ -1,8 +1,8 @@
 # Oak Ville: modern tropical luxury handover
 
-Date: 2026-09-05  
-Baseline application version: **0.10.3**  
-Baseline implementation commit: **5689766** (`fix: refine minimalist material balance and artwork`)  
+Date: 2026-09-05
+Baseline application version: **0.10.3**
+Baseline implementation commit: **5689766** (`fix: refine minimalist material balance and artwork`)
 Workspace: `C:\Users\Admin\Documents\coding-projects\oak-ville-dream-home`
 
 ## 1. Immediate objective
