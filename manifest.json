@@ -1,0 +1,752 @@
+[
+  {
+    "file": "rooms/R01_entrance_01.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_02.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_03.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_04.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_05.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_06.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_07.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_08.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_09.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_10.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_11.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_12.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_ceiling.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R01_entrance_floor.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_01.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_02.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_03.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_04.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_05.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_06.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_07.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_08.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_09.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_10.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_11.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_12.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_ceiling.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R02_living_floor.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_01.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_02.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_03.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_04.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_05.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_06.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_07.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_08.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_09.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_10.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_11.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_12.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_ceiling.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R03_dining_corridor_floor.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_01.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_02.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_03.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_04.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_05.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_06.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_07.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_08.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_09.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_10.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_11.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_12.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_ceiling.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R04_kitchen_floor.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_01.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_02.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_03.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_04.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_05.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_06.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_07.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_08.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_09.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_10.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_11.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_12.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_ceiling.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R05_left_bedroom_floor.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_01.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_02.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_03.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_04.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_05.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_06.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_07.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_08.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_09.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_10.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_11.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_12.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R06_middle_bedroom_ceiling.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_01.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_02.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_03.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_04.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_05.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_06.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_07.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_08.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_09.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_10.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_11.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_12.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_ceiling.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R07_main_bedroom_floor.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_01.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_02.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_03.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_04.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_05.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_06.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_07.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_08.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_09.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_10.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_11.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_12.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_ceiling.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R08_ensuite_floor.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_01.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_02.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_03.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_04.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_05.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_06.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_07.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_08.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_09.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_10.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_11.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_12.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_ceiling.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  },
+  {
+    "file": "rooms/R09_common_bathroom_floor.png",
+    "width": 981,
+    "height": 542,
+    "minimap": "visible"
+  }
+]
