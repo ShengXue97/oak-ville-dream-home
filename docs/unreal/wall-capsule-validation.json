@@ -1,0 +1,594 @@
+{
+  "method": "Actual Character root capsule swept on Pawn channel in Play, each wall isolated, both directions",
+  "checks": [
+    {
+      "wall": "Bath_Common_West_0_pier",
+      "side": -1,
+      "standoff_cm": 26.11,
+      "passed": true
+    },
+    {
+      "wall": "Bath_Common_West_0_pier",
+      "side": 1,
+      "standoff_cm": 26.11,
+      "passed": true
+    },
+    {
+      "wall": "Baths_Divider_0_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Baths_Divider_0_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Baths_North_0_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Baths_North_0_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Baths_North_1_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Baths_North_1_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Baths_South_0_pier",
+      "side": -1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Baths_South_0_pier",
+      "side": 1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Baths_South_0_sill",
+      "side": -1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Baths_South_0_sill",
+      "side": 1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Baths_South_1_pier",
+      "side": -1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Baths_South_1_pier",
+      "side": 1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Baths_South_1_sill",
+      "side": -1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Baths_South_1_sill",
+      "side": 1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Baths_South_2_pier",
+      "side": -1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Baths_South_2_pier",
+      "side": 1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom2_East_0_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom2_East_0_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom2_East_1_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom2_East_1_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom2_South_0_pier",
+      "side": -1,
+      "standoff_cm": 26.087,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom2_South_0_pier",
+      "side": 1,
+      "standoff_cm": 26.087,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom2_South_1_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom2_South_1_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom3_East_0_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom3_East_0_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom3_South_0_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom3_South_0_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom3_South_1_pier",
+      "side": -1,
+      "standoff_cm": 26.087,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom3_South_1_pier",
+      "side": 1,
+      "standoff_cm": 26.087,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom3_West_0_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Bedroom3_West_0_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Ensuite_East_0_pier",
+      "side": -1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Ensuite_East_0_pier",
+      "side": 1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Entry_South_0_pier",
+      "side": -1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Entry_South_0_pier",
+      "side": 1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Entry_South_1_pier",
+      "side": -1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Entry_South_1_pier",
+      "side": 1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Facade_Column_0",
+      "side": -1,
+      "standoff_cm": 26.11,
+      "passed": true
+    },
+    {
+      "wall": "Facade_Column_0",
+      "side": 1,
+      "standoff_cm": 26.11,
+      "passed": true
+    },
+    {
+      "wall": "Facade_Column_12.675",
+      "side": -1,
+      "standoff_cm": 26.11,
+      "passed": true
+    },
+    {
+      "wall": "Facade_Column_12.675",
+      "side": 1,
+      "standoff_cm": 26.11,
+      "passed": true
+    },
+    {
+      "wall": "Facade_Column_6.375",
+      "side": -1,
+      "standoff_cm": 26.11,
+      "passed": true
+    },
+    {
+      "wall": "Facade_Column_6.375",
+      "side": 1,
+      "standoff_cm": 26.11,
+      "passed": true
+    },
+    {
+      "wall": "Facade_North_0_pier",
+      "side": -1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Facade_North_0_pier",
+      "side": 1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Facade_North_1_pier",
+      "side": -1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Facade_North_1_pier",
+      "side": 1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Facade_North_2_pier",
+      "side": -1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Facade_North_2_pier",
+      "side": 1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Facade_North_3_pier",
+      "side": -1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Facade_North_3_pier",
+      "side": 1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Facade_North_4_pier",
+      "side": -1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Facade_North_4_pier",
+      "side": 1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Kitchen_West_0_pier",
+      "side": -1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Kitchen_West_0_pier",
+      "side": 1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Kitchen_Yard_0_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Kitchen_Yard_0_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Kitchen_Yard_1_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Kitchen_Yard_1_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Kitchen_Yard_South_0_pier",
+      "side": -1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Kitchen_Yard_South_0_pier",
+      "side": 1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Ledge_East_0_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Ledge_East_0_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Ledge_West_0_pier",
+      "side": -1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Ledge_West_0_pier",
+      "side": 1,
+      "standoff_cm": 26.09,
+      "passed": true
+    },
+    {
+      "wall": "Living_West_0_pier",
+      "side": -1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Living_West_0_pier",
+      "side": 1,
+      "standoff_cm": 26.1,
+      "passed": true
+    },
+    {
+      "wall": "Main_East_0_pier",
+      "side": -1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Main_East_0_pier",
+      "side": 1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Main_East_1_pier",
+      "side": -1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Main_East_1_pier",
+      "side": 1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Main_South_0_pier",
+      "side": -1,
+      "standoff_cm": 26.095,
+      "passed": true
+    },
+    {
+      "wall": "Main_South_0_pier",
+      "side": 1,
+      "standoff_cm": 26.095,
+      "passed": true
+    },
+    {
+      "wall": "Main_South_1_pier",
+      "side": -1,
+      "standoff_cm": 26.095,
+      "passed": true
+    },
+    {
+      "wall": "Main_South_1_pier",
+      "side": 1,
+      "standoff_cm": 26.095,
+      "passed": true
+    },
+    {
+      "wall": "Shelter_East_0_pier",
+      "side": -1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Shelter_East_0_pier",
+      "side": 1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Shelter_East_1_pier",
+      "side": -1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Shelter_East_1_pier",
+      "side": 1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Shelter_North_0_pier",
+      "side": -1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Shelter_North_0_pier",
+      "side": 1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Shelter_South_0_pier",
+      "side": -1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Shelter_South_0_pier",
+      "side": 1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Shelter_West_0_pier",
+      "side": -1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Shelter_West_0_pier",
+      "side": 1,
+      "standoff_cm": 26.105,
+      "passed": true
+    },
+    {
+      "wall": "Yard_East_0_pier",
+      "side": -1,
+      "standoff_cm": 26.095,
+      "passed": true
+    },
+    {
+      "wall": "Yard_East_0_pier",
+      "side": 1,
+      "standoff_cm": 26.095,
+      "passed": true
+    },
+    {
+      "wall": "Yard_East_1_pier",
+      "side": -1,
+      "standoff_cm": 26.095,
+      "passed": true
+    },
+    {
+      "wall": "Yard_East_1_pier",
+      "side": 1,
+      "standoff_cm": 26.095,
+      "passed": true
+    },
+    {
+      "wall": "Yard_North_Closure",
+      "side": -1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Yard_North_Closure",
+      "side": 1,
+      "standoff_cm": 26.092,
+      "passed": true
+    },
+    {
+      "wall": "Yard_Utility_0_pier",
+      "side": -1,
+      "standoff_cm": 26.088,
+      "passed": true
+    },
+    {
+      "wall": "Yard_Utility_0_pier",
+      "side": 1,
+      "standoff_cm": 26.088,
+      "passed": true
+    },
+    {
+      "wall": "Yard_Utility_1_pier",
+      "side": -1,
+      "standoff_cm": 26.088,
+      "passed": true
+    },
+    {
+      "wall": "Yard_Utility_1_pier",
+      "side": 1,
+      "standoff_cm": 26.088,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

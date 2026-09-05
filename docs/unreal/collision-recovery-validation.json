@@ -1,0 +1,8 @@
+{
+  "actor_collision_recovered": true,
+  "capsule_collision_recovered": true,
+  "wall_response_recovered": true,
+  "creative_still_allows_noclip": true,
+  "unload_restores_collision": true,
+  "passed": true
+}

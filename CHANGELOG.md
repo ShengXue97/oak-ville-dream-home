@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.1 - Harden human collision and refresh imported physics
+
+- Explicitly restore disabled actor/capsule collision and wall blocking in human mode, returning to the last safe position. Unloading the editor helper now exits noclip safely.
+- Keep a visible HUMAN/collision ON or CREATIVE/collision OFF indicator so the current mode is unambiguous.
+- Rebind placed mesh components after geometry/collision rebuilds while preserving material overrides. Refreshed 102 existing architectural physics bodies without changing geometry.
+- Added actual Pawn-channel capsule tests against 49 wall segments from both sides, native walking/running wall-contact tests over game frames, and injected collision-fault recovery checks.
+- The reported intermittent wall passage was not reproduced in the isolated tests; these changes address identified recovery/refresh gaps, not a proven root cause. An exact location/action sequence is still needed if the symptom recurs.
+
 ## 0.9.0 - Detailed furniture and fixtures throughout the flat
 
 - Refined 294 furniture/detail components across seating, tables, beds, storage, kitchen, bathrooms, appliances and decor. Added curved chair shells, bent oak, sewn upholstery, draped bedding, shaped table profiles, cabinet hardware, hollow bowls and detailed appliance fronts.

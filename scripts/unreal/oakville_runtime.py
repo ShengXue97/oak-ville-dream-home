@@ -134,6 +134,7 @@ class PlaySession:
         self.keys = {}
         self.last_safe = unreal.Vector(270, 655, 88)
         self.movement = pawn.get_editor_property("character_movement")
+        self.ensure_human_collision()
         pawn.set_actor_location(self.last_safe, False, True)
         pawn.set_actor_rotation(unreal.Rotator(pitch=0, yaw=-60, roll=0), False)
         controller.set_control_rotation(unreal.Rotator(pitch=0, yaw=-60, roll=0))
@@ -219,6 +220,7 @@ class PlaySession:
         if enabled:
             self.movement.set_movement_mode(unreal.MovementMode.MOVE_FLYING)
         else:
+            self.ensure_human_collision()
             # Resume at the last grounded location, never trapped inside a wall
             # or falling from outside the apartment after a noclip inspection.
             self.pawn.set_actor_location(self.last_safe, False, True)
@@ -232,6 +234,43 @@ class PlaySession:
             ),
             duration=5,
         )
+
+    def ensure_human_collision(self):
+        """Recover safely if an editor reload or other code leaves noclip on."""
+        if self.creative:
+            return
+        capsule = self.pawn.get_editor_property("capsule_component")
+        broken = (
+            not self.pawn.get_actor_enable_collision()
+            or capsule.get_collision_enabled()
+            != unreal.CollisionEnabled.QUERY_AND_PHYSICS
+            or capsule.get_collision_response_to_channel(
+                unreal.CollisionChannel.ECC_WORLD_STATIC
+            )
+            != unreal.CollisionResponseType.ECR_BLOCK
+            or capsule.get_collision_response_to_channel(
+                unreal.CollisionChannel.ECC_WORLD_DYNAMIC
+            )
+            != unreal.CollisionResponseType.ECR_BLOCK
+        )
+        if broken:
+            self.pawn.set_actor_enable_collision(True)
+            capsule.set_collision_profile_name("Pawn")
+            capsule.set_collision_enabled(unreal.CollisionEnabled.QUERY_AND_PHYSICS)
+            capsule.set_collision_response_to_channel(
+                unreal.CollisionChannel.ECC_WORLD_STATIC,
+                unreal.CollisionResponseType.ECR_BLOCK,
+            )
+            capsule.set_collision_response_to_channel(
+                unreal.CollisionChannel.ECC_WORLD_DYNAMIC,
+                unreal.CollisionResponseType.ECR_BLOCK,
+            )
+            self.pawn.set_actor_location(self.last_safe, False, True)
+            self.movement.stop_movement_immediately()
+            self.movement.set_movement_mode(unreal.MovementMode.MOVE_FALLING)
+            unreal.log_warning(
+                "OakVille restored human capsule collision at the last safe position"
+            )
 
     def aimed_door(self):
         eye, rotation = self.controller.get_player_view_point()
@@ -260,6 +299,17 @@ class PlaySession:
         delta = min(delta, 0.5)
         if self.pressed("G"):
             self.set_creative(not self.creative)
+        self.ensure_human_collision()
+        message(
+            self.world,
+            (
+                "CREATIVE | collision OFF | G: return to human"
+                if self.creative
+                else "HUMAN | collision ON | Shift: run | G: creative"
+            ),
+            key="OakVilleMovementMode",
+            duration=0.5,
+        )
         self.update_walk_speed()
         if self.creative:
             vertical = int(self.down("SpaceBar")) - int(self.down("LeftControl"))
@@ -309,6 +359,15 @@ def tick(delta):
 
 def uninstall():
     global HANDLE, STATE
+    # Unloading the editor helper must never strand a character in noclip.
+    if STATE is not None:
+        try:
+            if STATE.creative:
+                STATE.set_creative(False)
+            STATE.ensure_human_collision()
+        except Exception:
+            # The Play world may already have been destroyed during shutdown.
+            pass
     if HANDLE is not None:
         unreal.unregister_slate_post_tick_callback(HANDLE)
     HANDLE, STATE = None, None

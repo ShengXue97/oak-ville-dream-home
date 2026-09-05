@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "wall": "external",
+      "speed_cm_s": 180,
+      "x_cm": 35.246,
+      "passed": true
+    },
+    {
+      "wall": "thin_west",
+      "speed_cm_s": 180,
+      "x_cm": 367.743,
+      "passed": true
+    },
+    {
+      "wall": "thin_east",
+      "speed_cm_s": 180,
+      "x_cm": 607.249,
+      "passed": true
+    },
+    {
+      "wall": "external",
+      "speed_cm_s": 320,
+      "x_cm": 35.252,
+      "passed": true
+    },
+    {
+      "wall": "thin_west",
+      "speed_cm_s": 320,
+      "x_cm": 367.721,
+      "passed": true
+    },
+    {
+      "wall": "thin_east",
+      "speed_cm_s": 320,
+      "x_cm": 607.274,
+      "passed": true
+    }
+  ],
+  "max_frame_delta_s": 0.125,
+  "passed": true
+}

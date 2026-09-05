@@ -122,14 +122,15 @@ def update_record(record):
     previous_collision = unreal.EditorAssetLibrary.get_metadata_tag(
         mesh, "CollisionKind"
     )
-    if record["solid"] and (
+    collision_rebuilt = record["solid"] and (
         signature != previous_hash
         or previous_collision != collision_kind
         or unreal.get_editor_subsystem(
             unreal.StaticMeshEditorSubsystem
         ).get_simple_collision_count(mesh)
         == 0
-    ):
+    )
+    if collision_rebuilt:
         mesh_editor = unreal.get_editor_subsystem(unreal.StaticMeshEditorSubsystem)
         mesh_editor.remove_collisions(mesh)
         mesh.get_editor_property("body_setup").set_editor_property(
@@ -141,6 +142,13 @@ def update_record(record):
         unreal.EditorAssetLibrary.set_metadata_tag(
             mesh, "CollisionKind", collision_kind
         )
+    if signature != previous_hash or collision_rebuilt:
+        # In-place asset edits do not reliably replace a registered component's
+        # physics body. Rebind the mesh while retaining designer overrides.
+        overrides = list(component.get_editor_property("override_materials"))
+        component.set_static_mesh(None)
+        component.set_static_mesh(mesh)
+        component.set_editor_property("override_materials", overrides)
     component.set_collision_profile_name(
         "BlockAll" if record["solid"] else "NoCollision"
     )

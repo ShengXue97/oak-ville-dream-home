@@ -45,7 +45,7 @@ Bedroom_3_Bed_Base,0.98,2.0,0.32,5.6,1.2,0.22
 Bedroom_3_Bed_Base_Detail_Recessed_Foot,0.8134,1.72,0.048,0.0,-0.0,0.0
 Bedroom_3_Bed_Base_Detail_Upper_Shadow_Reveal,0.9689,1.9746,0.003,0.0,-0.0,0.0
 Bedroom_3_Desk,1.4,0.45,0.055,4.32,3.04,0.745
-Bedroom_3_Desk_Detail_Underside_Apron,1.1662,0.3837,0.0688,0.0,-0.0,0.0
+Bedroom_3_Desk_Detail_Underside_Apron,1.1662,0.3837,0.0687,0.0,-0.0,0.0
 Bedroom_3_Desk_Leg,0.055,0.38,0.72,3.72,3.04,0.36
 Bedroom_3_Desk_Leg.001,0.055,0.38,0.72,4.92,3.04,0.36
 Bedroom_3_Desk_Stool,0.44,0.44,0.08,4.32,3.04,0.46
@@ -303,8 +303,8 @@ Service_Yard_Washer_Detail_Detergent_Drawer,0.192,0.0124,0.0792,0.0,-0.0,0.0
 Service_Yard_Washer_Detail_Display,0.132,0.0087,0.0484,0.0,-0.0,0.0
 Service_Yard_Washer_Detail_Program_Dial,0.051,0.022,0.0527,0.0,-0.0,0.0
 Service_Yard_Washer_Door,0.41,0.41,0.025,6.49,8.165,0.47
-Service_Yard_Washer_Door_Detail_Machined_Rim,0.4018,0.4018,0.03,0.0,0.0,0.0
-Service_Yard_Washer_Door_Detail_Rubber_Seal,0.3536,0.3536,0.035,0.0,0.0,0.0
+Service_Yard_Washer_Door_Detail_Machined_Rim,0.4018,0.4018,0.03,0.0,-0.0,0.0
+Service_Yard_Washer_Door_Detail_Rubber_Seal,0.3536,0.3536,0.035,0.0,-0.0,0.0
 Shelter_Freestanding_Shelf,0.66,0.45,0.035,0.48,6.7,0.4
 Shelter_Freestanding_Shelf.001,0.66,0.45,0.035,0.48,6.7,0.95
 Shelter_Freestanding_Shelf.001_Detail_Front_Lip,0.66,0.0113,0.049,0.0,-0.0,0.0

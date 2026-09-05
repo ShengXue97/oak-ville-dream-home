@@ -14,7 +14,10 @@ the viewport to capture the mouse. Escape stops Play.
 | Left Ctrl | Descend in creative mode |
 
 Human mode is the default. Returning from creative mode places you at the last
-grounded position to avoid spawning inside furniture. The front door stays
+grounded position. A persistent mode indicator shows whether collision is on.
+If actor/capsule collision is unexpectedly disabled in human mode, the helper
+restores blocking and returns to the last safe point. Unloading the helper also
+restores human collision. The front door stays
 closed and locked. Interior doors start closed and rotate with their handles;
 the animation stops if its leaf would intersect the player's capsule.
 No custom controls use function keys. Unreal's own Shift+F1 mouse-release
