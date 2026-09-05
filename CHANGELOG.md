@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.10.1 - Correct main-bedroom door swing
+
+- Correct the main-bedroom hinge to the Bedroom 2-side jamb and open into the bedroom rather than the corridor, preserving the opening dimensions and ensuite approach.
+- Apply the correction in Blender and export the same signed angle for Unreal's E interaction.
+- Synchronize the pending 0.10.0 windows, air conditioning and dining layout into Unreal, retaining calibrated lighting and applying the frosted-pane material change.
+
 ## 0.10.0 - Bathroom window fittings, air conditioning and kitchen access
 
 - Completed both provisional bathroom window openings with frames, centre mullions, frosted privacy panes and latches, shown closed.

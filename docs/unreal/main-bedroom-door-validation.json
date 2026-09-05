@@ -1,0 +1,9 @@
+{
+  "targets_main_door": true,
+  "e_opens_door": true,
+  "hinge_at_bedroom2_side": true,
+  "opens_into_main_bedroom": true,
+  "clears_ensuite_approach": true,
+  "e_closes_door": true,
+  "passed": true
+}

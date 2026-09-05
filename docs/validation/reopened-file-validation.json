@@ -1,7 +1,7 @@
 {
   "opened_file": "oak-ville.blend",
   "blender_version": "5.2.1 LTS",
-  "project_version": "0.10.0",
+  "project_version": "0.10.1",
   "metres_per_unit": 1.0,
   "default_scene": "Oak_Ville",
   "camera": "PREVIEW_Bathroom_Window",
@@ -33,7 +33,7 @@
   "ceiling_objects": 13,
   "route_count": 11,
   "collision_proxy_count": 361,
-  "file_size_bytes": 5466652,
+  "file_size_bytes": 5482128,
   "read_only": true,
   "nonmanifold_collision_sources": [],
   "inward_closed_meshes": [],

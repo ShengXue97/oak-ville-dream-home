@@ -40,9 +40,9 @@
     "fixed_m": 9.375,
     "start_m": 3.45,
     "end_m": 4.35,
-    "hinge_end": "end",
+    "hinge_end": "start",
     "open_angle_blender": 90,
-    "direction": "Toward corridor, hinged at bathroom-side end, following the drawn arc."
+    "direction": "Into main bedroom, hinged at the Bedroom 2-side jamb; keep the ensuite approach clear."
   },
   "Common_Bath": {
     "axis": "h",

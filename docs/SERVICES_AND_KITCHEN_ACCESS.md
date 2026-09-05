@@ -1,8 +1,7 @@
 # Service fittings and kitchen approach
 
-Delivery status: Blender and its export are updated to 0.10.0. The Unreal map
-is still at 0.9.2 because the owner's active Play session was preserved. See
-`docs/unreal/services-sync-status.json` for the remaining sync steps.
+Delivery status: Blender, its export and the Unreal map are synchronized at
+0.10.1, including the corrected main-bedroom hinge and inward swing.
 
 The dimensioned plan shows one labelled A/C ledge, modelled at plan X
 8.625–11.100 m and Y 6.400–7.650 m. It sits outside the ensuite beside the
