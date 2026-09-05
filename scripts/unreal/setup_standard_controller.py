@@ -30,7 +30,7 @@ for key, value in {
     "gravity_scale": 1.0,
     "jump_z_velocity": 260.0,
     "air_control": 0.15,
-    "max_walk_speed": 120.0,
+    "max_walk_speed": 180.0,
     "max_acceleration": 1000.0,
     "ground_friction": 8.0,
     "braking_deceleration_walking": 1200.0,

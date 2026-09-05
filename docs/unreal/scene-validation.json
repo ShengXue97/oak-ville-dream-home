@@ -75,6 +75,6 @@
   "capsule_radius_cm": 25.0,
   "capsule_half_height_cm": 86.0,
   "eye_above_capsule_centre_cm": 72.0,
-  "walk_speed_cm_s": 120.0,
+  "walk_speed_cm_s": 180.0,
   "passed": true
 }

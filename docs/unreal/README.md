@@ -7,6 +7,7 @@ the viewport to capture the mouse. Escape stops Play.
 | Control | Behaviour |
 | --- | --- |
 | WASD / mouse | Walk / look using Epic's First Person Blueprint input |
+| Hold Shift | Run; release to return to walking (either Shift key) |
 | Space | Jump in human mode; ascend in creative mode |
 | E | Open or close the nearby door you are looking at |
 | G | Toggle human walking and creative flight without collision |
@@ -20,13 +21,14 @@ No custom controls use function keys. Unreal's own Shift+F1 mouse-release
 shortcut remains available.
 
 The capsule is 172 cm tall and 50 cm across. Assumed eye height is about 160 cm,
-horizontal field of view 65 degrees, walking speed 120 cm/s, gravity scale 1,
+horizontal field of view 65 degrees, walking speed 180 cm/s, running speed
+320 cm/s while Shift is held, gravity scale 1,
 jump velocity 260 cm/s and maximum step height 18 cm. The entry start faces
 into the flat with zero pitch. Native movement settings are in the copied
 `/Game/FirstPerson/Blueprints/BP_FirstPersonCharacter` and
 `BP_FirstPersonPlayerController`, selected by `BP_OakVilleGameMode`.
 
-E/G interaction and camera setup currently run through editor Python in
+E/G interaction, Shift running and camera setup currently run through editor Python in
 `scripts/unreal/oakville_runtime.py`, loaded by `Content/Python/init_unreal.py`.
 This is an **editor Play walkthrough**. Packaging needs the missing Windows
 SDK/C++ toolchain and a Blueprint/C++ port of the editor-only interactions.

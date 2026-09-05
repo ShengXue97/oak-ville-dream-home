@@ -16,6 +16,8 @@ ROOT = Path(__file__).resolve().parents[2]
 STATE = None
 HANDLE = None
 BUSY = False
+WALK_SPEED_CM_S = 180.0
+RUN_SPEED_CM_S = 320.0
 
 
 def message(world, text, key="OakVilleControls", duration=0.2):
@@ -186,7 +188,7 @@ class PlaySession:
                 self.doors.append(Door(record, children, records))
         message(
             world,
-            "Human mode | WASD walk | Space jump | E door | G creative",
+            "Human mode | WASD walk | Hold Shift run | Space jump | E door | G creative",
             duration=6,
         )
 
@@ -200,6 +202,15 @@ class PlaySession:
         previous = self.keys.get(name, False)
         self.keys[name] = down
         return down and not previous
+
+    def update_walk_speed(self):
+        """Hold either Shift to run; release it to resume normal walking."""
+        running = not self.creative and (
+            self.down("LeftShift") or self.down("RightShift")
+        )
+        speed = RUN_SPEED_CM_S if running else WALK_SPEED_CM_S
+        if self.movement.get_editor_property("max_walk_speed") != speed:
+            self.movement.set_editor_property("max_walk_speed", speed)
 
     def set_creative(self, enabled):
         self.creative = enabled
@@ -249,6 +260,7 @@ class PlaySession:
         delta = min(delta, 0.5)
         if self.pressed("G"):
             self.set_creative(not self.creative)
+        self.update_walk_speed()
         if self.creative:
             vertical = int(self.down("SpaceBar")) - int(self.down("LeftControl"))
             self.pawn.add_movement_input(unreal.Vector(0, 0, 1), vertical)

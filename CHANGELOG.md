@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.8.0 - Faster walking and hold-to-run
+
+- Increased normal walking from 120 to 180 cm/s. Hold either Shift key to run at 320 cm/s; releasing it restores walking speed.
+- Retained native CharacterMovement, gravity, jump and collision. Shift running applies to human mode; creative flight keeps its existing speed.
+- Updated the reproducible Blueprint setup, editor runtime, on-screen controls and instructions. Verified both Shift keys and release behaviour on the live native character; gravity remained at scale 1.
+- Running, like E/G interaction, currently uses the editor Play Python integration and needs a packaged gameplay implementation for standalone delivery.
+
 ## 0.7.0 - Human walking, working doors and bedroom circulation
 
 - Switched to Epic's standard First Person Blueprint character/controller with native grounded movement, gravity and jump. Start inside the entry with horizontal view, 172 cm capsule and assumed 160 cm eye height.

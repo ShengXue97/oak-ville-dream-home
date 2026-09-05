@@ -1,0 +1,21 @@
+{
+  "walk": {
+    "speed_cm_s": 180.0,
+    "passed": true
+  },
+  "left_shift_run": {
+    "speed_cm_s": 320.0,
+    "passed": true
+  },
+  "release_returns_to_walk": {
+    "speed_cm_s": 180.0,
+    "passed": true
+  },
+  "right_shift_run": {
+    "speed_cm_s": 320.0,
+    "passed": true
+  },
+  "native_character": true,
+  "gravity_scale": 1.0,
+  "passed": true
+}
