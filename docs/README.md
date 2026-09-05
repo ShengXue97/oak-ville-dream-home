@@ -1,5 +1,6 @@
 # Designer and project documentation
 
+- [TROPICAL_MODERN_HANDOVER.md](TROPICAL_MODERN_HANDOVER.md): selected tropical luxury video, current project state, reference capture plan and implementation handover for a second style.
 - [DESIGNER_HANDOFF.md](DESIGNER_HANDOFF.md): units, dimension conventions, assumptions and items to measure on site.
 - [RESTYLING.md](RESTYLING.md): replaceable furniture and shared material roles.
 - [WALKTHROUGH.md](WALKTHROUGH.md): navigation, reproduction and validation commands.
