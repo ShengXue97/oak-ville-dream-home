@@ -1,0 +1,171 @@
+{
+  "profile": {
+    "name": "Soft neutral daylight / cream and oak",
+    "lights": {
+      "ceiling": {
+        "colour_linear": [
+          1.0,
+          0.98,
+          0.95
+        ],
+        "lumens": 400,
+        "radius_cm": 400
+      },
+      "window": {
+        "colour_linear": [
+          0.94,
+          0.97,
+          1.0
+        ],
+        "lumens": 650,
+        "radius_cm": 450
+      },
+      "task": {
+        "colour_linear": [
+          1.0,
+          0.94,
+          0.85
+        ],
+        "lumens": 90,
+        "radius_cm": 180
+      },
+      "cove": {
+        "colour_linear": [
+          1.0,
+          0.94,
+          0.85
+        ],
+        "lumens": 140,
+        "radius_cm": 260
+      }
+    },
+    "overrides_lumens": {
+      "Living_Ceiling_2900K": 550,
+      "Dining_Ceiling_2900K": 450,
+      "Entry_Ceiling_2900K": 250,
+      "Bedroom_Corridor_Ceiling_2900K": 300,
+      "Common_Bath_Ceiling_2900K": 230,
+      "Ensuite_Ceiling_2900K": 230,
+      "Shelter_Ceiling_2900K": 180,
+      "Service_Yard_Ceiling_2900K": 230,
+      "Yard_Daylight_6500K": 300
+    },
+    "sun": {
+      "lux": 300,
+      "source_angle_degrees": 5.0
+    },
+    "sky_intensity": 1.0,
+    "post_process": {
+      "auto_exposure_min_brightness": 12.0,
+      "auto_exposure_max_brightness": 12.0,
+      "auto_exposure_bias": 0.0,
+      "white_temp": 6500.0,
+      "white_tint": 0.0,
+      "bloom_intensity": 0.025,
+      "lens_flare_intensity": 0.0,
+      "vignette_intensity": 0.0,
+      "motion_blur_amount": 0.0,
+      "local_exposure_highlight_contrast_scale": 0.75,
+      "local_exposure_shadow_contrast_scale": 0.85,
+      "local_exposure_detail_strength": 1.0
+    }
+  },
+  "lights": [
+    {
+      "name": "Living_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 550
+    },
+    {
+      "name": "Dining_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 450
+    },
+    {
+      "name": "Entry_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 250
+    },
+    {
+      "name": "Bedroom_3_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 400
+    },
+    {
+      "name": "Bedroom_2_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 400
+    },
+    {
+      "name": "Main_Bedroom_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 400
+    },
+    {
+      "name": "Common_Bath_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 230
+    },
+    {
+      "name": "Ensuite_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 230
+    },
+    {
+      "name": "Kitchen_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 400
+    },
+    {
+      "name": "Service_Yard_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 230
+    },
+    {
+      "name": "Shelter_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 180
+    },
+    {
+      "name": "Bedroom_Corridor_Ceiling_2900K",
+      "role": "ceiling",
+      "lumens": 300
+    },
+    {
+      "name": "Living_Daylight_6500K",
+      "role": "window",
+      "lumens": 650
+    },
+    {
+      "name": "Bedroom_3_Daylight_6500K",
+      "role": "window",
+      "lumens": 650
+    },
+    {
+      "name": "Bedroom_2_Daylight_6500K",
+      "role": "window",
+      "lumens": 650
+    },
+    {
+      "name": "Main_Bedroom_Daylight_6500K",
+      "role": "window",
+      "lumens": 650
+    },
+    {
+      "name": "Kitchen_Under_Cabinet_2900K",
+      "role": "task",
+      "lumens": 90
+    },
+    {
+      "name": "Living_Cove_Wash_2900K",
+      "role": "cove",
+      "lumens": 140
+    },
+    {
+      "name": "Yard_Daylight_6500K",
+      "role": "window",
+      "lumens": 300
+    }
+  ],
+  "rect_light_count": 19
+}

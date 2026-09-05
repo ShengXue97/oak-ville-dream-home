@@ -1,0 +1,36 @@
+{
+  "name": "Soft neutral daylight / cream and oak",
+  "lights": {
+    "ceiling": {"colour_linear": [1.0, 0.98, 0.95], "lumens": 400, "radius_cm": 400},
+    "window": {"colour_linear": [0.94, 0.97, 1.0], "lumens": 650, "radius_cm": 450},
+    "task": {"colour_linear": [1.0, 0.94, 0.85], "lumens": 90, "radius_cm": 180},
+    "cove": {"colour_linear": [1.0, 0.94, 0.85], "lumens": 140, "radius_cm": 260}
+  },
+  "overrides_lumens": {
+    "Living_Ceiling_2900K": 550,
+    "Dining_Ceiling_2900K": 450,
+    "Entry_Ceiling_2900K": 250,
+    "Bedroom_Corridor_Ceiling_2900K": 300,
+    "Common_Bath_Ceiling_2900K": 230,
+    "Ensuite_Ceiling_2900K": 230,
+    "Shelter_Ceiling_2900K": 180,
+    "Service_Yard_Ceiling_2900K": 230,
+    "Yard_Daylight_6500K": 300
+  },
+  "sun": {"lux": 300, "source_angle_degrees": 5.0},
+  "sky_intensity": 1.0,
+  "post_process": {
+    "auto_exposure_min_brightness": 12.0,
+    "auto_exposure_max_brightness": 12.0,
+    "auto_exposure_bias": 0.0,
+    "white_temp": 6500.0,
+    "white_tint": 0.0,
+    "bloom_intensity": 0.025,
+    "lens_flare_intensity": 0.0,
+    "vignette_intensity": 0.0,
+    "motion_blur_amount": 0.0,
+    "local_exposure_highlight_contrast_scale": 0.75,
+    "local_exposure_shadow_contrast_scale": 0.85,
+    "local_exposure_detail_strength": 1.0
+  }
+}

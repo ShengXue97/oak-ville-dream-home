@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.2 - Neutral daylight and controlled window highlights
+
+- Rebalanced 19 Unreal area lights by purpose and room instead of assigning the same intensity to windows, ceilings and task lights. Neutral ceiling fill preserves cream finishes without the previous yellow cast.
+- Reduced the direct sun from 2500 to 300 lux for this interior preview, widened its source angle, softened highlight contrast and reduced bloom. Fixed exposure prevents brightness pumping while walking.
+- Added an editable lighting profile, embedded a copy in the Blender source, and retained it across normal geometry sync. Blender geometry, materials and lighting remain the source style reference.
+- Added repeatable dining, kitchen, corridor and window-facing captures, plus saved-setting/material/collision integrity checks. Unreal shading remains an approximation of Blender's procedural materials and colour transform.
+
 ## 0.9.1 - Harden human collision and refresh imported physics
 
 - Explicitly restore disabled actor/capsule collision and wall blocking in human mode, returning to the last safe position. Unloading the editor helper now exits noclip safely.

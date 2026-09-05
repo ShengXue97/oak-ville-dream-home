@@ -59,6 +59,11 @@ and `install_play_controls.py` using `python scripts/unreal/remote.py SCRIPT`.
 Wait for each import/sync to finish before the next command. Regular geometry
 updates use only `update_from_blender.py` and preserve lighting/material edits.
 
+The calibrated daylight profile is in `assets/unreal/lighting-profile.json`;
+see [lighting calibration and comparison](LIGHTING_CALIBRATION.md). Run
+`tune_lighting.py` only when deliberately applying that profile. A copy is
+embedded in `oak-ville.blend` as `UNREAL_LIGHTING_PROFILE.json`.
+
 - `scene-validation.json`: 576 bounds, 11 capsule routes and supporting floors.
 - `play-controls-validation.json`: actual spawned native character, grounded
   start, jump/landing, E targeting/opening, locked entry and G mode changes.

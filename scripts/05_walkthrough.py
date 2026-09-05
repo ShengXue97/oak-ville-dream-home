@@ -305,3 +305,4 @@ summary = {
     json.dumps(summary, indent=2)
 )
 runpy.run_path(str(ROOT / "scripts/refresh_designer_handoff.py"))
+runpy.run_path(str(ROOT / "scripts/embed_unreal_lighting_profile.py"))

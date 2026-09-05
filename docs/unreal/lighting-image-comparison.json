@@ -1,0 +1,77 @@
+{
+  "note": "Whole-image measurements, not a perceptual quality score. Near-white means all RGB channels >=250/255. Both stages use identical capture cameras.",
+  "views": {
+    "dining": {
+      "before": {
+        "mean_rgb_8bit": [
+          87.45,
+          63.55,
+          34.65
+        ],
+        "near_white_pixel_percent": 0.005
+      },
+      "final": {
+        "mean_rgb_8bit": [
+          158.95,
+          147.13,
+          124.87
+        ],
+        "near_white_pixel_percent": 0.0
+      }
+    },
+    "living_window": {
+      "before": {
+        "mean_rgb_8bit": [
+          212.23,
+          201.56,
+          180.41
+        ],
+        "near_white_pixel_percent": 1.568
+      },
+      "final": {
+        "mean_rgb_8bit": [
+          186.52,
+          185.35,
+          175.98
+        ],
+        "near_white_pixel_percent": 0.0
+      }
+    },
+    "bedroom_window": {
+      "before": {
+        "mean_rgb_8bit": [
+          208.85,
+          189.78,
+          158.33
+        ],
+        "near_white_pixel_percent": 3.261
+      },
+      "final": {
+        "mean_rgb_8bit": [
+          194.6,
+          185.14,
+          166.87
+        ],
+        "near_white_pixel_percent": 0.0
+      }
+    },
+    "corridor": {
+      "before": {
+        "mean_rgb_8bit": [
+          195.27,
+          165.51,
+          120.97
+        ],
+        "near_white_pixel_percent": 0.0
+      },
+      "final": {
+        "mean_rgb_8bit": [
+          190.36,
+          179.74,
+          159.98
+        ],
+        "near_white_pixel_percent": 0.0
+      }
+    }
+  }
+}
