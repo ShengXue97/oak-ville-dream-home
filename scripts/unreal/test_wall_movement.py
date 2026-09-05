@@ -49,6 +49,7 @@ def begin():
     global started
     name, start, direction, limit, sign, speed = cases[index]
     pawn.set_actor_location(unreal.Vector(*start), False, True)
+    state.previous_position = pawn.get_actor_location()
     movement.stop_movement_immediately()
     state.down = lambda key: speed == 320 and key == "LeftShift"
     started = time.monotonic()
@@ -63,6 +64,7 @@ def finish():
     pawn.set_actor_location(original, False, True)
     movement.stop_movement_immediately()
     state.last_safe = original
+    state.previous_position = original
     report = {
         "cases": results,
         "max_frame_delta_s": max_delta,

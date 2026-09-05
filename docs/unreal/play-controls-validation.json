@@ -3,7 +3,7 @@
   "initial_human_mode": true,
   "level_start_pitch": true,
   "gravity_scale": 1.0,
-  "jump_rise_cm": 31.61,
+  "jump_rise_cm": 32.22,
   "jump_lifted_character": true,
   "landed_on_floor": true,
   "front_door_rejects_toggle": true,

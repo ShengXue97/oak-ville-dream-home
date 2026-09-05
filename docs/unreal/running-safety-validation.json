@@ -1,0 +1,11 @@
+{
+  "LeftShift_crossing_rejected": true,
+  "RightShift_crossing_rejected": true,
+  "release_restores_walk": true,
+  "all_eleven_routes_accepted": true,
+  "unexpected_flight_recovered": true,
+  "detached_movement_recovered": true,
+  "explicit_creative_still_works": true,
+  "return_from_creative_safe": true,
+  "passed": true
+}

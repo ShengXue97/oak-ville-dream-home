@@ -3,40 +3,40 @@
     {
       "wall": "external",
       "speed_cm_s": 180,
-      "x_cm": 35.246,
+      "x_cm": 35.1,
       "passed": true
     },
     {
       "wall": "thin_west",
       "speed_cm_s": 180,
-      "x_cm": 367.743,
+      "x_cm": 367.6,
       "passed": true
     },
     {
       "wall": "thin_east",
       "speed_cm_s": 180,
-      "x_cm": 607.249,
+      "x_cm": 607.399,
       "passed": true
     },
     {
       "wall": "external",
       "speed_cm_s": 320,
-      "x_cm": 35.252,
+      "x_cm": 35.092,
       "passed": true
     },
     {
       "wall": "thin_west",
       "speed_cm_s": 320,
-      "x_cm": 367.721,
+      "x_cm": 367.6,
       "passed": true
     },
     {
       "wall": "thin_east",
       "speed_cm_s": 320,
-      "x_cm": 607.274,
+      "x_cm": 607.4,
       "passed": true
     }
   ],
-  "max_frame_delta_s": 0.125,
+  "max_frame_delta_s": 0.017943497747182846,
   "passed": true
 }

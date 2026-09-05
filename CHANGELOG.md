@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.10.2 - Centre the running camera and protect against wall crossings
+
+- Replace the mesh-attached template viewpoint with a dedicated capsule-centred walkthrough camera. The old live camera was approximately 75 cm sideways from the collision capsule, allowing the view to enter walls while the player body stayed blocked.
+- Keep either Shift as hold-to-run (320 cm/s), returning to 180 cm/s on release; only G explicitly enables creative flight.
+- Recover an unexpected human flight mode or detached CharacterMovement collision component, in addition to disabled capsule collision.
+- Independently sweep human displacement against architecture before accepting a new safe position. Reject wall crossings, stop movement and log the event; preserve native movement, jumping, furniture collision and moving doors.
+- Add camera alignment, fault-injection and route regression checks. Tests exercise the Shift handler over actual frames; physical keyboard input is not simulated.
+- Runtime-only patch: the dimensioned Blender geometry and existing Unreal mesh assets remain unchanged at source-model version 0.10.1.
+
 ## 0.10.1 - Correct main-bedroom door swing
 
 - Correct the main-bedroom hinge to the Bedroom 2-side jamb and open into the bedroom rather than the corridor, preserving the opening dimensions and ensuite approach.

@@ -23,6 +23,7 @@ report = {}
 phase = "aim_open"
 started = time.monotonic()
 pawn.set_actor_location(unreal.Vector(885, 390, 88), False, True)
+state.previous_position = pawn.get_actor_location()
 state.movement.stop_movement_immediately()
 
 
@@ -39,6 +40,7 @@ def finish():
     door.current = door.target = door.closed_angle
     door.apply(door.current)
     pawn.set_actor_location(old_position, False, True)
+    state.previous_position = old_position
     controller.set_control_rotation(old_rotation)
     state.movement.stop_movement_immediately()
     unreal.unregister_slate_post_tick_callback(handle)

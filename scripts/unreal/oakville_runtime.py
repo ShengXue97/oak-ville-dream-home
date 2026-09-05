@@ -133,6 +133,8 @@ class PlaySession:
         self.creative = False
         self.keys = {}
         self.last_safe = unreal.Vector(270, 655, 88)
+        self.previous_position = self.last_safe
+        self.wall_recoveries = 0
         self.movement = pawn.get_editor_property("character_movement")
         self.ensure_human_collision()
         pawn.set_actor_location(self.last_safe, False, True)
@@ -141,6 +143,10 @@ class PlaySession:
         self.initial_pitch = controller.get_control_rotation().pitch
         capsule = pawn.get_editor_property("capsule_component")
         for camera in pawn.get_components_by_class(unreal.CameraComponent):
+            if not camera.get_name().startswith("WalkthroughCamera"):
+                camera.deactivate()
+                continue
+            camera.activate()
             camera.attach_to_component(
                 capsule,
                 unreal.Name("None"),
@@ -157,9 +163,9 @@ class PlaySession:
         for mesh in pawn.get_components_by_class(unreal.SkeletalMeshComponent):
             mesh.set_hidden_in_game(True)
             mesh.set_component_tick_enabled(False)
-        self.movement.set_editor_property("gravity_scale", 1.0)
-        self.movement.set_editor_property("jump_z_velocity", 260.0)
-        self.movement.set_editor_property("max_fly_speed", 250.0)
+        self.movement.gravity_scale = 1.0
+        self.movement.jump_z_velocity = 260.0
+        self.movement.max_fly_speed = 250.0
         self.movement.set_movement_mode(unreal.MovementMode.MOVE_WALKING)
         with gzip.open(
             ROOT / "assets/unreal-export/scene.json.gz", "rt", encoding="utf-8"
@@ -169,6 +175,12 @@ class PlaySession:
         actors = unreal.GameplayStatics.get_all_actors_of_class(
             world, unreal.StaticMeshActor
         )
+        # A second, independent sweep protects the building envelope. Furniture
+        # and moving doors remain the native CharacterMovement capsule's job;
+        # including them here would reject valid step-ups and door animation.
+        self.wall_trace_ignored = [pawn] + [
+            actor for actor in actors if str(actor.get_folder_path()) != "Architecture"
+        ]
         by_id = {
             str(tag).removeprefix("BlenderID:"): actor
             for actor in actors
@@ -211,7 +223,40 @@ class PlaySession:
         )
         speed = RUN_SPEED_CM_S if running else WALK_SPEED_CM_S
         if self.movement.get_editor_property("max_walk_speed") != speed:
-            self.movement.set_editor_property("max_walk_speed", speed)
+            # Never use set_editor_property here: its editor change notification
+            # can reconstruct Blueprint components in PIE, invalidating the eye
+            # and movement references on every Shift transition.
+            self.movement.max_walk_speed = speed
+
+    def ensure_camera_attachment(self):
+        """Keep the eye over the collision capsule after template initialization.
+
+        A mesh/socket-relative eye can sit outside the capsule as its pose changes.
+        Repair the attachment itself instead of teleporting the character.
+        """
+        capsule = self.pawn.get_editor_property("capsule_component")
+        for camera in self.pawn.get_components_by_class(unreal.CameraComponent):
+            if not camera.get_name().startswith("WalkthroughCamera"):
+                if camera.is_active():
+                    camera.deactivate()
+                continue
+            if camera.get_attach_parent() != capsule:
+                attached = camera.attach_to_component(
+                    capsule,
+                    unreal.Name("None"),
+                    unreal.AttachmentRule.KEEP_RELATIVE,
+                    unreal.AttachmentRule.KEEP_RELATIVE,
+                    unreal.AttachmentRule.KEEP_RELATIVE,
+                    False,
+                )
+                if not attached:
+                    raise RuntimeError("Cannot attach walkthrough eye to capsule")
+                camera.set_relative_location(unreal.Vector(0, 0, 72), False, False)
+                camera.set_relative_rotation(unreal.Rotator(0, 0, 0), False, False)
+                camera.use_pawn_control_rotation = True
+                unreal.log_warning(
+                    "OakVille restored capsule-centred walkthrough camera"
+                )
 
     def set_creative(self, enabled):
         self.creative = enabled
@@ -224,6 +269,7 @@ class PlaySession:
             # Resume at the last grounded location, never trapped inside a wall
             # or falling from outside the apartment after a noclip inspection.
             self.pawn.set_actor_location(self.last_safe, False, True)
+            self.previous_position = self.last_safe
             self.movement.set_movement_mode(unreal.MovementMode.MOVE_FALLING)
         message(
             self.world,
@@ -242,6 +288,9 @@ class PlaySession:
         capsule = self.pawn.get_editor_property("capsule_component")
         broken = (
             not self.pawn.get_actor_enable_collision()
+            or self.movement.get_editor_property("updated_component") != capsule
+            or self.movement.get_editor_property("movement_mode")
+            not in (unreal.MovementMode.MOVE_WALKING, unreal.MovementMode.MOVE_FALLING)
             or capsule.get_collision_enabled()
             != unreal.CollisionEnabled.QUERY_AND_PHYSICS
             or capsule.get_collision_response_to_channel(
@@ -254,6 +303,7 @@ class PlaySession:
             != unreal.CollisionResponseType.ECR_BLOCK
         )
         if broken:
+            self.movement.set_updated_component(capsule)
             self.pawn.set_actor_enable_collision(True)
             capsule.set_collision_profile_name("Pawn")
             capsule.set_collision_enabled(unreal.CollisionEnabled.QUERY_AND_PHYSICS)
@@ -266,11 +316,47 @@ class PlaySession:
                 unreal.CollisionResponseType.ECR_BLOCK,
             )
             self.pawn.set_actor_location(self.last_safe, False, True)
+            self.previous_position = self.last_safe
             self.movement.stop_movement_immediately()
             self.movement.set_movement_mode(unreal.MovementMode.MOVE_FALLING)
             unreal.log_warning(
                 "OakVille restored human capsule collision at the last safe position"
             )
+
+    def validate_human_displacement(self):
+        """Reject wall crossings before accepting a new grounded safe position.
+
+        Native CharacterMovement still owns motion. This independent Pawn-profile
+        sweep also catches unswept position changes and stale move-ignore lists.
+        A 2 cm inset avoids treating ordinary floor/wall contact as penetration.
+        """
+        if self.creative:
+            return
+        position = self.pawn.get_actor_location()
+        if (position - self.previous_position).length() < 0.01:
+            return
+        capsule = self.pawn.get_editor_property("capsule_component")
+        hit = unreal.SystemLibrary.capsule_trace_single_by_profile(
+            self.world,
+            self.previous_position,
+            position,
+            capsule.get_scaled_capsule_radius() - 2.0,
+            capsule.get_scaled_capsule_half_height() - 2.0,
+            "Pawn",
+            False,
+            self.wall_trace_ignored,
+            unreal.DrawDebugTrace.NONE,
+        )
+        if hit:
+            self.wall_recoveries += 1
+            unreal.log_warning(
+                f"OakVille rejected wall crossing: {self.previous_position} -> "
+                f"{position}; Shift={self.down('LeftShift') or self.down('RightShift')}"
+            )
+            self.pawn.set_actor_location(self.previous_position, False, True)
+            self.movement.stop_movement_immediately()
+        else:
+            self.previous_position = position
 
     def aimed_door(self):
         eye, rotation = self.controller.get_player_view_point()
@@ -300,6 +386,8 @@ class PlaySession:
         if self.pressed("G"):
             self.set_creative(not self.creative)
         self.ensure_human_collision()
+        self.validate_human_displacement()
+        self.ensure_camera_attachment()
         message(
             self.world,
             (

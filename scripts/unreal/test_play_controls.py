@@ -46,6 +46,7 @@ def finish():
     if state.creative:
         state.set_creative(False)
     pawn.set_actor_location(unreal.Vector(270, 655, 88), False, True)
+    state.previous_position = pawn.get_actor_location()
     pawn.set_actor_rotation(unreal.Rotator(pitch=0, yaw=-60, roll=0), False)
     controller.set_control_rotation(unreal.Rotator(pitch=0, yaw=-60, roll=0))
     movement.stop_movement_immediately()
@@ -87,10 +88,18 @@ def test_tick(delta):
             pawn.set_actor_location(
                 unreal.Vector(centre.x, centre.y + 90, 88), False, True
             )
+            state.previous_position = pawn.get_actor_location()
             pawn.set_actor_rotation(unreal.Rotator(pitch=0, yaw=-90, roll=0), False)
             controller.set_control_rotation(unreal.Rotator(pitch=0, yaw=-90, roll=0))
             phase, started = "door_aim", time.monotonic()
         elif phase == "door_aim" and elapsed > 0.4:
+            door = next(d for d in state.doors if d.name == "Bedroom_3_Door_Hinge")
+            eye = pawn.get_actor_location() + unreal.Vector(0, 0, 72)
+            controller.set_control_rotation(
+                unreal.MathLibrary.make_rot_from_x(door.leaf.get_actor_location() - eye)
+            )
+            phase, started = "door_target", time.monotonic()
+        elif phase == "door_target" and elapsed > 0.5:
             report["nearby_door_targeted"] = state.aimed_door() is not None
             report["targeted_door"] = (
                 state.aimed_door().name if state.aimed_door() else None

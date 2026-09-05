@@ -1,6 +1,8 @@
 """Use Epic's native First Person Blueprint input and CharacterMovement."""
 
 import unreal
+import runpy
+from pathlib import Path
 
 levels = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
 if levels.is_in_play_in_editor():
@@ -74,3 +76,6 @@ world = unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_editor_wor
 world.get_world_settings().set_editor_property("default_game_mode", mode_class)
 levels.save_current_level()
 print("Epic First Person character and controller configured")
+runpy.run_path(
+    str(Path(__file__).with_name("fix_camera_rig.py")), run_name="__camera_setup__"
+)

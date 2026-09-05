@@ -72,6 +72,7 @@ finally:
     for actor in actors:
         capsule.ignore_actor_when_moving(actor, False)
     pawn.set_actor_location(original, False, True)
+    state.previous_position = original
     state.movement.stop_movement_immediately()
 report = {
     "method": "Actual Character root capsule swept on Pawn channel in Play, each wall isolated, both directions",
