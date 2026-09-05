@@ -31,6 +31,7 @@ paths = (
     sorted(folder.glob("EYE_W*.png"))
     + sorted(folder.glob("PREVIEW_*.png"))
     + [folder / "PLAN_Orthographic.png"]
+    + sorted(folder.glob("DETAIL_*.png"))
 )
 cards = []
 for path in paths:

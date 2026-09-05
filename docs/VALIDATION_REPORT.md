@@ -1,6 +1,6 @@
 # Oak Ville validation and designer handoff
 
-Version 0.5.0. The editable model is `../oak-ville.blend`. It was constructed through Blender MCP in the visible Blender 5.2.1 LTS session. Final saved-file checks run in an independent Blender process so the live session is not reloaded.
+Version 0.5.1. The editable model is `../oak-ville.blend`. It was constructed through Blender MCP in the visible Blender 5.2.1 LTS session. Final saved-file checks run in an independent Blender process so the live session is not reloaded.
 
 ## What is verified
 
@@ -55,3 +55,7 @@ Blender Walk Navigation does **not** consume these collision meshes as a charact
 ## Before fabrication
 
 Resolve the assumptions in `DESIGNER_HANDOFF.md` with an undistorted issued drawing and on-site measurements. Confirm structural/shelter constraints, finished wall faces, ceiling/beam heights, every opening, floor drops, services and exact appliance/furniture specifications. Produce dimensioned elevations and shop drawings from those confirmed values. Keep proposed finishes and removable joinery separate from the fixed building shell when exploring design options.
+
+## Interior detail correction (0.5.1)
+
+All sixteen handle mounting assemblies contact their door leaves, with connected rose, spindle and lever meshes parented to the hinge. Dining plant geometry has a conservative 263.8 mm gap to the closest chair component in the delivered static arrangement. This does not simulate pulling chairs out. Both plants use thin curved leaves and connected branches. See `validation/interior-detail-validation.json` and the detail previews.

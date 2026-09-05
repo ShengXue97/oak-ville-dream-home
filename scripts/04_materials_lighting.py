@@ -274,35 +274,10 @@ cub(
 )
 
 # Small amount of styling: plants, books and tonal artwork.
-for room, x, plan_y in [("Living", 2.77, 0.64), ("Dining", 5.76, 4.77)]:
-    round_object(
-        room + "_Plant_Pot", x, plan_y, 0.21, 0.16, 0.39, "Countertop", "Decor"
-    )
-    for index in range(9):
-        angle = index * 2.4
-        height = 0.63 + index * 0.055
-        cub(
-            room + "_Plant_Stem",
-            x,
-            plan_y,
-            height / 2 + 0.20,
-            0.012,
-            0.012,
-            height,
-            "Decor",
-            "Oak_Joinery",
-            0.003,
-            False,
-        )
-        leaf = soft_shape(
-            room + "_Leaf",
-            x + 0.15 * math.cos(angle),
-            plan_y + 0.15 * math.sin(angle),
-            height + 0.10,
-            (0.24, 0.12, 0.055),
-            "Foliage",
-        )
-        leaf.rotation_euler = (0.4, 0.4, angle)
+import runpy
+
+plant_details = runpy.run_path(str(ROOT / "scripts/interior_details.py"))
+plant_details["build_plants"](globals())
 for index in range(3):
     cub(
         "Living_Table_Book",

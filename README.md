@@ -1,6 +1,6 @@
 # Oak Ville ? editable Blender project
 
-Current model version: **0.5.0**. Open [oak-ville.blend](oak-ville.blend).
+Current model version: **0.5.1**. Open [oak-ville.blend](oak-ville.blend).
 
 | Folder | Contents |
 |---|---|

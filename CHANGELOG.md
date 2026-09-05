@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.1 - Attached door hardware and botanical detail
+
+- Replaced floating lever bars with connected mounting roses, spindles and levers on both sides of all eight doors; all parts remain parented to each door hinge.
+- Replaced thick oval foliage with thin, curved pointed leaves, visible midribs, connected tapering branches, soil and varied greens on both plants.
+- Moved the dining plant from (5.76, 4.77) m to (5.88, 6.05) m in plan coordinates to clear the chair backs. Architecture remains unchanged.
+- Set the Bedroom 2 open stop to 86 degrees so its attached handle clears the adjacent partition; opening dimensions remain unchanged.
+- Added reproducible detail construction and checks for handle attachment and plant-to-chair clearance, alongside existing saved-file and circulation validation.
+
 ## Unreleased — Project organisation
 
 - Separated the supplied reference pack into `references/original/`, preserving source images and internal gallery links.

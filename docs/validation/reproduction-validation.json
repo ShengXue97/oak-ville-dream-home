@@ -1,6 +1,6 @@
 {
-  "delivered_object_count": 919,
-  "reproduced_object_count": 919,
+  "delivered_object_count": 1059,
+  "reproduced_object_count": 1059,
   "compared": "Object transforms, dimensions, types, collection memberships, mesh vertex counts, material role names and route control points at 0.00001m rounding",
   "differences": {},
   "pass": true

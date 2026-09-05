@@ -1,0 +1,160 @@
+{
+  "hardware_mounts_checked": 16,
+  "hardware_wall_contacts_at_open_stop": [],
+  "hardware": [
+    {
+      "mount": "Entry_Door_Handle_Front_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Entry_Door_Handle_Back_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Shelter_Door_Handle_Front_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Shelter_Door_Handle_Back_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Bedroom_3_Door_Handle_Front_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Bedroom_3_Door_Handle_Back_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Bedroom_2_Door_Handle_Front_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Bedroom_2_Door_Handle_Back_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Main_Bedroom_Door_Handle_Front_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Main_Bedroom_Door_Handle_Back_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Common_Bath_Door_Handle_Front_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Common_Bath_Door_Handle_Back_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Ensuite_Door_Handle_Front_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Ensuite_Door_Handle_Back_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Service_Yard_Door_Handle_Front_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    },
+    {
+      "mount": "Service_Yard_Door_Handle_Back_Rose",
+      "connection_gaps_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_hinge": true
+    }
+  ],
+  "hardware_attached": true,
+  "dining_plant_to_chair_conservative_gap_m": 0.2638,
+  "closest_objects": [
+    "Dining_Plant_Leaf_01",
+    "Dining_Chair_East_1_Back"
+  ],
+  "plant_clear_of_chairs": true,
+  "plant_obstacle_overlaps": [],
+  "method": "Conservative world-axis mesh bounding boxes for every dining plant/chair component; mounted hardware checked in hinge coordinates. Static chair layout only, not chair pull-out simulation.",
+  "passed": true
+}

@@ -1,5 +1,5 @@
 {
-  "view_count": 25,
+  "view_count": 27,
   "all_images_load": true,
   "all_images_nonuniform": true,
   "views": [
@@ -10,7 +10,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "148df2288922c9a7b7462e3c4cd72aacdb2052aa313582f2eca96bbe190dbd14"
+      "sha256": "ddec9b7969e086b4fab1718aae04fa2d335045677df416cde3155c7695ee60f4"
     },
     {
       "file": "renders/EYE_W02_dining-living.png",
@@ -19,7 +19,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "3fd948565ec28159ee67b537a69861465c1049a26eef529b6e3bd8eb01f02807"
+      "sha256": "8c8c02601dcd5853f1350211b43700b0eaa40dae8326f1f889be42a638e6ed72"
     },
     {
       "file": "renders/EYE_W03_dining-kitchen.png",
@@ -28,7 +28,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "539c95870a375ad6f6a7e93fca832767ea2d2c8a0512dcfedb0993fb2f5732b5"
+      "sha256": "e2af3c38762f858bdd0c821b6d167c1ee309806e44f3193a791019d6e953d526"
     },
     {
       "file": "renders/EYE_W04_bedroom_corridor.png",
@@ -37,7 +37,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "2aacc67e5fc770cae5295b09fbde50852be672eb4d17d17d8b885bafb380150b"
+      "sha256": "8fd548d4bfa5d1ef03602e75d1e2991469be15bf708f92924684558c984e80bd"
     },
     {
       "file": "renders/EYE_W05_Bedroom_3.png",
@@ -46,7 +46,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "0592406a20c50230cf3c367e692bc65e1b269994b06cc3786e50319a1ffc2e08"
+      "sha256": "75cb7aedd7b2c33434ff8720c01f177fc0e37c4e9055039417eb5246d5825d3b"
     },
     {
       "file": "renders/EYE_W06_Bedroom_2.png",
@@ -55,7 +55,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "205e7abe2cf078607c86e0b6048e51c5d766fbd92b7c3df014f28c7088c7e4f2"
+      "sha256": "8fed770f199009fd9e7a8805a25a7922d2c8c0c51e4f5e8d7935021d31f18ded"
     },
     {
       "file": "renders/EYE_W07_main_bedroom.png",
@@ -64,7 +64,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "841a8e776536f2d9e7ab2d1d6a89a18c270f06697d4f4c93bdadbafb13ca4614"
+      "sha256": "e4b22f61aa03c208a74278e7b8a12343310f6ceee0e334fd0e0886671f8bbe2f"
     },
     {
       "file": "renders/EYE_W08_common_bath.png",
@@ -73,7 +73,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "2653e412c20b80068363c9674a86748a54859f509273244884e12b8fcd613407"
+      "sha256": "2d63e29b9fc82b7d3768588d36e3e4f1c886202a209bb51248f345ce7fa49c2f"
     },
     {
       "file": "renders/EYE_W09_ensuite.png",
@@ -82,7 +82,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "bcf75f59fe7efdc44a3fe0450f706e167b4451cd340b9b37c0001b09de196359"
+      "sha256": "ae07b9cff4fed9c91ff0c03dcd530cc8eaf570ad58fa9e30aeb347597642c7b4"
     },
     {
       "file": "renders/EYE_W10_service_yard.png",
@@ -91,7 +91,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "834a58fb107c06d839afb637fb0ae7fb06534ffa5a5116898232c48f90c0f95f"
+      "sha256": "e6f0451c23c4c00ebdc94cc6c184b0100171696a2dc6cd919f4be4bcd462e4b7"
     },
     {
       "file": "renders/EYE_W11_shelter_access.png",
@@ -100,7 +100,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "d6f79526d86956e1052967fca7a10e20c23735a11b028a8afa7c792a4dad5794"
+      "sha256": "b22f7effbcafab3342b077dd37c9686a76d198fb7630c8dfe8ffae82fd2b5464"
     },
     {
       "file": "renders/PREVIEW_Bedroom_2.png",
@@ -109,7 +109,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "b936196815bf90f984713dd9b89a1257dacef8bb5c74ff61bb7f28df8a2445dc"
+      "sha256": "d9b62fd8702074bbcbce1aaacd326747bd670ed74563b2cd246cb672c34f6b24"
     },
     {
       "file": "renders/PREVIEW_Bedroom_3.png",
@@ -118,7 +118,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "09dae619d3a68c8b0cd84e2235d78aecca2136bcee4dac60b1767a2e08f894b3"
+      "sha256": "5ce4c38421aa0df14fa056c71fa367697aa3229d8f73a679fe6919e5985dcd08"
     },
     {
       "file": "renders/PREVIEW_Common_Bath.png",
@@ -127,7 +127,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "8ff5dd7405ac93ef601b97016ef98c70b98edf1bdc13b4418a542323f0f7137c"
+      "sha256": "3b541dd5d135899800bbad1503fefa736168d756655f4c6062c06ba1607f7f1b"
     },
     {
       "file": "renders/PREVIEW_Common_Bath_Vanity.png",
@@ -136,7 +136,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "93e7a32ee73d73fba8b31d3256232e9b35447b24a809490ed6ff9195afb9220e"
+      "sha256": "fe905d3b3d9845a2f1d2cbe60bfdfb57326bbfadf598d79d271ebf8e704682d8"
     },
     {
       "file": "renders/PREVIEW_Dining.png",
@@ -145,7 +145,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "be5eb6411c9c073bc684fdbe6df607f6fb682f943f6c7f722fba2cb9977dd2e8"
+      "sha256": "1bab47fc30b461865341bc00a1631ea5a3792d1ef0e2d89bb28d50b28e2f432d"
     },
     {
       "file": "renders/PREVIEW_Ensuite.png",
@@ -154,7 +154,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "9e24b7b18fb52bcdd8a1cb46d4167efa1d3eeba03ea72e1de1d15c4838bc1073"
+      "sha256": "5d0a6cfab401967c5d8a77d237c6cc58e4d4728b880f3c5d0f56dd93e7136352"
     },
     {
       "file": "renders/PREVIEW_Ensuite_Vanity.png",
@@ -163,7 +163,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "348ac06c041d18bfb00f1788c707643f5e111c70695ecc02c3dc5c33f6da897c"
+      "sha256": "163aed79ca41880676f37088bec5d2e81f8154ca11c632b01d2505e281a307ad"
     },
     {
       "file": "renders/PREVIEW_Entry.png",
@@ -172,7 +172,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "c26220336dd5b6f583db16cfe999fef699a454730465de887833f9af76b31fde"
+      "sha256": "995bcd80270b62cb037aae1b665f33203a5fd29662b05dcb7ead52d2bddef234"
     },
     {
       "file": "renders/PREVIEW_Kitchen.png",
@@ -181,7 +181,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "1b2de99518422f85a68517967913b2a1e524a001f333b8293e8142331706376e"
+      "sha256": "fddca0a15cda2e1415e5057d0f490e65fd7f8598c0dceff8f12d4269f436c40f"
     },
     {
       "file": "renders/PREVIEW_Living_Eye.png",
@@ -190,7 +190,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "23e1d4a8e7c18fe123f5f3dd770c952f4b751cc2e3572aa6acc4efceb084da98"
+      "sha256": "97871f8bf646e6b24b59675bc783375ec2432358a113b59378de5bca7e6024d0"
     },
     {
       "file": "renders/PREVIEW_Main_Bedroom.png",
@@ -199,7 +199,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "24a9f88c1828f6d6dd0f6987268979a0283eb866559420c942d1ae010d183e77"
+      "sha256": "96da809eefff8daadff8c2c5b4cfc34987cd3efa0f9644340a9bbc6ac7fc24c6"
     },
     {
       "file": "renders/PREVIEW_Service_Yard.png",
@@ -208,7 +208,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "37adc0416f3f48bfdf73b8ab9baab00816e0215f7800fca26ad69492d9fa5f04"
+      "sha256": "cfa2f1581b4d5563ce5e4c425db14ba4424a3a457f8a771851e6be8c833119dc"
     },
     {
       "file": "renders/PREVIEW_Shelter.png",
@@ -217,7 +217,7 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "3d07a6c82ee43153901986eb39f7240f96a623397629d763fbae2a45bf8c95a5"
+      "sha256": "276159bc25f26a404387ec1f75dabeb56c5a290e586afa25514a053208ad174c"
     },
     {
       "file": "renders/PLAN_Orthographic.png",
@@ -226,7 +226,25 @@
         720
       ],
       "nonuniform_pixels": true,
-      "sha256": "4812e2afddac938021f095cd6987b4d6bd7c98fdf7de2d9094dc808fc0a20c1a"
+      "sha256": "fedf0128ef01847e7d658fcc78a1ff60f0ebbe68bca7b0bd6b3bbbdb82834802"
+    },
+    {
+      "file": "renders/DETAIL_Attached_Door_Handle.png",
+      "size": [
+        1000,
+        850
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "e0ac406974a9c20b32ccf8ca8c8ae52def2ed86583ca8e2c9bb03bbb616c75f7"
+    },
+    {
+      "file": "renders/DETAIL_Dining_Plant_Clearance.png",
+      "size": [
+        1000,
+        850
+      ],
+      "nonuniform_pixels": true,
+      "sha256": "257da529144c96b185d117388fdaa7ba1f2d33f9a2e9d749ae6f4a883f27df8d"
     }
   ],
   "visual_review": "Room and walkway contact sheets reviewed; living, bathrooms, vanity and plan inspected individually during delivery. Provisional design-detail representations, not photogrammetry."

@@ -1,10 +1,7 @@
 {
   "preserved_original_files": 303,
-  "gallery_links_checked": 363,
-  "python_scripts_parsed": 16,
+  "gallery_links_checked": 367,
+  "python_scripts_parsed": 19,
   "errors": [],
-  "passed": true,
-  "cleanup": "Removed temporary Blender backups, two reproduction copies and their backups, local formatter, browser and render caches, Python bytecode, obsolete drawing raster and completed render progress file. Original references and 25 current previews retained.",
-  "model_version": "0.5.0",
-  "reproduction_comparison_pass": true
+  "passed": true
 }

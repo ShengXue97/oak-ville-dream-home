@@ -91,21 +91,11 @@ for room, axis, fixed, start, end, thickness, angle in DOORS:
             2.15,
         )
     box(room + "_Door_Frame_Head", bounds, "Doors_Windows", "Oak_Joinery", 0.003)
-    # Handle coordinates are local to the hinge, so they follow the leaf.
-    handle = cub(
-        room + "_Door_Handle",
-        leaf_width - 0.10 if axis == "h" else 0.055,
-        -0.055 if axis == "h" else leaf_width - 0.10,
-        1.02,
-        0.11 if axis == "h" else 0.025,
-        0.025 if axis == "h" else 0.11,
-        0.025,
-        "Doors_Windows",
-        "Metal_Champagne",
-        0.009,
-        False,
-    )
-    handle.parent = pivot
+    # Mounting plates, spindles and levers on both faces follow the hinge.
+    import runpy
+
+    details = runpy.run_path(str(ROOT / "scripts/interior_details.py"))
+    details["build_door_hardware"](room, axis, leaf_width, pivot)
     door_schedule.append(
         {
             "room": room,

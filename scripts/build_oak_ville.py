@@ -46,7 +46,7 @@ DOORS = [
     ("Entry", "h", 7.25, 2.15, 3.25, 0.20, 90),
     ("Shelter", "v", 1.75, 5.20, 6.05, 0.25, -90),
     ("Bedroom_3", "h", 3.35, 5.40, 6.30, 0.10, 90),
-    ("Bedroom_2", "h", 3.35, 6.45, 7.35, 0.10, 90),
+    ("Bedroom_2", "h", 3.35, 6.45, 7.35, 0.10, 86),
     ("Main_Bedroom", "v", 9.375, 3.45, 4.35, 0.10, 90),
     ("Common_Bath", "h", 4.45, 6.75, 7.55, 0.10, -90),
     ("Ensuite", "h", 4.45, 9.55, 10.35, 0.15, -90),
@@ -207,7 +207,11 @@ def save(stage):
     s = bpy.context.scene
     s["milestone"] = stage
     s["ceiling_height_assumed_m"] = H
-    s["project_version"] = ["0.0.0", "0.1.0", "0.2.0", "0.3.0", "0.4.0", "0.5.0"][stage]
+    s["project_version"] = (
+        (ROOT / "VERSION").read_text().strip()
+        if stage == 5
+        else ["0.0.0", "0.1.0", "0.2.0", "0.3.0", "0.4.0"][stage]
+    )
     bpy.ops.file.pack_all()
     if not bpy.data.filepath:
         bpy.ops.wm.save_as_mainfile(
