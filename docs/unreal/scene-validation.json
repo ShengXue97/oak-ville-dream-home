@@ -1,6 +1,6 @@
 {
   "engine_version": "5.8.2-56702186+++UE5+Release-5.8",
-  "mesh_count_expected": 576,
+  "mesh_count_expected": 773,
   "actor_bounds_max_error_cm": 0.00014,
   "errors": [],
   "routes": [

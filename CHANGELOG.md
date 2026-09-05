@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.9.0 - Detailed furniture and fixtures throughout the flat
+
+- Refined 294 furniture/detail components across seating, tables, beds, storage, kitchen, bathrooms, appliances and decor. Added curved chair shells, bent oak, sewn upholstery, draped bedding, shaped table profiles, cabinet hardware, hollow bowls and detailed appliance fronts.
+- Added a genuinely recessed kitchen sink and countertop opening, basket drain, raised toilet lids, ring seats, connected shower arms and a shared brushed-steel material role.
+- Retained room geometry and the corrected bedroom layout. New details are separately editable, parented to their source parts and use shared material roles; tiny trim does not add gameplay collision.
+- Added deterministic family builders, collision-proxy refresh, seven detail preview views, mesh/attachment/recess checks and a targeted Unreal material migration that preserves custom overrides.
+- Recovered an accidental uniform scale only after backing up the detailed scene and auditing against the verified committed model. Rechecked written plan datums, all planned routes and saved-file integrity before export.
+- Updated designer schedules and documentation. Furniture remains proposed geometry, with manufacturer dimensions, concealed construction and moving cabinet mechanisms requiring further design.
+
 ## 0.8.0 - Faster walking and hold-to-run
 
 - Increased normal walking from 120 to 180 cm/s. Hold either Shift key to run at 320 cm/s; releasing it restores walking speed.

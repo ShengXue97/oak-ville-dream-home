@@ -148,7 +148,7 @@
     }
   ],
   "hardware_attached": true,
-  "dining_plant_to_chair_conservative_gap_m": 0.2638,
+  "dining_plant_to_chair_conservative_gap_m": 0.2646,
   "closest_objects": [
     "Dining_Plant_Leaf_01",
     "Dining_Chair_East_1_Back"

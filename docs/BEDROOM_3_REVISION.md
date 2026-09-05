@@ -1,5 +1,10 @@
 # Bedroom 3 layout correction
 
+The v0.9.0 furniture overhaul adds wardrobe pulls within this arrangement.
+The accessible-side clearance is now approximately 1017 mm measured to those
+pulls; the earlier 1033 mm figure below is to the bare fronts. See
+`FURNITURE_OVERHAUL.md` for the current furniture details and validation.
+
 The earlier arrangement was too congested: the desk stool overlapped the bed
 and the foot gap was approximately 265 mm. Passing selected corridor routes
 did not validate every approach to the bed. The new dedicated checks cover

@@ -35,6 +35,8 @@ SDK/C++ toolchain and a Blueprint/C++ port of the editor-only interactions.
 Native movement uses Epic's standard CharacterMovement and Enhanced Input.
 
 For geometry changes follow [Update from Blender](UPDATE_FROM_BLENDER.md).
+The detailed furniture revision is documented in [Furniture overhaul](../FURNITURE_OVERHAUL.md),
+including construction details, editable assemblies and validation evidence.
 Blender is authoritative for room geometry, furniture and door pivots. Unreal
 owns its lighting and role material instances. Full Blender node graphs do not
 transfer. The dimensioned plan and documented assumptions take precedence over

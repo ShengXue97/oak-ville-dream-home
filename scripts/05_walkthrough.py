@@ -10,6 +10,7 @@ import runpy
 exec((ROOT / "scripts/validate_model.py").read_text(), globals())
 fixture_helpers = runpy.run_path(str(ROOT / "scripts/fixture_details.py"))
 fixture_helpers["refine_basins"](globals())
+runpy.run_path(str(ROOT / "scripts/furniture_overhaul.py"))["apply"]()
 
 # More centred yard approach avoids skimming the washer's projecting door.
 for name in ("W03_dining-kitchen",):

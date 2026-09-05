@@ -1,0 +1,23 @@
+{
+  "revision": "crafted-minimalist-1",
+  "detailed_components": 294,
+  "separate_attached_details": 197,
+  "evaluated_detail_triangles": 138316,
+  "invalid_closed_meshes": [],
+  "unparented_details": [],
+  "sink_centre_hit": "Kitchen_Sink_Bowl_Detail_Drain_Outlet",
+  "sink_recess_m": 0.1584,
+  "source_roles": [
+    "Appliance",
+    "Cabinet_Front",
+    "Countertop",
+    "Fabric_Main",
+    "Fabric_Oatmeal",
+    "Metal_Brushed_Steel",
+    "Metal_Champagne",
+    "Oak_Joinery",
+    "Porcelain"
+  ],
+  "passed": true,
+  "scope": "Mesh integrity, editable attachment and sink recess; full plan, door and route checks are separate reports."
+}
