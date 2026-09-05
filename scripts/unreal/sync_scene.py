@@ -49,6 +49,7 @@ def update_record(record):
                 "vertices": record["vertices"],
                 "normals": record["normals"],
                 "triangles": record["triangles"],
+                **({"uv0": record["uv0"]} if record.get("uv0") else {}),
             },
             separators=(",", ":"),
         ).encode()
@@ -94,7 +95,9 @@ def update_record(record):
             axis = max(range(3), key=lambda index: abs(normal[index]))
             axes = [index for index in range(3) if index != axis]
             uvs.append(unreal.Vector2D(value[axes[0]] / 100, value[axes[1]] / 100))
-        buffers.uv0 = uvs
+        buffers.uv0 = (
+            [unreal.Vector2D(*uv) for uv in record["uv0"]] if record.get("uv0") else uvs
+        )
         dynamic = unreal.DynamicMesh()
         unreal.GeometryScript_MeshEdits.append_buffers_to_mesh(dynamic, buffers)
         options = unreal.GeometryScriptCopyMeshToAssetOptions()

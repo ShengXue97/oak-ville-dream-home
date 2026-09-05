@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.10.3 - Coordinated minimalist materials and refined artwork
+
+- Follow the user's Singapore BTO examples with a warmer natural-oak floor family, honey-oak dining furniture, flax textiles and restrained sage, clay and olive accents. Keep the sofa consistently cream.
+- Replace the two oval art reliefs with a packed original landscape print inside the existing frames. Preserve image UVs through Blender-to-Unreal export and import the print texture into Unreal.
+- Keep material roles editable in a JSON palette and apply intentional changes during the standard sync while preserving unrelated custom material overrides.
+- Recover accidental multi-object Edit Mode mesh changes from the previously validated Blender model, as confirmed by the user; preserve the accidental session in a local recovery copy.
+- Reopen the saved Blender source and validate dimensions, all 11 routes and furniture/door clearances. Existing walls, collision settings, lighting and player controls remain unchanged.
+
 ## 0.10.2 - Fix Shift-triggered camera displacement
 
 - Use runtime speed assignment instead of editor change notifications to prevent Blueprint component reconstruction on Shift transitions. User confirmed the fix in Play.

@@ -1,7 +1,7 @@
 {
-  "source_version": "0.10.1",
+  "source_version": "0.10.3",
   "mesh_objects": 868,
-  "triangles": 225804,
+  "triangles": 224752,
   "lights": 19,
   "doors": 8,
   "coordinate_mapping": "Blender (X,Y,Z) metres -> Unreal (X,-Y,Z) centimetres"

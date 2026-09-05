@@ -74,6 +74,8 @@ def main():
                     f"Geometry: {len(report['updated'])} changed, {len(report['added'])} added, {len(report['unchanged'])} unchanged"
                 )
                 remote("validate_scene.py")
+                if (ROOT / "assets/styles/accent-assignments.json").is_file():
+                    remote("sync_accent_materials.py")
                 print(
                     "Update complete. Unreal lighting and material overrides were retained."
                 )

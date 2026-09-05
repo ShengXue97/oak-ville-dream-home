@@ -308,3 +308,5 @@ summary = {
 )
 runpy.run_path(str(ROOT / "scripts/refresh_designer_handoff.py"))
 runpy.run_path(str(ROOT / "scripts/embed_unreal_lighting_profile.py"))
+runpy.run_path(str(ROOT / "scripts/minimalist_accents.py"), run_name="__main__")
+runpy.run_path(str(ROOT / "scripts/refine_artwork.py"), run_name="__main__")

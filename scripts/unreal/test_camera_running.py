@@ -43,6 +43,11 @@ def begin():
 
 def tick(delta):
     global index
+    if runtime.STATE is not state:
+        # A user may stop Play during an automated check. Never retain a callback
+        # that keeps querying components belonging to a destroyed Play world.
+        unreal.unregister_slate_post_tick_callback(handle)
+        return
     if time.monotonic() - started < 0.25:
         return
     offset = camera.get_world_location() - pawn.get_actor_location()

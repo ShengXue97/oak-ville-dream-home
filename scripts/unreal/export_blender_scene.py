@@ -84,6 +84,7 @@ for obj in sorted(scene.objects, key=lambda item: item.name):
     )
     normal_matrix = obj.matrix_world.to_3x3().inverted().transposed()
     vertices, normals, triangles = [], [], []
+    art_uvs = []
     # Split corners retain weighted/smooth normals and hard architectural edges.
     for triangle in mesh.loop_triangles:
         start = len(vertices)
@@ -96,6 +97,9 @@ for obj in sorted(scene.objects, key=lambda item: item.name):
                 normal_matrix @ mesh.corner_normals[loop_index].vector
             ).normalized()
             normals.append([normal.x, -normal.y, normal.z])
+            if obj.get("artwork_asset") and mesh.uv_layers.active:
+                uv = mesh.uv_layers.active.data[loop_index].uv
+                art_uvs.append([float(uv.x), 1.0 - float(uv.y)])
         triangles.append([start, start + 1, start + 2])
     role = obj.data.materials[0].name if obj.data.materials else "Wall_Paint"
     group = next(
@@ -136,6 +140,8 @@ for obj in sorted(scene.objects, key=lambda item: item.name):
         }
     )
     evaluated.to_mesh_clear()
+    if art_uvs:
+        objects[-1]["uv0"] = art_uvs
 
 lights = []
 for obj in scene.objects:
@@ -170,7 +176,9 @@ manifest = {
     "geometry_revision": 4,
     "objects": objects,
     "materials": {
-        material.name: material_settings(material) for material in bpy.data.materials
+        material.name: material_settings(material)
+        for material in bpy.data.materials
+        if material.name in {record["material"] for record in objects}
     },
     "lights": lights,
     "doors": doors,

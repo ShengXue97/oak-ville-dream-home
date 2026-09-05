@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "authorization": "User confirmed the Edit Mode changes were accidental while navigating",
+  "recovered_from": "Committed oak-ville.blend at 3bbfb23, source-model version 0.10.1",
+  "preserved_unsaved_copy": ".cache/before-accents.blend",
+  "scope": "Restore original mesh datablocks by object name, retain style materials and transforms; then replace two artwork surfaces",
+  "mesh_count": 1249
+}

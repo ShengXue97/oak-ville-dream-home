@@ -1,0 +1,234 @@
+{
+  "preset": {
+    "preset": "MINIMALIST_CREAM",
+    "description": "Cream shell and pale oak, layered with sage, clay, flax and honey oak accents.",
+    "roles": {
+      "Accent_Sage_Linen": {
+        "source": "Fabric_Oatmeal",
+        "hex": "929D80",
+        "roughness": 0.88
+      },
+      "Accent_Clay_Linen": {
+        "source": "Fabric_Oatmeal",
+        "hex": "B58069",
+        "roughness": 0.9
+      },
+      "Accent_Flax_Linen": {
+        "source": "Fabric_Oatmeal",
+        "hex": "B6A58A",
+        "roughness": 0.92
+      },
+      "Accent_Olive_Ceramic": {
+        "source": "Countertop",
+        "hex": "65715A",
+        "roughness": 0.43
+      },
+      "Accent_Warm_Stone": {
+        "source": "Countertop",
+        "hex": "BAAC94",
+        "roughness": 0.7
+      },
+      "Accent_Honey_Oak": {
+        "source": "Oak_Joinery",
+        "hex": "B68F61",
+        "roughness": 0.56
+      },
+      "Accent_Natural_Oak_Floor": {
+        "source": "Floor_Main",
+        "hex": "C8AD8B",
+        "roughness": 0.62
+      }
+    }
+  },
+  "assignments": {
+    "Living_Sofa_Back_Cushion_0": {
+      "previous": "Fabric_Main",
+      "target": "Fabric_Main"
+    },
+    "Living_Sofa_Back_Cushion_2": {
+      "previous": "Fabric_Main",
+      "target": "Fabric_Main"
+    },
+    "Living_Rug": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Flax_Linen"
+    },
+    "Living_Art_Frame": {
+      "previous": "Oak_Joinery",
+      "target": "Accent_Honey_Oak"
+    },
+    "Living_Coffee_Table_Top": {
+      "previous": "Countertop",
+      "target": "Accent_Warm_Stone"
+    },
+    "Dining_Plant_Pot": {
+      "previous": "Countertop",
+      "target": "Accent_Olive_Ceramic"
+    },
+    "Bedroom_3_Folded_Throw": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Sage_Linen"
+    },
+    "Bedroom_3_Upholstered_Headboard": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Flax_Linen"
+    },
+    "Bedroom_2_Folded_Throw": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Clay_Linen"
+    },
+    "Bedroom_2_Upholstered_Headboard": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Flax_Linen"
+    },
+    "Main_Bedroom_Folded_Throw": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Sage_Linen"
+    },
+    "Main_Bedroom_Upholstered_Headboard": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Flax_Linen"
+    },
+    "Main_Bedroom_Rug": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Flax_Linen"
+    },
+    "Common_Bath_Vanity_Front_01": {
+      "previous": "Cabinet_Front",
+      "target": "Accent_Honey_Oak"
+    },
+    "Ensuite_Vanity_Front_01": {
+      "previous": "Cabinet_Front",
+      "target": "Accent_Honey_Oak"
+    },
+    "Dining_Oval_Table": {
+      "previous": "Oak_Joinery",
+      "target": "Accent_Honey_Oak"
+    },
+    "Dining_Table_Pedestal": {
+      "previous": "Oak_Joinery",
+      "target": "Accent_Honey_Oak"
+    },
+    "Dining_Table_Pedestal.001": {
+      "previous": "Oak_Joinery",
+      "target": "Accent_Honey_Oak"
+    },
+    "Dining_Chair_West_0_Seat": {
+      "previous": "Fabric_Main",
+      "target": "Accent_Flax_Linen"
+    },
+    "Dining_Chair_West_0_Back": {
+      "previous": "Fabric_Main",
+      "target": "Accent_Flax_Linen"
+    },
+    "Dining_Chair_East_0_Seat": {
+      "previous": "Fabric_Main",
+      "target": "Accent_Flax_Linen"
+    },
+    "Dining_Chair_East_0_Back": {
+      "previous": "Fabric_Main",
+      "target": "Accent_Flax_Linen"
+    },
+    "Dining_Chair_West_1_Seat": {
+      "previous": "Fabric_Main",
+      "target": "Accent_Flax_Linen"
+    },
+    "Dining_Chair_West_1_Back": {
+      "previous": "Fabric_Main",
+      "target": "Accent_Flax_Linen"
+    },
+    "Dining_Chair_East_1_Seat": {
+      "previous": "Fabric_Main",
+      "target": "Accent_Flax_Linen"
+    },
+    "Dining_Chair_East_1_Back": {
+      "previous": "Fabric_Main",
+      "target": "Accent_Flax_Linen"
+    },
+    "Dining_Oval_Table_Detail_Underside_Apron": {
+      "previous": "Oak_Joinery",
+      "target": "Accent_Honey_Oak"
+    },
+    "Dining_Chair_East_0_Back_Detail_Bent_Oak_Back": {
+      "previous": "Oak_Joinery",
+      "target": "Oak_Joinery"
+    },
+    "Dining_Chair_East_1_Back_Detail_Bent_Oak_Back": {
+      "previous": "Oak_Joinery",
+      "target": "Oak_Joinery"
+    },
+    "Dining_Chair_West_0_Back_Detail_Bent_Oak_Back": {
+      "previous": "Oak_Joinery",
+      "target": "Oak_Joinery"
+    },
+    "Dining_Chair_West_1_Back_Detail_Bent_Oak_Back": {
+      "previous": "Oak_Joinery",
+      "target": "Oak_Joinery"
+    },
+    "Living_Table_Book_Detail_Top_Cover": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Sage_Linen"
+    },
+    "Living_Table_Book_Detail_Lower_Cover": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Sage_Linen"
+    },
+    "Living_Table_Book.001_Detail_Top_Cover": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Clay_Linen"
+    },
+    "Living_Table_Book.001_Detail_Lower_Cover": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Clay_Linen"
+    },
+    "Living_Table_Book.002_Detail_Top_Cover": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Sage_Linen"
+    },
+    "Living_Table_Book.002_Detail_Lower_Cover": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Accent_Sage_Linen"
+    },
+    "Living_Floor": {
+      "previous": "Floor_Main",
+      "target": "Accent_Natural_Oak_Floor"
+    },
+    "Bedroom_3_Floor": {
+      "previous": "Floor_Main",
+      "target": "Accent_Natural_Oak_Floor"
+    },
+    "Bedroom_2_Floor": {
+      "previous": "Floor_Main",
+      "target": "Accent_Natural_Oak_Floor"
+    },
+    "Main_Bedroom_Floor": {
+      "previous": "Floor_Main",
+      "target": "Accent_Natural_Oak_Floor"
+    },
+    "Bedroom_Corridor_Floor": {
+      "previous": "Floor_Main",
+      "target": "Accent_Natural_Oak_Floor"
+    },
+    "Shelter_Floor": {
+      "previous": "Floor_Main",
+      "target": "Accent_Natural_Oak_Floor"
+    },
+    "Dining_Floor": {
+      "previous": "Floor_Main",
+      "target": "Accent_Natural_Oak_Floor"
+    },
+    "Entry_Floor": {
+      "previous": "Floor_Main",
+      "target": "Accent_Natural_Oak_Floor"
+    },
+    "Living_Art_Relief": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Art_Mineral_Landscape"
+    },
+    "Bedroom_3_Art_Relief": {
+      "previous": "Fabric_Oatmeal",
+      "target": "Art_Mineral_Landscape"
+    }
+  },
+  "geometry_changed": "Two non-colliding art surfaces replaced within existing frames"
+}

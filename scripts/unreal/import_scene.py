@@ -152,7 +152,17 @@ def create_materials():
             kind = (
                 "glass"
                 if role in {"Glass", "Sheer_Linen"}
-                else "wood" if role in {"Oak_Joinery", "Floor_Main"} else "surface"
+                else (
+                    "wood"
+                    if role
+                    in {
+                        "Oak_Joinery",
+                        "Floor_Main",
+                        "Accent_Honey_Oak",
+                        "Accent_Natural_Oak_Floor",
+                    }
+                    else "surface"
+                )
             )
             editor = unreal.MaterialEditingLibrary
             editor.set_material_instance_parent(instance, masters[kind])
@@ -187,6 +197,8 @@ def create_mesh(record):
     buffers.uv0 = [
         unreal.Vector2D(value[0] / 100, value[1] / 100) for value in record["vertices"]
     ]
+    if record.get("uv0"):
+        buffers.uv0 = [unreal.Vector2D(*uv) for uv in record["uv0"]]
     dynamic = unreal.DynamicMesh()
     unreal.GeometryScript_MeshEdits.append_buffers_to_mesh(dynamic, buffers)
     options = unreal.GeometryScriptCreateNewStaticMeshAssetOptions()

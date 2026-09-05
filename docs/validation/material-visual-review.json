@@ -1,0 +1,15 @@
+{
+  "version": "0.10.3",
+  "blender_previews": [
+    "renders/accents/PREVIEW_Living_Eye.png",
+    "renders/accents/PREVIEW_Main_Bedroom.png"
+  ],
+  "unreal_previews": [
+    "renders/unreal/lighting/accents/living_art.png",
+    "renders/unreal/lighting/accents/dining.png"
+  ],
+  "review": "Cream sofa, coordinated wood/textile palette, print fitted within existing frame. User confirmed artwork visible in Unreal after two-sided paper material correction.",
+  "source_geometry": "Validated original mesh geometry restored after user confirmed accidental Edit Mode changes",
+  "dimensions_and_routes": "Saved Blender all_pass true; Unreal validation passed",
+  "notes": "Unreal procedural shading approximates Blender materials."
+}

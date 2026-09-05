@@ -1,0 +1,13 @@
+{
+  "preset": "MINIMALIST_CREAM",
+  "description": "Cream shell and pale oak, layered with sage, clay, flax and honey oak accents.",
+  "roles": {
+    "Accent_Sage_Linen": {"source": "Fabric_Oatmeal", "hex": "929D80", "roughness": 0.88},
+    "Accent_Clay_Linen": {"source": "Fabric_Oatmeal", "hex": "B58069", "roughness": 0.9},
+    "Accent_Flax_Linen": {"source": "Fabric_Oatmeal", "hex": "B6A58A", "roughness": 0.92},
+    "Accent_Olive_Ceramic": {"source": "Countertop", "hex": "65715A", "roughness": 0.43},
+    "Accent_Warm_Stone": {"source": "Countertop", "hex": "BAAC94", "roughness": 0.7},
+    "Accent_Honey_Oak": {"source": "Oak_Joinery", "hex": "B68F61", "roughness": 0.56},
+    "Accent_Natural_Oak_Floor": {"source": "Floor_Main", "hex": "C8AD8B", "roughness": 0.62}
+  }
+}
