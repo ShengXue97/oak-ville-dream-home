@@ -1,0 +1,131 @@
+{
+  "method": "Vertical capsule vs upright oriented source bounding boxes; max step 0.025m; safety allowance 0.0125m",
+  "capsule_diameter_m": 0.5,
+  "capsule_height_m": 1.7,
+  "doors": "OPEN",
+  "routes": [
+    {
+      "route": "W01_entry-dining",
+      "length_m": 2.221,
+      "samples": 92,
+      "minimum_capsule_surface_clearance_m": 0.215,
+      "centered_clear_diameter_m": 0.93,
+      "nearest_obstacle": "Shelter_Door_Leaf",
+      "collisions_or_sampling_margin": [],
+      "unsupported_samples": 0,
+      "pass": true
+    },
+    {
+      "route": "W02_dining-living",
+      "length_m": 2.639,
+      "samples": 109,
+      "minimum_capsule_surface_clearance_m": 0.12,
+      "centered_clear_diameter_m": 0.74,
+      "nearest_obstacle": "Living_Coffee_Table_Top",
+      "collisions_or_sampling_margin": [],
+      "unsupported_samples": 0,
+      "pass": true
+    },
+    {
+      "route": "W03_dining-kitchen",
+      "length_m": 4.5,
+      "samples": 184,
+      "minimum_capsule_surface_clearance_m": 0.03,
+      "centered_clear_diameter_m": 0.56,
+      "nearest_obstacle": "Kitchen_Fridge",
+      "collisions_or_sampling_margin": [],
+      "unsupported_samples": 0,
+      "pass": true
+    },
+    {
+      "route": "W04_bedroom_corridor",
+      "length_m": 6.205,
+      "samples": 254,
+      "minimum_capsule_surface_clearance_m": 0.238,
+      "centered_clear_diameter_m": 0.976,
+      "nearest_obstacle": "Common_Bath_Door_Jamb",
+      "collisions_or_sampling_margin": [],
+      "unsupported_samples": 0,
+      "pass": true
+    },
+    {
+      "route": "W05_Bedroom_3",
+      "length_m": 1.48,
+      "samples": 62,
+      "minimum_capsule_surface_clearance_m": 0.045,
+      "centered_clear_diameter_m": 0.59,
+      "nearest_obstacle": "Bedroom_3_Wardrobe_Carcass",
+      "collisions_or_sampling_margin": [],
+      "unsupported_samples": 0,
+      "pass": true
+    },
+    {
+      "route": "W06_Bedroom_2",
+      "length_m": 1.454,
+      "samples": 61,
+      "minimum_capsule_surface_clearance_m": 0.148,
+      "centered_clear_diameter_m": 0.796,
+      "nearest_obstacle": "Bedroom_2_Door_Leaf",
+      "collisions_or_sampling_margin": [],
+      "unsupported_samples": 0,
+      "pass": true
+    },
+    {
+      "route": "W07_main_bedroom",
+      "length_m": 2.8,
+      "samples": 114,
+      "minimum_capsule_surface_clearance_m": 0.148,
+      "centered_clear_diameter_m": 0.796,
+      "nearest_obstacle": "Main_Bedroom_Door_Leaf",
+      "collisions_or_sampling_margin": [],
+      "unsupported_samples": 0,
+      "pass": true
+    },
+    {
+      "route": "W08_common_bath",
+      "length_m": 1.652,
+      "samples": 70,
+      "minimum_capsule_surface_clearance_m": 0.098,
+      "centered_clear_diameter_m": 0.696,
+      "nearest_obstacle": "Common_Bath_Door_Leaf",
+      "collisions_or_sampling_margin": [],
+      "unsupported_samples": 0,
+      "pass": true
+    },
+    {
+      "route": "W09_ensuite",
+      "length_m": 1.404,
+      "samples": 60,
+      "minimum_capsule_surface_clearance_m": 0.0751,
+      "centered_clear_diameter_m": 0.6502,
+      "nearest_obstacle": "Ensuite_Door_Leaf",
+      "collisions_or_sampling_margin": [],
+      "unsupported_samples": 0,
+      "pass": true
+    },
+    {
+      "route": "W10_service_yard",
+      "length_m": 2.065,
+      "samples": 86,
+      "minimum_capsule_surface_clearance_m": 0.015,
+      "centered_clear_diameter_m": 0.53,
+      "nearest_obstacle": "Service_Yard_Washer_Door",
+      "collisions_or_sampling_margin": [],
+      "unsupported_samples": 0,
+      "pass": true
+    },
+    {
+      "route": "W11_shelter_access",
+      "length_m": 2.141,
+      "samples": 89,
+      "minimum_capsule_surface_clearance_m": 0.12,
+      "centered_clear_diameter_m": 0.74,
+      "nearest_obstacle": "Shelter_Door_Jamb.001",
+      "collisions_or_sampling_margin": [],
+      "unsupported_samples": 0,
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "limitations": "Conservative furniture bounds, proposed dimensions, no building compliance certification or game-engine physics test"
+}

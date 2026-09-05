@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 — Materials and lighting
+
+- Added procedural pale-oak planks/grain, cream upholstery, oatmeal textiles, warm ivory wet finishes, curtains, tonal art and restrained greenery.
+- Added named room lights, daylight aids and editable approximate temperature metadata. Hid daylight emitters from camera/transmission rays after render inspection.
+- Added JSON palette export/application and non-destructive alternative-style duplication helpers.
+- Saved and rendered the enclosed living view from a separate process while preserving the live session. Styled route validation passes. Textures are procedural; source images remain packed reference-only assets.
+
 ## 0.3.0 — Furnishings
 
 - Furnished living/dining, all bedrooms, kitchen, both bathrooms, yard and shelter with separately editable components and shared material slots.
