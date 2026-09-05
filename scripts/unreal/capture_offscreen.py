@@ -41,7 +41,7 @@ def finish(delta):
     global count
     count += 1
     component.capture_scene()
-    if count not in {24, 48}:
+    if count not in {24, 48, 72}:
         return
     output = ROOT / "renders/unreal"
     output.mkdir(parents=True, exist_ok=True)
@@ -49,16 +49,28 @@ def finish(delta):
         world,
         target,
         str(output),
-        "living-offscreen.png" if count == 24 else "corridor-offscreen.png",
+        {
+            24: "living-offscreen.png",
+            48: "corridor-offscreen.png",
+            72: "bedroom3-offscreen.png",
+        }[count],
     )
     if count == 24:
         capture.set_actor_location(unreal.Vector(670, 395, 160), False, False)
         capture.set_actor_rotation(unreal.Rotator(pitch=-8, yaw=0, roll=0), False)
         return
+    if count == 48:
+        position = unreal.Vector(580, 305, 160)
+        capture.set_actor_location(position, False, False)
+        capture.set_actor_rotation(
+            unreal.MathLibrary.make_rot_from_x(unreal.Vector(495, 120, 105) - position),
+            False,
+        )
+        return
     unreal.unregister_slate_post_tick_callback(handle)
     actors.destroy_actor(capture)
     levels.save_current_level()
-    print("Saved living-offscreen.png")
+    print("Saved living, corridor and Bedroom 3 previews")
 
 
 handle = unreal.register_slate_post_tick_callback(finish)

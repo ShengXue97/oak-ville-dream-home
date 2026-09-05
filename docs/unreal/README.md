@@ -1,38 +1,66 @@
 # Oak Ville desktop walkthrough
 
-Open `unreal/OakVille/OakVille.uproject` in Unreal 5.8.2. Keep it on monitor 2.
-The default map is `Content/OakVille/Maps/OakVille`. Click Play to walk using
-WASD and the mouse; Escape stops Play, and Shift+F1 releases the mouse.
+Open `unreal/OakVille/OakVille.uproject` in Unreal 5.8.2 on monitor 2.
+The default map is `Content/OakVille/Maps/OakVille`. Click Play, then click
+the viewport to capture the mouse. Escape stops Play.
 
-The character is 172 cm tall with a 50 cm diameter capsule. Eye height starts
-at 160 cm above floor, horizontal field of view is 65 degrees and walking speed
-is 120 cm/s. The eye height is an assumption for a 172 cm owner, not a measurement.
-Settings live in the `BP_OakVilleWalker` and `BP_OakVilleCamera` defaults.
+| Control | Behaviour |
+| --- | --- |
+| WASD / mouse | Walk / look using Epic's First Person Blueprint input |
+| Space | Jump in human mode; ascend in creative mode |
+| E | Open or close the nearby door you are looking at |
+| G | Toggle human walking and creative flight without collision |
+| Left Ctrl | Descend in creative mode |
 
-For geometry changes, follow [Update from Blender](UPDATE_FROM_BLENDER.md).
-For interior style changes, edit the shared `MI_*` material instances and keep
-architecture separate from furniture and decor. Current materials are an Unreal
-approximation of the cream/oak design, not a transfer of Blender shader graphs.
+Human mode is the default. Returning from creative mode places you at the last
+grounded position to avoid spawning inside furniture. The front door stays
+closed and locked. Interior doors start closed and rotate with their handles;
+the animation stops if its leaf would intersect the player's capsule.
+No custom controls use function keys. Unreal's own Shift+F1 mouse-release
+shortcut remains available.
 
-The source plan's written dimension spans remain authoritative; consult the
-designer handoff and assumptions in the parent docs folder before actual building.
-This is a design visualisation, not a surveyed fabrication model.
+The capsule is 172 cm tall and 50 cm across. Assumed eye height is about 160 cm,
+horizontal field of view 65 degrees, walking speed 120 cm/s, gravity scale 1,
+jump velocity 260 cm/s and maximum step height 18 cm. The entry start faces
+into the flat with zero pitch. Native movement settings are in the copied
+`/Game/FirstPerson/Blueprints/BP_FirstPersonCharacter` and
+`BP_FirstPersonPlayerController`, selected by `BP_OakVilleGameMode`.
 
-## Validation and reproduction
+E/G interaction and camera setup currently run through editor Python in
+`scripts/unreal/oakville_runtime.py`, loaded by `Content/Python/init_unreal.py`.
+This is an **editor Play walkthrough**. Packaging needs the missing Windows
+SDK/C++ toolchain and a Blueprint/C++ port of the editor-only interactions.
+Native movement uses Epic's standard CharacterMovement and Enhanced Input.
 
-- `scene-validation.json`: imported bounds, 11 route sweeps and supporting floors.
-- `sync-preservation-test.json`: rename, mesh update, material and offset retention.
-- `sync-validation.json`: most recent incremental update result.
-- `sdk-report.txt`: Windows SDK absent; standalone packaging remains pending.
-- `scripts/unreal/import_scene.py`: first import into an open project with its
-  configured plugins. Then run `sync_scene.py` to establish IDs and collision,
-  `repair_oak_material.py` for the refined oak graph, and `tune_lighting.py`.
-- `scripts/unreal/capture_offscreen.py`: interior preview without window focus.
-  Output goes to ignored `renders/unreal/`. It uses an offscreen Lumen capture,
-  so noise/performance differ from the interactive viewport.
+For geometry changes follow [Update from Blender](UPDATE_FROM_BLENDER.md).
+Blender is authoritative for room geometry, furniture and door pivots. Unreal
+owns its lighting and role material instances. Full Blender node graphs do not
+transfer. The dimensioned plan and documented assumptions take precedence over
+perspective tour screenshots; this is not a surveyed fabrication model.
 
-Regular updates intentionally do not rerun lighting or material repair scripts.
-Doors remain open static meshes; door interaction is not implemented. Furniture
-colliders are conservative convex hull approximations. Planned routes pass, but
-walking into furniture remains blocked and the capsule needs 25 cm clearance
-around its centre. No room or furnishing was shrunk to make navigation easier.
+## Reproduction and checks
+
+The committed template assets come from the installed Epic UE 5.8 templates:
+`TP_FirstPersonBP` and `TemplateResources/High/{Input,Characters}`. Their mount
+paths are retained so Blueprint references resolve. To restore missing template
+files run `python scripts/unreal/install_template_assets.py`; it never overwrites
+existing files. The template character's visible mannequin is disabled.
+
+For a fresh scene import run `import_scene.py`, then `sync_scene.py`,
+`repair_oak_material.py`, `tune_lighting.py`, `setup_standard_controller.py`,
+and `install_play_controls.py` using `python scripts/unreal/remote.py SCRIPT`.
+Wait for each import/sync to finish before the next command. Regular geometry
+updates use only `update_from_blender.py` and preserve lighting/material edits.
+
+- `scene-validation.json`: 576 bounds, 11 capsule routes and supporting floors.
+- `play-controls-validation.json`: actual spawned native character, grounded
+  start, jump/landing, E targeting/opening, locked entry and G mode changes.
+- `sync-preservation-test.json`: rename/update retention of overrides and offsets.
+- `../validation/bedroom3-clearances.json`: corrected single-bed circulation.
+- `scripts/unreal/capture_offscreen.py`: previews without changing window focus.
+
+Furniture collision uses conservative convex hulls. The designated accessible
+bedside and foot route are checked; wall-side slivers are not walking routes.
+Bath and yard folding-door symbols remain single-leaf swing proxies, documented
+in `assets/architecture/door-layout.json`; their detailed folding mechanisms
+still need modelling. Doors and windows require site confirmation before build.

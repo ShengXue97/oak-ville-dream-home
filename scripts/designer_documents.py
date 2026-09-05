@@ -256,7 +256,7 @@ def write_designer_documents():
     vertical_dimension([7650], 13.85, 12.675)
     svg.extend(
         [
-            '<text x="70" y="1004" class="note">Teal dashed lines: W01–W11 walking routes. Door leaves shown open. Ceiling removed only in this drawing.</text>',
+            '<text x="70" y="1004" class="note">Teal: W01–W11 routes. Interior doors open; entry closed. Ceiling removed only in this drawing.</text>',
             '<text x="70" y="1029" class="note">* Undimensioned partition positions, wall thicknesses, utility strip, fixtures and opening sizes are provisional.</text>',
             '<text x="70" y="1054" class="note">FFL Z=0.00 m · ceiling assumed 2.60 m · typical door clear head 2.12 m · corridor datum band 1.10 m</text>',
             '<text x="70" y="1079" class="note">See DESIGNER_HANDOFF.md and schedules. Verify finished faces and services on site before fabrication.</text>',

@@ -1,0 +1,13 @@
+{
+  "mattress_m": [
+    0.9,
+    1.9
+  ],
+  "bed_foot_to_desk_clear_m": 0.615,
+  "wardrobe_front_to_bed_side_clear_m": 1.033,
+  "stool_overlaps_bed": false,
+  "route": "W05_Bedroom_3 crosses the foot and continues along the open side",
+  "room_dimensions_changed": false,
+  "note": "The wall-side gap is not a walking route. The stool is tucked under the desk; pull-out seating space is separate from the standing walkway.",
+  "passed": true
+}

@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.7.0 - Human walking, working doors and bedroom circulation
+
+- Switched to Epic's standard First Person Blueprint character/controller with native grounded movement, gravity and jump. Start inside the entry with horizontal view, 172 cm capsule and assumed 160 cm eye height.
+- Added E-operated interior doors and G creative/human mode toggle without function-key bindings. Entry stays closed and locked. Handles follow their leaves; moving leaves stop at the player capsule.
+- Corrected hinge sides and swing directions from the plan in Blender and the shared export. Bath/yard folding symbols remain documented single-leaf proxies.
+- Corrected Bedroom 3 in the editable Blender source: 900 × 1900 mm single bed, west wardrobe, foot-end desk and tucked stool. Checked 615 mm foot clearance, 1033 mm accessible-side clearance and no bed/stool overlap; room walls are unchanged.
+- Restored an accidental whole-scene scale operation with owner approval. Updated reference drawing, schedules, cameras and regeneration scripts. Reproduction comparison tolerates only 0.011 mm numeric rounding differences.
+- Validated native character spawn, grounded start, jump/landing, E opening, locked front door and G transitions in Play. Rechecked Blender dimensions and planned routes and Unreal mesh bounds/collision routes.
+- Geometry changes remain Blender-first; export records actual door pose, and incremental sync preserves Unreal overrides and lighting.
+- Limitations: E/G currently run through editor Python, not packaged gameplay. Windows SDK/C++ tools and a packaged interaction implementation remain required for a standalone build. Unlabelled plan depths and joinery details remain provisional.
+
 ## 0.6.0 - Editable Unreal walkthrough and Blender updates
 
 - Added the Unreal 5.8.2 editor project under `unreal/OakVille`, with centimetre-scale meshes, a 172 cm character capsule, 160 cm eye height, 65 degree field of view and desktop walking controls.

@@ -47,6 +47,8 @@ def main():
         [
             str(args.blender),
             "--background",
+            "--python-exit-code",
+            "1",
             str(ROOT / "oak-ville.blend"),
             "--python",
             str(ROOT / "scripts/unreal/export_blender_scene.py"),

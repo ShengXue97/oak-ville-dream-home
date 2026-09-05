@@ -2,6 +2,7 @@
 
 import bpy
 import json
+import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,13 +35,28 @@ def scene_record():
     return record
 
 
+def equivalent(first, second):
+    """Allow tiny float decomposition differences, not geometry changes."""
+    if isinstance(first, dict) and isinstance(second, dict):
+        return first.keys() == second.keys() and all(
+            equivalent(first[key], second[key]) for key in first
+        )
+    if isinstance(first, list) and isinstance(second, list):
+        return len(first) == len(second) and all(
+            equivalent(a, b) for a, b in zip(first, second)
+        )
+    if isinstance(first, (float, int)) and isinstance(second, (float, int)):
+        return math.isclose(first, second, rel_tol=0, abs_tol=0.000011)
+    return first == second
+
+
 delivered = scene_record()
 bpy.ops.wm.open_mainfile(filepath=str(ROOT / ".cache/reproduction-check.blend"))
 reproduced = scene_record()
 differences = {
     name: {"delivered": delivered.get(name), "reproduced": reproduced.get(name)}
     for name in sorted(set(delivered) | set(reproduced))
-    if delivered.get(name) != reproduced.get(name)
+    if not equivalent(delivered.get(name), reproduced.get(name))
 }
 report = {
     "delivered_object_count": len(delivered),

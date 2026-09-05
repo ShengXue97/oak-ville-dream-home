@@ -357,15 +357,15 @@ for index, plan_y in enumerate((4.73, 5.37)):
 cabinet("Entry_Shoe_Storage", 1.99, 6.70, 0.22, 0.57, 1.02, 0.08, "east")
 
 # Bedroom 3 is the tour's left bedroom; Bedroom 2 is its middle/nursery room.
-bed("Bedroom_3", 4.35, 1.40, 1.20, 2.00)
-cabinet("Bedroom_3_Wardrobe", 6.00, 1.30, 0.55, 1.65, 2.23, 0.10, "west")
+bed("Bedroom_3", 5.60, 1.20, 0.90, 1.90)
+cabinet("Bedroom_3_Wardrobe", 3.78, 1.30, 0.55, 1.65, 2.23, 0.10, "east")
 cub(
     "Bedroom_3_Desk",
     4.32,
-    2.99,
+    3.04,
     0.745,
     1.40,
-    0.55,
+    0.45,
     0.055,
     "Furniture",
     "Oak_Joinery",
@@ -375,17 +375,17 @@ for x in (3.72, 4.92):
     cub(
         "Bedroom_3_Desk_Leg",
         x,
-        2.99,
+        3.04,
         0.36,
         0.055,
-        0.48,
+        0.38,
         0.72,
         "Furniture",
         "Oak_Joinery",
         0.01,
     )
-round_object("Bedroom_3_Desk_Stool", 5.00, 2.38, 0.46, 0.22, 0.08, "Fabric_Main")
-round_object("Bedroom_3_Stool_Base", 5.00, 2.38, 0.23, 0.12, 0.44, "Oak_Joinery")
+round_object("Bedroom_3_Desk_Stool", 4.32, 3.04, 0.46, 0.22, 0.08, "Fabric_Main")
+round_object("Bedroom_3_Stool_Base", 4.32, 3.04, 0.23, 0.12, 0.44, "Oak_Joinery")
 bed("Bedroom_2", 8.20, 1.37, 1.20, 2.00)
 cabinet("Bedroom_2_Wardrobe", 6.76, 1.30, 0.55, 1.65, 2.23, 0.10, "east")
 cabinet("Bedroom_2_Low_Storage", 8.30, 3.02, 1.60, 0.46, 0.73, 0.10, "north")

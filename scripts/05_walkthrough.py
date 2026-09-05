@@ -12,7 +12,7 @@ fixture_helpers = runpy.run_path(str(ROOT / "scripts/fixture_details.py"))
 fixture_helpers["refine_basins"](globals())
 
 # More centred yard approach avoids skimming the washer's projecting door.
-for name in ("W03_dining-kitchen", "W10_service_yard"):
+for name in ("W03_dining-kitchen",):
     route = bpy.data.objects[name]
     points = json.loads(route["route_points_plan_m"])
     points = [
@@ -132,9 +132,9 @@ for layer in bpy.context.scene.view_layers:
 
 # Eye-level camera positions are independent of the wider presentation camera.
 room_cameras = {
-    "Entry": ((2.70, 7.05, 1.60), (3.0, 5.9, 1.40)),
+    "Entry": ((2.70, 6.55, 1.60), (3.2, 5.68, 1.60)),
     "Dining": ((2.8, 4.0, 1.60), (4.65, 5.05, 1.15)),
-    "Bedroom_3": ((5.85, 2.42, 1.60), (4.35, 1.35, 1.10)),
+    "Bedroom_3": ((5.80, 3.05, 1.60), (4.95, 1.2, 1.05)),
     "Bedroom_2": ((7.15, 2.55, 1.60), (8.20, 1.35, 1.10)),
     "Main_Bedroom": ((10.70, 2.90, 1.60), (11.30, 1.0, 1.15)),
     "Kitchen": ((4.70, 6.05, 1.60), (4.42, 8.50, 1.10)),
@@ -142,7 +142,7 @@ room_cameras = {
     "Ensuite": ((9.95, 4.95, 1.60), (9.62, 6.05, 1.05)),
     "Common_Bath_Vanity": ((7.35, 5.50, 1.60), (8.28, 4.93, 1.25)),
     "Ensuite_Vanity": ((9.78, 5.45, 1.60), (10.73, 4.93, 1.25)),
-    "Service_Yard": ((6.45, 7.25, 1.60), (6.50, 8.50, 1.10)),
+    "Service_Yard": ((6.40, 7.65, 1.60), (6.50, 8.50, 1.10)),
     "Shelter": ((1.00, 5.40, 1.60), (0.55, 6.75, 1.10)),
 }
 for room, (location, target) in room_cameras.items():
@@ -303,3 +303,4 @@ summary = {
 (ROOT / "docs/validation/final-stage-validation.json").write_text(
     json.dumps(summary, indent=2)
 )
+runpy.run_path(str(ROOT / "scripts/refresh_designer_handoff.py"))

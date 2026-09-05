@@ -1,9 +1,9 @@
-room,opening_m,between_frames_m,clear_head_m,open_degrees,evidence
-Entry,1.1,1.04,2.12,90,Estimated from photograph; site measure required
-Shelter,0.85,0.79,2.12,90,Estimated from photograph; site measure required
-Bedroom_3,0.9,0.84,2.12,90,Estimated from photograph; site measure required
-Bedroom_2,0.9,0.84,2.12,86,Estimated from photograph; site measure required
-Main_Bedroom,0.9,0.84,2.12,90,Estimated from photograph; site measure required
-Common_Bath,0.8,0.74,2.12,-90,Estimated from photograph; site measure required
-Ensuite,0.8,0.74,2.12,-90,Estimated from photograph; site measure required
-Service_Yard,0.85,0.79,2.12,-90,Estimated from photograph; site measure required
+room,opening_m,between_frames_m,clear_head_m,open_degrees,hinge_end,evidence
+Entry,1.1,1.04,2.12,-90,end,Into entry; right jamb hinge. Outer grille not modelled.
+Shelter,0.85,0.79,2.12,90,start,Out of shelter toward entry/dining.
+Bedroom_3,0.9,0.84,2.12,-86,end,Into Bedroom 3; right jamb beside central partition.
+Bedroom_2,0.9,0.84,2.12,86,start,Into Bedroom 2; left jamb. 86 degree hardware-clearance stop.
+Main_Bedroom,0.9,0.84,2.12,90,end,"Toward corridor, hinged at bathroom-side end, following the drawn arc."
+Common_Bath,0.8,0.74,2.12,-90,start,Into common bathroom; folding-door symbol represented by a swing proxy.
+Ensuite,0.8,0.74,2.12,-90,start,Into ensuite; folding-door symbol represented by a swing proxy.
+Service_Yard,0.85,0.79,2.12,90,start,"Toward service yard, not into kitchen; folding symbol represented by a swing proxy."

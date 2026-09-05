@@ -8,12 +8,17 @@ Original transforms, role names and door hinge metadata remain in the manifest.
 
 import gzip
 import json
+import math
+import runpy
 from pathlib import Path
 
 import bpy
 from mathutils import Vector
 
 ROOT = Path(__file__).resolve().parents[2]
+# Validate the saved source against plan datums before publishing any export.
+# Comparing Unreal only to the export would miss an accidental source scale.
+runpy.run_path(str(ROOT / "scripts/reopen_validate.py"))
 OUTPUT = ROOT / "assets/unreal-export"
 OUTPUT.mkdir(parents=True, exist_ok=True)
 scene = bpy.data.scenes["Oak_Ville"]
@@ -153,6 +158,7 @@ doors = [
         "name": obj.name,
         "location_cm": unreal_point(obj.matrix_world.translation),
         "open_angle": obj["open_angle_degrees"],
+        "export_angle": math.degrees(obj.rotation_euler.z),
         "closed_angle": obj["closed_angle_degrees"],
     }
     for obj in scene.objects

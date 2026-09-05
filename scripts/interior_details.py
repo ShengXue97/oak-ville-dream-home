@@ -251,4 +251,7 @@ def apply_live_fixes(namespace):
             room, axis, end - start - 0.065, bpy.data.objects[room + "_Door_Hinge"]
         )
     build_plants(namespace)
+    import runpy
+
+    runpy.run_path(str(namespace["ROOT"] / "scripts/door_plan.py"))["apply"]()
     bpy.context.view_layer.update()

@@ -89,8 +89,11 @@ wall_test = unreal.SystemLibrary.line_trace_single(
     [],
     draw,
 )
-pawn_class = unreal.load_class(
-    None, "/Game/OakVille/Blueprints/BP_OakVilleWalker.BP_OakVilleWalker_C"
+mode_class = unreal.load_class(
+    None, "/Game/OakVille/Blueprints/BP_OakVilleGameMode.BP_OakVilleGameMode_C"
+)
+pawn_class = unreal.get_default_object(mode_class).get_editor_property(
+    "default_pawn_class"
 )
 pawn = unreal.get_default_object(pawn_class)
 capsule = pawn.get_editor_property("capsule_component")
@@ -106,7 +109,7 @@ report = {
     "eye_above_capsule_centre_cm": pawn.get_editor_property("base_eye_height"),
     "walk_speed_cm_s": pawn.get_editor_property(
         "character_movement"
-    ).get_editor_property("walking_speed"),
+    ).get_editor_property("max_walk_speed"),
 }
 report["passed"] = (
     not errors

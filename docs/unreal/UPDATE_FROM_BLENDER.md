@@ -14,7 +14,8 @@ settings and editable material instances. Keep both applications in this repo.
    python scripts/unreal/update_from_blender.py
    ```
 
-The command exports the saved Blender file, updates the open Unreal session in
+The command checks the saved Blender file against plan datums and circulation,
+then exports it and updates the open Unreal session in
 small batches, saves the map and meshes, then checks imported dimensions and all
 11 planned routes. It does not move window focus. No Unreal MCP is required;
 the project uses Epic's Python Remote Execution plugin over localhost.
@@ -56,6 +57,13 @@ Furniture collision is a conservative convex approximation; spaces beneath
 joined furniture meshes are not necessarily traversable. Architecture and
 room dimensions must remain governed by the dimensioned reference plan.
 
-The standalone Windows build is pending installation of the Windows SDK;
-the current delivery is the editable Unreal editor project. Doors are separate
-static meshes in their exported open positions, not yet interactive doors.
+Door pivots, leaf geometry and opening angles are authored in Blender. The
+export records their IDs, hinge locations and actual exported angles. On each
+Play session, the interaction script reads that manifest and animates the
+corresponding components; it does not alter the saved editor poses. Keep door
+parts parented to their named hinge and preserve their source IDs.
+
+The standalone Windows build is pending the Windows SDK and C++ build tools.
+E/G interactions currently use editor Python and must be ported to packaged
+Blueprint/C++ gameplay before distributing an executable. Native First Person
+movement and jump use Epic's Blueprint character and Enhanced Input assets.

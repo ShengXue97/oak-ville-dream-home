@@ -107,6 +107,10 @@ for room, axis, fixed, start, end, thickness, angle in DOORS:
         }
     )
 
+import runpy
+
+runpy.run_path(str(ROOT / "scripts/door_plan.py"))["apply"]()
+
 # Editable glazing and mullions; facade walls already contain apertures.
 for room, left, right in [
     ("Living", 0.4, 3.15),
@@ -184,7 +188,7 @@ ROUTES = {
         (6.9, 3.9),
         (8.9, 3.9),
     ],
-    "W05_Bedroom_3": [(5.85, 3.9), (5.85, 2.85), (5.85, 2.42)],
+    "W05_Bedroom_3": [(5.85, 3.9), (5.85, 2.5), (4.7, 2.5), (4.7, 1.0)],
     "W06_Bedroom_2": [(6.90, 3.9), (6.90, 2.8), (7.15, 2.55)],
     "W07_main_bedroom": [(8.90, 3.9), (10.70, 3.9), (10.70, 2.9)],
     "W08_common_bath": [(7.15, 3.9), (7.15, 4.95), (7.55, 5.4)],
@@ -211,4 +215,5 @@ exec(
     ),
     globals(),
 )
+runpy.run_path(str(ROOT / "scripts/door_plan.py"))["apply"]()
 validate_routes("architecture-routes")

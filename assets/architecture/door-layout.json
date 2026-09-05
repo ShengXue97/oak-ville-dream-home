@@ -1,0 +1,74 @@
+{
+  "Entry": {
+    "axis": "h",
+    "fixed_m": 7.25,
+    "start_m": 2.15,
+    "end_m": 3.25,
+    "hinge_end": "end",
+    "open_angle_blender": -90,
+    "direction": "Into entry; right jamb hinge. Outer grille not modelled."
+  },
+  "Shelter": {
+    "axis": "v",
+    "fixed_m": 1.75,
+    "start_m": 5.2,
+    "end_m": 6.05,
+    "hinge_end": "start",
+    "open_angle_blender": 90,
+    "direction": "Out of shelter toward entry/dining."
+  },
+  "Bedroom_3": {
+    "axis": "h",
+    "fixed_m": 3.35,
+    "start_m": 5.4,
+    "end_m": 6.3,
+    "hinge_end": "end",
+    "open_angle_blender": -86,
+    "direction": "Into Bedroom 3; right jamb beside central partition."
+  },
+  "Bedroom_2": {
+    "axis": "h",
+    "fixed_m": 3.35,
+    "start_m": 6.45,
+    "end_m": 7.35,
+    "hinge_end": "start",
+    "open_angle_blender": 86,
+    "direction": "Into Bedroom 2; left jamb. 86 degree hardware-clearance stop."
+  },
+  "Main_Bedroom": {
+    "axis": "v",
+    "fixed_m": 9.375,
+    "start_m": 3.45,
+    "end_m": 4.35,
+    "hinge_end": "end",
+    "open_angle_blender": 90,
+    "direction": "Toward corridor, hinged at bathroom-side end, following the drawn arc."
+  },
+  "Common_Bath": {
+    "axis": "h",
+    "fixed_m": 4.45,
+    "start_m": 6.75,
+    "end_m": 7.55,
+    "hinge_end": "start",
+    "open_angle_blender": -90,
+    "direction": "Into common bathroom; folding-door symbol represented by a swing proxy."
+  },
+  "Ensuite": {
+    "axis": "h",
+    "fixed_m": 4.45,
+    "start_m": 9.55,
+    "end_m": 10.35,
+    "hinge_end": "start",
+    "open_angle_blender": -90,
+    "direction": "Into ensuite; folding-door symbol represented by a swing proxy."
+  },
+  "Service_Yard": {
+    "axis": "v",
+    "fixed_m": 5.775,
+    "start_m": 7.2,
+    "end_m": 8.05,
+    "hinge_end": "start",
+    "open_angle_blender": 90,
+    "direction": "Toward service yard, not into kitchen; folding symbol represented by a swing proxy."
+  }
+}

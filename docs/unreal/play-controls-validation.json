@@ -1,0 +1,18 @@
+{
+  "spawned_character": true,
+  "initial_human_mode": true,
+  "level_start_pitch": true,
+  "gravity_scale": 1.0,
+  "jump_rise_cm": 31.61,
+  "jump_lifted_character": true,
+  "landed_on_floor": true,
+  "front_door_rejects_toggle": true,
+  "nearby_door_targeted": true,
+  "targeted_door": "Bedroom_3_Door_Hinge",
+  "door_angle_after_e": -86.0,
+  "door_target_after_e": -86,
+  "e_opens_interior_door": true,
+  "g_enables_flight": true,
+  "g_restores_human": true,
+  "passed": true
+}

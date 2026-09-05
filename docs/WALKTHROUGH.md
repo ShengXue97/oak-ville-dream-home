@@ -22,11 +22,11 @@ Enable `Walkthrough → Calibration` in the view layer to inspect the 1.70 m hum
 
 ## Doors and collision export
 
-Doors default open. Each `*_Door_Hinge` stores closed/open angles and owns its leaf/handle. `scripts/door_states.py` sets all doors OPEN or CLOSED without saving. Do not merge leaves into architectural walls.
+Interior doors default open for Blender inspection; the entry defaults closed. Each `*_Door_Hinge` stores closed/open angles and owns its leaf/handle. `scripts/door_states.py` sets all doors OPEN or CLOSED without saving. Do not merge leaves into architectural walls.
 
 `Collision_Architecture` contains floor, wall, frame, ceiling and glazing boxes. `Collision_Furniture` contains conservative simplified furniture/fixture bounds. `Collision_Doors` contains hinge-parented moving leaf proxies. The parent `Collision` collection is excluded from both view layers and never rendered. Enable it deliberately for export/debugging; render geometry and collision geometry should be exported as separate sets.
 
-For a later engine, export at scale 1 metre/unit (e.g. glTF after baking unsupported procedural materials, or FBX with unit settings verified). Add a capsule controller of diameter 0.50 m and height 1.70 m with eye offset 1.60 m. Map static architectural/furniture meshes to static colliders and door proxies to moving colliders. Re-run route/door tests in the target engine, including stairs/thresholds once measured. Procedural Blender materials require baking or recreation for glTF/game engines. No engine project or baked material export is included.
+For a later engine, export at scale 1 metre/unit (e.g. glTF after baking unsupported procedural materials, or FBX with unit settings verified). Add a capsule controller of diameter 0.50 m and height 1.70 m with eye offset 1.60 m. Map static architectural/furniture meshes to static colliders and door proxies to moving colliders. Re-run route/door tests in the target engine, including stairs/thresholds once measured. Procedural Blender materials require baking or recreation for glTF/game engines. The editable Unreal project is now included; see `unreal/README.md` for current controls and engine limitations.
 
 ## Reproduce and validate
 
