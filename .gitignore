@@ -1,0 +1,11 @@
+*.blend1
+*.blend2
+*.blend@
+__pycache__/
+*.pyc
+renders/*
+!renders/.gitkeep
+*.log
+scripts/.commit-message.txt
+assets/*.tmp
+assets/.tools/

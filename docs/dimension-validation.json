@@ -1,0 +1,120 @@
+{
+  "upper": {
+    "segments": [
+      {
+        "plan_mm": 3375,
+        "model_mm": 3375.0,
+        "error_mm": 0.0
+      },
+      {
+        "plan_mm": 3000,
+        "model_mm": 3000.0,
+        "error_mm": 0.0
+      },
+      {
+        "plan_mm": 3000,
+        "model_mm": 3000.0,
+        "error_mm": 0.0
+      },
+      {
+        "plan_mm": 3300,
+        "model_mm": 3300.0,
+        "error_mm": 0.0002
+      }
+    ],
+    "total_mm": 12675,
+    "pass": true
+  },
+  "left": {
+    "segments": [
+      {
+        "plan_mm": 4450,
+        "model_mm": 4450.0,
+        "error_mm": -0.0002
+      },
+      {
+        "plan_mm": 2800,
+        "model_mm": 2800.0,
+        "error_mm": 0.0002
+      },
+      {
+        "plan_mm": 1700,
+        "model_mm": 1700.0,
+        "error_mm": -0.0002
+      }
+    ],
+    "total_mm": 8950,
+    "pass": true
+  },
+  "right": {
+    "segments": [
+      {
+        "plan_mm": 4450,
+        "model_mm": 4450.0,
+        "error_mm": -0.0002
+      },
+      {
+        "plan_mm": 1950,
+        "model_mm": 1950.0,
+        "error_mm": 0.0003
+      },
+      {
+        "plan_mm": 1250,
+        "model_mm": 1250.0,
+        "error_mm": 0.0
+      }
+    ],
+    "total_mm": 7650,
+    "pass": true
+  },
+  "lower": {
+    "segments": [
+      {
+        "plan_mm": 1750,
+        "model_mm": 1750.0,
+        "error_mm": 0.0
+      },
+      {
+        "plan_mm": 1750,
+        "model_mm": 1750.0,
+        "error_mm": 0.0
+      },
+      {
+        "plan_mm": 2275,
+        "model_mm": 2275.0,
+        "error_mm": 0.0001
+      },
+      {
+        "plan_mm": 1375,
+        "model_mm": 1375.0,
+        "error_mm": 0.0
+      },
+      {
+        "plan_mm": 3950,
+        "model_mm": 3950.0,
+        "error_mm": 0.0002
+      }
+    ],
+    "total_mm": 11100,
+    "pass": true
+  },
+  "area_convention": "Non-overlapping reference floor patches, inclusive of walls; not clear/net floor area.",
+  "reference_areas_m2": {
+    "Living": 15.0188,
+    "Bedroom_3": 10.05,
+    "Bedroom_2": 10.05,
+    "Main_Bedroom": 14.685,
+    "Bedroom_Corridor": 6.6,
+    "Shelter": 4.9,
+    "Dining": 9.0188,
+    "Entry": 1.4875,
+    "Kitchen": 5.8012,
+    "Service_Yard": 3.5062,
+    "Utility_Strip": 1.53,
+    "Common_Bath": 4.3875,
+    "Ensuite": 4.8262,
+    "AC_Ledge": 3.0937
+  },
+  "internal_reference_m2": 91.8612,
+  "includes_ledge_m2": 94.9549
+}
