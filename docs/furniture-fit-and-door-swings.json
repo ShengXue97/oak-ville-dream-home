@@ -1,0 +1,55 @@
+{
+  "furniture_wall_clashes_over_10mm": [],
+  "door_swings": [
+    {
+      "hinge": "Entry_Door_Hinge",
+      "tested_angles": 91,
+      "contacts": [],
+      "pass": true
+    },
+    {
+      "hinge": "Shelter_Door_Hinge",
+      "tested_angles": 91,
+      "contacts": [],
+      "pass": true
+    },
+    {
+      "hinge": "Bedroom_3_Door_Hinge",
+      "tested_angles": 91,
+      "contacts": [],
+      "pass": true
+    },
+    {
+      "hinge": "Bedroom_2_Door_Hinge",
+      "tested_angles": 91,
+      "contacts": [],
+      "pass": true
+    },
+    {
+      "hinge": "Main_Bedroom_Door_Hinge",
+      "tested_angles": 91,
+      "contacts": [],
+      "pass": true
+    },
+    {
+      "hinge": "Common_Bath_Door_Hinge",
+      "tested_angles": 91,
+      "contacts": [],
+      "pass": true
+    },
+    {
+      "hinge": "Ensuite_Door_Hinge",
+      "tested_angles": 91,
+      "contacts": [],
+      "pass": true
+    },
+    {
+      "hinge": "Service_Yard_Door_Hinge",
+      "tested_angles": 91,
+      "contacts": [],
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "limitations": "1-degree swing samples, leaf bounds only; handles/hinge hardware and cabinet door operation need detailed design. Interpenetrating components within the same furniture assembly are intentional."
+}

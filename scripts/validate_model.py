@@ -100,3 +100,104 @@ def validate_routes(report_name="walkthrough-validation"):
     }
     (ROOT / "docs" / (report_name + ".json")).write_text(json.dumps(report, indent=2))
     return report
+
+
+def rectangles_overlap(first, second, tolerance=0.002):
+    """Separating-axis test for upright, possibly rotated rectangle footprints."""
+    for polygon in (first, second):
+        for index in range(4):
+            edge = polygon[(index + 1) % 4] - polygon[index]
+            axis = Vector((-edge.y, edge.x))
+            if axis.length < 1e-8:
+                continue
+            axis.normalize()
+            a = [point.dot(axis) for point in first]
+            b = [point.dot(axis) for point in second]
+            if min(max(a), max(b)) - max(min(a), min(b)) <= tolerance:
+                return False
+    return True
+
+
+def footprint(obj):
+    low = [min(corner[axis] for corner in obj.bound_box) for axis in range(3)]
+    high = [max(corner[axis] for corner in obj.bound_box) for axis in range(3)]
+    return [
+        (obj.matrix_world @ Vector((x, y, 0))).xy
+        for x, y in [
+            (low[0], low[1]),
+            (high[0], low[1]),
+            (high[0], high[1]),
+            (low[0], high[1]),
+        ]
+    ]
+
+
+def z_span(obj):
+    values = [(obj.matrix_world @ Vector(corner)).z for corner in obj.bound_box]
+    return min(values), max(values)
+
+
+def validate_furniture_and_swings():
+    bpy.context.view_layer.update()
+    sources = [
+        obj
+        for obj in bpy.context.scene.objects
+        if obj.type == "MESH" and obj.get("collision_source", False)
+    ]
+    architecture = [
+        obj
+        for obj in sources
+        if any(c.name == "Architecture" for c in obj.users_collection)
+        and z_span(obj)[1] > 0.10
+    ]
+    furnishings = [
+        obj
+        for obj in sources
+        if any(c.name in {"Furniture", "Fixed_Joinery"} for c in obj.users_collection)
+    ]
+    clashes = []
+    for item in furnishings:
+        item_low, item_high = z_span(item)
+        for wall_obj in architecture:
+            wall_low, wall_high = z_span(wall_obj)
+            if min(item_high, wall_high) - max(item_low, wall_low) > 0.01:
+                if rectangles_overlap(footprint(item), footprint(wall_obj), 0.01):
+                    clashes.append([item.name, wall_obj.name])
+    swings = []
+    for hinge in bpy.context.scene.objects:
+        if "open_angle_degrees" not in hinge:
+            continue
+        leaf = next(obj for obj in hinge.children if obj.get("hinged_component"))
+        original_angle = hinge.rotation_euler.z
+        contacts = set()
+        for step in range(91):
+            hinge.rotation_euler.z = math.radians(
+                hinge["open_angle_degrees"] * step / 90
+            )
+            bpy.context.view_layer.update()
+            leaf_low, leaf_high = z_span(leaf)
+            for obstacle in architecture + furnishings:
+                obstacle_low, obstacle_high = z_span(obstacle)
+                if min(leaf_high, obstacle_high) - max(leaf_low, obstacle_low) > 0.01:
+                    if rectangles_overlap(footprint(leaf), footprint(obstacle), 0.002):
+                        contacts.add(obstacle.name)
+        hinge.rotation_euler.z = original_angle
+        swings.append(
+            {
+                "hinge": hinge.name,
+                "tested_angles": 91,
+                "contacts": sorted(contacts),
+                "pass": not contacts,
+            }
+        )
+    bpy.context.view_layer.update()
+    report = {
+        "furniture_wall_clashes_over_10mm": clashes,
+        "door_swings": swings,
+        "all_pass": not clashes and all(row["pass"] for row in swings),
+        "limitations": "1-degree swing samples, leaf bounds only; handles/hinge hardware and cabinet door operation need detailed design. Interpenetrating components within the same furniture assembly are intentional.",
+    }
+    (ROOT / "docs/furniture-fit-and-door-swings.json").write_text(
+        json.dumps(report, indent=2)
+    )
+    return report
